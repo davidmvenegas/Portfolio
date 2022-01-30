@@ -1,5 +1,5 @@
 import { Fragment } from 'react'
-import Sidebar from './Sidebar/Sidebar'
+import Navbar from './Navbar/Navbar'
 import Home from './0-Home/Home'
 import About from './1-About/About'
 import Skills from './2-Skills/Skills'
@@ -11,7 +11,7 @@ import Contact from './6-Contact/Contact'
 function App() {
   return (
     <Fragment>
-      <Sidebar/>
+      <Navbar/>
       <Home/>
       <About/>
       <Skills/>
@@ -23,4 +23,4 @@ function App() {
   )
 }
 
-export default App;
+export default App
