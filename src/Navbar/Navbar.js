@@ -10,7 +10,7 @@ function Navbar() {
     const navLinks = [
         {navLinkId: 'Home', scrollToId: 'homeContainer', navIcon: faHome},
         {navLinkId: 'About', scrollToId: 'aboutContainer', navIcon: faUserAlt},
-        {navLinkId: 'Proficiencies', scrollToId: 'ProficienciesContainer', navIcon: faWrench},
+        {navLinkId: 'Proficiencies', scrollToId: 'proficienciesContainer', navIcon: faWrench},
         {navLinkId: 'My Work', scrollToId: 'myWorkContainer', navIcon: faFolder},
         {navLinkId: 'Algorithms', scrollToId: 'algorithmsContainer', navIcon: faNetworkWired},
         {navLinkId: 'Blogs', scrollToId: 'blogsContainer', navIcon: faPencilAlt},
