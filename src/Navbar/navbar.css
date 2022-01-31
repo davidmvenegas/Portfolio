@@ -1,0 +1,46 @@
+.navbarContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+    width: 23.5rem;
+    background-color: #2b343b;
+    box-shadow: 12.5px 0 0 #4187f6;
+}
+/* NAVBAR HEADER */
+.navbarHeader {
+}
+.navbarHeaderTitle {
+    font-size: 2.5rem;
+}
+.navbarHeaderDescription {
+    font-size: 1.25rem;
+    margin-top: .25rem;
+    text-align: center;
+}
+/* NAVBAR LINKS */
+.navbarLinks {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+/* NAVBAR FOOTER */
+.navbarFooter {
+}
+.navFooterItem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0;
+}
+#navFooterIcon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.navFooterText {
+    font-size: 1.5rem;
+}

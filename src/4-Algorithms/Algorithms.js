@@ -1,4 +1,4 @@
-import './Algorithms.css'
+import './algorithms.css'
 
 function Algorithms() {
     return (

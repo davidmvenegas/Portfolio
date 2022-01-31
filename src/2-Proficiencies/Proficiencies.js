@@ -1,4 +1,4 @@
-import './Proficiencies.css'
+import './proficiencies.css'
 
 function Proficiencies() {
     return (
