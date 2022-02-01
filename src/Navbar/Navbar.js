@@ -1,12 +1,10 @@
 import './navbar.css'
-import { useState } from 'react'
+import Navlink from './Navlink'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserAlt, faWrench, faFolder, faNetworkWired, faPencilAlt, faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import Navlink from './Navlink'
 
 function Navbar() {
-    const [activeNavLinkId, setActiveNavLinkId] = useState('')
     const navLinks = [
         {navLinkId: 'About', scrollToId: 'aboutContainer', navIcon: faUserAlt},
         {navLinkId: 'Proficiencies', scrollToId: 'proficienciesContainer', navIcon: faWrench},
@@ -24,7 +22,7 @@ function Navbar() {
             </div>
             <ul className='navbarLinks'>
                 {navLinks.map(({navLinkId, scrollToId, navIcon}) => (
-                    <Navlink navLinkId={navLinkId} navIcon={navIcon} scrollToId={scrollToId} activeNavLinkId={activeNavLinkId} setActiveNavLinkId={setActiveNavLinkId} />
+                    <Navlink navLinkId={navLinkId} navIcon={navIcon} scrollToId={scrollToId} />
                 ))}
             </ul>
             <div className="navbarFooter">
