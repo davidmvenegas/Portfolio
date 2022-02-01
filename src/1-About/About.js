@@ -22,7 +22,7 @@ function About() {
                 </div>
             </div>
             <div className="about-right-box">
-                <div className="about-right-title">About</div>
+                <div className="about-right-title">About me</div>
                 <p className='about-right-description'>
                     I am a recent Bootcamp graduate with a passion for programming and solving difficult problems.
                     <br /><br />I have always held a natural affinity for technology and am ready to translate my skills profesionally. I have high aspirations and constantly strive to outdo myself with every challenge I undertake.

@@ -8,7 +8,7 @@
 
 /* LEFT SIDE */
 .about-left-box {
-    padding-left: 6.5rem;
+    padding-left: 5.5rem;
 }
 .about-left-title:before {
     content: '<h1>';
@@ -22,7 +22,7 @@
 }
 .about-left-title {
     position: relative;
-    font-size: 7.5rem;
+    font-size: 7.75rem;
     line-height: 8.5rem;
 }
 .about-left-title:after {
@@ -32,8 +32,8 @@
     color: #515152;
     font-size: 14px;
     font-weight: 200;
-    margin-top: 2rem;
-    margin-left: 1.25rem;
+    margin-top: 2.25rem;
+    margin-left: 1rem;
 }
 .about-left-description:before {
     content: '<p>';
@@ -42,8 +42,8 @@
     font-size: 14px;
     font-weight: 200;
     position: absolute;
-    margin-top: -2.75rem;
-    left: -1.75rem;
+    margin-top: -2.65rem;
+    left: -1.25rem;
 }
 .about-left-description {
     position: relative;
@@ -58,8 +58,8 @@
     font-family: cursive;
     color: #515152;
     position: absolute;
-    left: -2rem;
-    bottom: -2.75rem;
+    left: -1.25rem;
+    bottom: -2.25rem;
 }
 .about-left-button-box {
     margin-top: 6.5rem;
@@ -127,7 +127,7 @@
     height: 5.4rem;
     width: 5.4rem;
     margin-top: .2rem;
-    transition: all ease-in-out .2s;
+    transition: all ease .15s;
 }
 .about-resume-pdf:hover {
     cursor: pointer;
@@ -139,7 +139,7 @@
 .about-resume-googleDocs {
     height: 5rem;
     width: 5rem;
-    transition: all ease-in-out .2s;
+    transition: all ease .15s;
 }
 .about-resume-googleDocs:hover {
     cursor: pointer;
@@ -153,7 +153,7 @@
 /* RIGHT SIDE */
 .about-right-box {
     padding-right: 6.5rem;
-    width: 40%;
+    width: 42.5%;
 }
 .about-right-title:before {
     content: '<h2>';
@@ -169,7 +169,7 @@
     position: relative;
     color: #08fdd8;
     font-size: 5rem;
-    line-height: 12rem;
+    line-height: 13.25rem;
     font-weight: 500;
 }
 .about-right-title:after {
@@ -189,8 +189,8 @@
     color: #515152;
     font-size: 14px;
     font-weight: 200;
-    margin-top: -2rem;
-    left: -2rem;
+    margin-top: -2.5rem;
+    left: -1rem;
 }
 .about-right-description {
     margin-top: 2rem;
@@ -205,6 +205,6 @@
     color: #515152;
     font-size: 14px;
     font-weight: 200;
-    left: -2rem;
-    bottom: -3rem;
+    left: -1rem;
+    bottom: -2.5rem;
 }
