@@ -1,10 +1,11 @@
 .navbarContainer {
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
     height: 100vh;
+    top: 0;
     width: 23.5rem;
     background-color: #2b343b;
     box-shadow: 12.5px 0 0 #4187f6;

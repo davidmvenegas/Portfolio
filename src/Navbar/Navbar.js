@@ -1,14 +1,13 @@
 import './navbar.css'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUserAlt, faWrench, faFolder, faNetworkWired, faPencilAlt, faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
+import { faUserAlt, faWrench, faFolder, faNetworkWired, faPencilAlt, faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Navlink from './Navlink'
 
 function Navbar() {
     const [activeNavLinkId, setActiveNavLinkId] = useState('')
     const navLinks = [
-        {navLinkId: 'Home', scrollToId: 'homeContainer', navIcon: faHome},
         {navLinkId: 'About', scrollToId: 'aboutContainer', navIcon: faUserAlt},
         {navLinkId: 'Proficiencies', scrollToId: 'proficienciesContainer', navIcon: faWrench},
         {navLinkId: 'My Work', scrollToId: 'myWorkContainer', navIcon: faFolder},

@@ -1,6 +1,5 @@
 import { Fragment } from 'react'
 import Navbar from './Navbar/Navbar'
-import Home from './0-Home/Home'
 import About from './1-About/About'
 import Proficiencies from './2-Proficiencies/Proficiencies'
 import MyWork from './3-MyWork/MyWork'
@@ -12,7 +11,6 @@ function App() {
   return (
     <Fragment>
       <Navbar/>
-      <Home/>
       <About/>
       <Proficiencies/>
       <MyWork/>

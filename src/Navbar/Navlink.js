@@ -9,7 +9,7 @@ function NavLink({ navLinkId, navIcon, scrollToId, activeNavLinkId, setActiveNav
 	}
 
 	return (
-        <li id={navLinkId} className={activeNavLinkId === navLinkId ? 'navLink activeClass' : 'navLink'} onClick={handleClick}>
+        <li id={navLinkId} className={activeNavLinkId === navLinkId ? 'navLink active' : 'navLink'} onClick={handleClick}>
             <FontAwesomeIcon icon={navIcon} id='navLinkIcon'/>
             <span className="navLinkTitle">{navLinkId}</span>
         </li>
