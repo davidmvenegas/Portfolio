@@ -1,92 +1,76 @@
-.navbarContainer {
-    position: fixed;
+.navbar-container {
+    background-color: #121212;
+    height: 10rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    height: 100vh;
+    justify-content: center;
+    font-size: 1.5rem;
+    position: sticky;
     top: 0;
-    width: 25rem;
-    background-color: #2b343b;
-}
-/* NAVBAR HEADER */
-.navbarHeaderTitle {
-    font-size: 2.5rem;
-}
-.navbarHeaderDescription {
-    font-size: 1.25rem;
-    margin-top: .25rem;
-    text-align: center;
-}
-/* NAVBAR LINKS */
-.navbarLinks {
+    z-index: 1000;
+    height: 10rem;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    margin-left: 15rem;
+    margin-top: .5rem;
 }
-.navLink {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    font-size: 2.25rem;
-    font-weight: 500;
-    color: whitesmoke;
-    padding: 1.5rem 0;
+.nav-logo {
+    position: absolute;
+    left: 15rem;
+    top: 2.8rem;
+    color: #ba0c0c;
+    font-size: 3.5rem;
+    letter-spacing: .1rem;
+    text-shadow: .25rem .25rem .25rem black;
     cursor: pointer;
 }
-.navLinkWrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 80%;
+.nav-logo-img {
+    position: absolute;
+    left: 10.25rem;
+    top: 3rem;
+    width: 4rem;
+    height: 4rem;
+    padding-right: 1rem;
 }
-.navLink::after {
+.nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-right: 2rem;
+}
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-item {
+    padding: 1rem 2rem;
+    font-size: 1.15rem;
+    margin: 0 2.5rem;
+    line-height: 4rem;
+}
+.nav-item::after {
     content: "";
     display: block;
-    height: .35rem;
+    height: .3rem;
     width: 0;
-    margin-top: .5rem;
     background-color: transparent;
-    border-radius: 1px;
-    transition: all .65s ease;
-    transition-delay: .25s;
+    transition: all .7s ease;
 }
-.navLink.active::after {
-    width: 80%;
-    background-color: rebeccapurple;
+.nav-item:hover::after {
+    width: 100%;
+    background-color: #d82020;
 }
-#navLinkIcon {
-    margin-right: 1.65rem;
-    transition: all .5s ease;
+.nav-item .active {
+    color: #d82020;
 }
-.navLinkTitle {
-    z-index: 1;
-    transition: all .5s ease;
+.account-btn {
+    position: absolute;
+    right: 16.5rem;
+    font-size: 3rem;
+    top: 3rem;
 }
-.navLink.active #navLinkIcon {
-    color: rebeccapurple;
-    transition-delay: .25s;
-}
-.navLink.active .navLinkTitle {
-    color: rebeccapurple;
-    transition-delay: .25s;
-}
-/* NAVBAR FOOTER */
-.navFooterItem {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 1rem 0;
-}
-#navFooterIcon {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-}
-.navFooterText {
-    font-size: 1.5rem;
+.account-btn .active {
+    color: #d82020;
 }

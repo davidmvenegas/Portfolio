@@ -2,7 +2,7 @@ import './blogs.css'
 
 function Blogs() {
     return (
-        <div className='blogsContainer'>
+        <div className='blogs-container'>
             BLOGS
         </div>
     )

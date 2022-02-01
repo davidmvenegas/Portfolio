@@ -2,7 +2,7 @@ import './algorithms.css'
 
 function Algorithms() {
     return (
-        <div className='algorithmsContainer'>
+        <div className='algorithms-container'>
             ALGORITHMS
         </div>
     )
