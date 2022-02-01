@@ -1,34 +1,210 @@
 .about-container {
-    padding-left: 20rem;
-    height: 100vh;
-    font-size: 5rem;
-    padding-top: 5rem;
-    text-align: center;
+    padding: 5rem 0 5rem 20rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* LEFT SIDE */
 .about-left-box {
+    padding-left: 6.5rem;
+}
+.about-left-title:before {
+    content: '<h1>';
+    position: absolute;
+    font-family: cursive;
+    color: #515152;
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: -5rem;
+    left: -1.25rem;
 }
 .about-left-title {
+    position: relative;
+    font-size: 7.5rem;
+    line-height: 8.5rem;
+}
+.about-left-title:after {
+    content: '<h1/>';
+    position: absolute;
+    font-family: cursive;
+    color: #515152;
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 2rem;
+    margin-left: 1.25rem;
+}
+.about-left-description:before {
+    content: '<p>';
+    font-family: cursive;
+    color: #515152;
+    font-size: 14px;
+    font-weight: 200;
+    position: absolute;
+    margin-top: -2.75rem;
+    left: -1.75rem;
 }
 .about-left-description {
+    position: relative;
+    color: #8d8d8d;
+    font-size: 1.6rem;
+    letter-spacing: 4px;
+    margin-top: 4rem;
+}
+.about-left-description:after {
+    content: '<p/>';
+    font-size: 14px;
+    font-family: cursive;
+    color: #515152;
+    position: absolute;
+    left: -2rem;
+    bottom: -2.75rem;
 }
 .about-left-button-box {
+    margin-top: 6.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .about-contact-button {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    line-height: 50px;
+    letter-spacing: 4px;
+    height: 50px;
+    width: 220px;
+    background-color: transparent;
+    border: 1px solid #08fdd8;
+    color: #08fdd8;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s ease-out all;
 }
+.about-contact-button:hover {
+    color: #1f1f1f;
+}
+.about-contact-button:after {
+    background: #08fdd8;
+    content: "";
+    height: 220px;
+    left: -350px;
+    position: absolute;
+    top: -100px;
+    transform: rotate(-45deg);
+    transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 350px;
+    z-index: -10;
+}
+.about-contact-button:hover:after {
+    left: -50px;
+}
+
+
 .about-resume-box {
+    margin-left: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.about-resume-title {
+    font-size: 2.125rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+}
+.about-resume-buttons-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
 }
 .about-resume-pdf {
+    height: 5.4rem;
+    width: 5.4rem;
+    margin-top: .2rem;
+    transition: all ease-in-out .2s;
+}
+.about-resume-pdf:hover {
+    cursor: pointer;
+    transform: scale(1.085);
+}
+.about-resume-pdf:active {
+    transform: scale(.95);
 }
 .about-resume-googleDocs {
+    height: 5rem;
+    width: 5rem;
+    transition: all ease-in-out .2s;
+}
+.about-resume-googleDocs:hover {
+    cursor: pointer;
+    transform: scale(1.085);
+}
+.about-resume-googleDocs:active {
+    transform: scale(.95);
 }
 
 
 /* RIGHT SIDE */
 .about-right-box {
+    padding-right: 6.5rem;
+    width: 40%;
+}
+.about-right-title:before {
+    content: '<h2>';
+    position: absolute;
+    font-family: cursive;
+    color: #515152;
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: -3.75rem;
+    left: -1rem;
 }
 .about-right-title {
+    position: relative;
+    color: #08fdd8;
+    font-size: 5rem;
+    line-height: 12rem;
+    font-weight: 500;
+}
+.about-right-title:after {
+    content: '<h2/>';
+    position: absolute;
+    font-family: cursive;
+    color: #515152;
+    font-size: 14px;
+    font-weight: 200;
+    left: -1rem;
+    bottom: -4rem;
+}
+.about-right-description:before {
+    content: '<p>';
+    position: absolute;
+    font-family: cursive;
+    color: #515152;
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: -2rem;
+    left: -2rem;
 }
 .about-right-description {
+    margin-top: 2rem;
+    position: relative;
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
+.about-right-description:after {
+    content: '<p/>';
+    position: absolute;
+    font-family:cursive;
+    color: #515152;
+    font-size: 14px;
+    font-weight: 200;
+    left: -2rem;
+    bottom: -3rem;
 }

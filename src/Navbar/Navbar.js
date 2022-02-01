@@ -2,7 +2,7 @@ import './navbar.css'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
-import Logo from '../Images/logo.png'
+import Logo from '../Media/Images/logo.png'
 
 function Navbar() {
     return (
