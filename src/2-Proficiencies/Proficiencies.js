@@ -1,8 +1,11 @@
 import './proficiencies.css'
+import NavRef from '../Navbar/Functions/NavRef'
 
 function Proficiencies() {
+    const proficienciesRef = NavRef('Proficiencies')
+
     return (
-        <div id='proficienciesContainer' className='proficienciesContainer'>
+        <div ref={proficienciesRef} id='proficienciesContainer' className='proficienciesContainer'>
             Proficiencies
         </div>
     )

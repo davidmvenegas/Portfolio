@@ -6,13 +6,10 @@
     flex-direction: column;
     height: 100vh;
     top: 0;
-    width: 23.5rem;
+    width: 25rem;
     background-color: #2b343b;
-    box-shadow: 12.5px 0 0 #4187f6;
 }
 /* NAVBAR HEADER */
-.navbarHeader {
-}
 .navbarHeaderTitle {
     font-size: 2.5rem;
 }
@@ -25,13 +22,61 @@
 .navbarLinks {
     width: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-/* NAVBAR FOOTER */
-.navbarFooter {
+.navLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: whitesmoke;
+    padding: 1.5rem 0;
+    cursor: pointer;
 }
+.navLinkWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+}
+.navLink::after {
+    content: "";
+    display: block;
+    height: .35rem;
+    width: 0;
+    margin-top: .5rem;
+    background-color: transparent;
+    border-radius: 1px;
+    transition: all .65s ease;
+    transition-delay: .25s;
+}
+.navLink.active::after {
+    width: 80%;
+    background-color: rebeccapurple;
+}
+#navLinkIcon {
+    margin-right: 1.65rem;
+    transition: all .5s ease;
+}
+.navLinkTitle {
+    z-index: 1;
+    transition: all .5s ease;
+}
+.navLink.active #navLinkIcon {
+    color: rebeccapurple;
+    transition-delay: .25s;
+}
+.navLink.active .navLinkTitle {
+    color: rebeccapurple;
+    transition-delay: .25s;
+}
+/* NAVBAR FOOTER */
 .navFooterItem {
     display: flex;
     align-items: center;

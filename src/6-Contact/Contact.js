@@ -1,8 +1,11 @@
 import './contact.css'
+import NavRef from '../Navbar/Functions/NavRef'
 
 function Contact() {
+    const contactRef = NavRef('Contact')
+
     return (
-        <div id='contactContainer' className='contactContainer'>
+        <div ref={contactRef} id='contactContainer' className='contactContainer'>
             CONTACT
         </div>
     )

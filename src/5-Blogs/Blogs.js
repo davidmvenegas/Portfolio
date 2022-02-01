@@ -1,8 +1,11 @@
 import './blogs.css'
+import NavRef from '../Navbar/Functions/NavRef'
 
 function Blogs() {
+    const blogsRef = NavRef('Blogs')
+
     return (
-        <div id='blogsContainer' className='blogsContainer'>
+        <div ref={blogsRef} id='blogsContainer' className='blogsContainer'>
             BLOGS
         </div>
     )

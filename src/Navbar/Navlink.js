@@ -1,4 +1,3 @@
-import './navlink.css'
 import { useContext } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { NavContext } from './Functions/NavContext'
@@ -13,8 +12,10 @@ function NavLink({ navLinkId, navIcon, scrollToId }) {
 
 	return (
         <li id={navLinkId} className={activeNavLinkId === navLinkId ? 'navLink active' : 'navLink'} onClick={handleClick}>
-            <FontAwesomeIcon icon={navIcon} id='navLinkIcon'/>
-            <span className="navLinkTitle">{navLinkId}</span>
+            <div className="navLinkWrapper">
+                <FontAwesomeIcon icon={navIcon} id='navLinkIcon'/>
+                <span className="navLinkTitle">{navLinkId}</span>
+            </div>
         </li>
 	)
 }

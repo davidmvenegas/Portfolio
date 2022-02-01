@@ -1,8 +1,12 @@
 import './mywork.css'
+import NavRef from '../Navbar/Functions/NavRef'
+
 
 function MyWork() {
+    const myWorkRef = NavRef('My Work')
+
     return (
-        <div id='myWorkContainer' className='myWorkContainer'>
+        <div ref={myWorkRef} id='myWorkContainer' className='myWorkContainer'>
             My Work
         </div>
     )

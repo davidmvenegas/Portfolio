@@ -1,13 +1,11 @@
 import { useRef, useContext, useEffect } from 'react'
-import { useOnScreen } from './useOnScreen'
+import Observer from './Observer'
 import { NavContext } from './NavContext'
 
-export const useNav = navLinkId => {
+function NavRef(navLinkId) {
 	const ref = useRef(null)
-
 	const { setActiveNavLinkId } = useContext(NavContext)
-
-	const isOnScreen = useOnScreen(ref)
+	const isOnScreen = Observer(ref)
 
 	useEffect(() => {
 		if (isOnScreen) {
@@ -17,3 +15,5 @@ export const useNav = navLinkId => {
 
 	return ref
 }
+
+export default NavRef

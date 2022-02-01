@@ -1,5 +1,5 @@
 import './about.css'
-import { NavRef } from '../Navbar/Functions/NavRef'
+import NavRef from '../Navbar/Functions/NavRef'
 
 function About() {
     const aboutRef = NavRef('About')
