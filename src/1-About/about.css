@@ -1,5 +1,5 @@
 .about-container {
-    padding: 5rem 0 5rem 20rem;
+    padding: 2.5rem 0 5rem 20rem;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -23,7 +23,50 @@
 .about-left-title {
     position: relative;
     font-size: 7.75rem;
-    line-height: 8.5rem;
+    line-height: 8.75rem;
+}
+.about-left-title span {
+    display: inline-block;
+    transition: color .35s ease;
+}
+.about-left-title span:hover {
+    color: #08fdd8;
+}
+@keyframes aboutFadeIn {
+    from {transform: scale3d(1, 1, 1); opacity: 0;}
+    30% {transform: scale3d(1.25, 0.75, 1)}
+    40% {transform: scale3d(0.75, 1.2, 1)}
+    50% {transform: scale3d(1.15, 0.85, 1); opacity: 1;}
+    65% {transform: scale3d(.95, 1.05, 1)}
+    75% {transform: scale3d(1.05, .95, 1)}
+    to {transform: scale3d(1, 1, 1); opacity: 1;}
+}
+#letter_H {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 0s;}
+#letter_i_one {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .05s;}
+#letter_comma_one {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .1s;}
+#letter_I {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .15s;}
+#letter_hyphen {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .2s;}
+#letter_m {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .25s;}
+#letter_D_one {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .3s;}
+#letter_a {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .35s;}
+#letter_v_one {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .4s;}
+#letter_i_two {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .45s;}
+#letter_d {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .5s;}
+#letter_comma_two {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .55s;}
+#letter_W {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1s;}
+#letter_e_one {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.05s;}
+#letter_b {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.1s;}
+#letter_D_two {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.25s;}
+#letter_e_two {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.3s;}
+#letter_v_two {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.35s;}
+#letter_e_three {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.4s;}
+#letter_l {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.45s;}
+#letter_o {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.5s;}
+#letter_p {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.55s;}
+#letter_e_four {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.65s;}
+#letter_r {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.7s;}
+@keyframes aboutTitleAfterFade {
+    100% {opacity: 1}
 }
 .about-left-title:after {
     content: '<h1/>';
@@ -34,6 +77,11 @@
     font-weight: 200;
     margin-top: 2.25rem;
     margin-left: 1rem;
+    animation: aboutTitleAfterFade .5s ease 1.8s forwards;
+    opacity: 0;
+}
+@keyframes aboutDescriptionFade {
+    100% {opacity: 1}
 }
 .about-left-description:before {
     content: '<p>';
@@ -44,6 +92,8 @@
     position: absolute;
     margin-top: -2.65rem;
     left: -1.25rem;
+    animation: aboutDescriptionFade 1s ease .65s forwards;
+    opacity: 0;
 }
 .about-left-description {
     position: relative;
@@ -51,6 +101,8 @@
     font-size: 1.6rem;
     letter-spacing: 4px;
     margin-top: 4rem;
+    animation: aboutDescriptionFade 1s ease .65s forwards;
+    opacity: 0;
 }
 .about-left-description:after {
     content: '<p/>';
@@ -60,21 +112,29 @@
     position: absolute;
     left: -1.25rem;
     bottom: -2.25rem;
+    animation: aboutDescriptionFade 1s ease .65s forwards;
+    opacity: 0;
+}
+@keyframes aboutButtonBoxUp {
+    100% {margin-top: 6.5rem; margin-bottom: 0; opacity: 1}
 }
 .about-left-button-box {
-    margin-top: 6.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 11.5rem;
+    margin-bottom: -5rem;
+    opacity: 0;
+    animation: aboutButtonBoxUp 1s ease 1.25s forwards;
 }
 .about-contact-button {
     position: relative;
     display: block;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 50px;
     letter-spacing: 4px;
-    height: 50px;
-    width: 220px;
+    height: 51.5px;
+    width: 215px;
     background-color: transparent;
     border: 1px solid #08fdd8;
     color: #08fdd8;
@@ -101,8 +161,6 @@
 .about-contact-button:hover:after {
     left: -50px;
 }
-
-
 .about-resume-box {
     margin-left: 2.5rem;
     display: flex;
@@ -111,7 +169,7 @@
     gap: 2rem;
 }
 .about-resume-title {
-    font-size: 2.125rem;
+    font-size: 2.085rem;
     font-weight: 400;
     font-style: italic;
     color: #fff;
@@ -121,7 +179,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .75rem;
+    gap: .5rem;
 }
 .about-resume-pdf {
     height: 5.4rem;
@@ -151,9 +209,14 @@
 
 
 /* RIGHT SIDE */
+@keyframes aboutRightSideFade {
+    100% {opacity: 1}
+}
 .about-right-box {
     padding-right: 6.5rem;
     width: 42.5%;
+    animation: aboutRightSideFade 1.5s ease 1.8s forwards;
+    opacity: 0;
 }
 .about-right-title:before {
     content: '<h2>';
@@ -168,8 +231,8 @@
 .about-right-title {
     position: relative;
     color: #08fdd8;
-    font-size: 5rem;
-    line-height: 13.25rem;
+    font-size: 5.25rem;
+    line-height: 12.65rem;
     font-weight: 500;
 }
 .about-right-title:after {
@@ -180,7 +243,7 @@
     font-size: 14px;
     font-weight: 200;
     left: -1rem;
-    bottom: -4rem;
+    bottom: -3.75rem;
 }
 .about-right-description:before {
     content: '<p>';
