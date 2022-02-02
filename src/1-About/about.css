@@ -215,7 +215,7 @@
 .about-right-box {
     padding-right: 6.5rem;
     width: 42.5%;
-    animation: aboutRightSideFade 1.5s ease 1.8s forwards;
+    animation: aboutRightSideFade 1.5s ease 1.5s forwards;
     opacity: 0;
 }
 .about-right-title:before {
