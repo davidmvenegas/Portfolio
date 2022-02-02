@@ -105,10 +105,10 @@ function Skills() {
                     <span>t</span>
                     <span>i</span>
                     <span>o</span>
-                    <span>n</span>&nsbp;
+                    <span>n</span>&nbsp;
                     <span>a</span>
                     <span>n</span>
-                    <span>d</span>&nsbp;
+                    <span>d</span>&nbsp;
                     <span>C</span>
                     <span>e</span>
                     <span>r</span>
@@ -124,40 +124,41 @@ function Skills() {
                     <span>n</span>
                     <span>s</span>
                 </h1>
-                <div className="education-box">
-                    <div className="education-item">
+                <div className="flatiron-item">
+                    <div className="flatiron-img-box">
+                        <img src="" alt="Flatiron" />
+                        <p>From Oct 2021 to Feb 2022</p>
+                    </div>
+                    <div className="flatiron-text-box">
+                        <h3>NYC, New York City</h3>
+                        <h1>FLATIRON SCHOOL</h1>
+                        <h4>Software Engineering - 16 weeks - Full Time & In-person</h4>
+                        <p>A highly acknowledged Software Engineering trade school and proven leader in tech education. During my time as a student I studied coding best practices, engaged in pair programming with my peers, collaborated on projects as a team and learned proper ways to tackle complex problems. Throughout my time at the school I actively improved my skills with 500+ hours of live coding experience.</p>
+                    </div>
+                </div>
+                <div className="cert-items">
+                    <div className="cert-item">
                         <img src="" alt="AWS" />
-                        <div className="education-item-text">
+                        <div className="cert-text-box">
                             <h1>AMAZON WEB SERVICES</h1>
                             <h4>Certified Cloud Practitioner</h4>
-                            <p>The foundational accreditation from the world's largest cloud provider. Cloud technology is expanding at an incredible pace and I intend to receive many more qualifications for the field in the near future.</p>
+                            <p>The foundational accreditation from the world's largest cloud provider. Cloud technology is expanding at an incredible pace and I intend to earn many more qualifications in the near future.</p>
                         </div>
                     </div>
-                    <div className="flatiron-item">
-                        <div className="flatiron-img-box">
-                            <img src="" alt="Flatiron" />
-                            <p>From Oct 2021 to Feb 2022</p>
-                        </div>
-                        <div className="flatiron-item-text">
-                            <h3>NYC, New York City</h3>
-                            <h1>FLATIRON SCHOOL</h1>
-                            <h4>Software Engineering - 16 weeks - Full Time & In-person</h4>
-                            <p>A highly acknowledged Software Engineering trade school and proven leader in tech education. During my time as a student I studied coding best practices, engaged in pair programming with my peers, collaborated on projects as a team and learned proper ways to tackle complex problems. Throughout my time at the school I actively improved my skills with 500+ hours of live coding experience.</p>
-                        </div>
-                    </div>
-                    <div className="education-item">
+                    
+                    <div className="cert-item">
                         <img src="" alt="Flatiron" />
-                        <div className="education-item-text">
-                            <h1>CYBER SECURITY</h1>
+                        <div className="cert-text-box">
+                            <h1>CYBERSECURITY</h1>
                             <h4>CompTiA Security +</h4>
-                            <p>A globally recognized certification that validates the baseline skills necessary to perform core security functions. Cybersecurity is a core component of the internet and I'm looking forward to expanding my knowledge further.</p>
+                            <p>A globally recognized certification that validates the baseline skills necessary to perform core security functions. Cybersecurity is a vital aspect of the modern internet and something I care deeply about.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="note-wrapper">
+            {/* <div className="note-wrapper">
                 <p><span>*</span> While I don't have a computer science degree, I do have a working understanding of the theory and maths behind the code. I've completed Harvard's CS50, finished numerous of MIT's Computer Science courses, read countless textbooks, taken advanced math courses and much more. I'm passionate about the fundamentals of programming - not just at the surface level, and I believe that dedication will show.</p>
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -38,8 +38,6 @@
     height: 2.5rem;
     font-family: monospace;
 }
-
-
 .skills-box:first-of-type {
     margin-top: 6.5rem;
 }
@@ -104,16 +102,17 @@
     font-size: 1.25rem;
     line-height: 1.35;
 }
-#ReactSkill {animation: skilsBoxFade 1s ease 1s forwards; opacity: 0;}
-#ReduxSkill {animation: skilsBoxFade 1s ease 1.5s forwards; opacity: 0;}
-#JavascriptSkill {animation: skilsBoxFade 1s ease 2s forwards; opacity: 0;}
-#RubySkill {animation: skilsBoxFade 1s ease 2.5s forwards; opacity: 0;}
-#CSSSkill {animation: skilsBoxFade 1s ease 3s forwards; opacity: 0;}
-#NodeSkill {animation: skilsBoxFade 1s ease 1s forwards; opacity: 0;}
-#MongoDBSkill {animation: skilsBoxFade 1s ease 1.5s forwards; opacity: 0;}
-#SQLSkill {animation: skilsBoxFade 1s ease 2s forwards; opacity: 0;}
-#RubyonRailsSkill {animation: skilsBoxFade 1s ease 2.5s forwards; opacity: 0;}
-#FirebaseSkill {animation: skilsBoxFade 1s ease 3s forwards; opacity: 0;}
+#ReactSkill {animation: skilsBoxFade 1s ease .5s forwards; opacity: 0}
+#ReduxSkill {animation: skilsBoxFade 1s ease 1s forwards; opacity: 0}
+#JavascriptSkill {animation: skilsBoxFade 1s ease 1.5s forwards; opacity: 0}
+#RubySkill {animation: skilsBoxFade 1s ease 2s forwards; opacity: 0}
+#CSSSkill {animation: skilsBoxFade 1s ease 2.5s forwards; opacity: 0}
+#NodeSkill {animation: skilsBoxFade 1s ease .5s forwards; opacity: 0}
+#MongoDBSkill {animation: skilsBoxFade 1s ease 1s forwards; opacity: 0}
+#SQLSkill {animation: skilsBoxFade 1s ease 1.5s forwards; opacity: 0}
+#RubyonRailsSkill {animation: skilsBoxFade 1s ease 2s forwards; opacity: 0}
+#FirebaseSkill {animation: skilsBoxFade 1s ease 2.5s forwards; opacity: 0}
+
 
 
 .education-wrapper {
@@ -122,15 +121,18 @@
     justify-content: flex-start;
     flex-direction: column;
     width: 100%;
+    margin-top: 5.5rem;
 }
 .education-header {
     position: relative;
     color: white;
-    font-size: 5rem;
+    font-size: 4.75rem;
     font-weight: 600;
+    animation: skilsBoxFade 2s ease forwards;
+    opacity: 0;
 }
 .education-header span {
-    /* display: inline-block; */
+    display: inline-block;
     transition: color .35s ease;
 }
 .education-header span:hover {
@@ -138,34 +140,29 @@
 }
 
 
-.education-box {
-}
-
-
-.education-item {
-}
-.education-item img {
-}
-.education-item-text {
-}
-.education-item-text h1 {
-}
-.education-item-text h4 {
-}
-.education-item-text p {
-}
-
-
+/* FLATIRON */
 .flatiron-item {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.5rem;
+    width: 90%;
 }
 .flatiron-img-box {
+    flex: 1;
 }
 .flatiron-img-box img {
 }
 .flatiron-img-box p {
 }
 
-.flatiron-item-text {
+.flatiron-text-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .flatiron-item-text h3 {
 }
@@ -175,6 +172,39 @@
 }
 .flatiron-item-text p {
 }
+
+
+/* CERTS */
+.cert-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3.5rem;
+    width: 90%;
+}
+.cert-item {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cert-item img {
+    flex: 1;
+}
+.cert-text-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cert-item-text h1 {
+}
+.cert-item-text h4 {
+}
+.cert-item-text p {
+}
+
 
 
 .note-wrapper {
