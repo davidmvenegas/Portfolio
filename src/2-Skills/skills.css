@@ -1,5 +1,5 @@
 .skills-container {
-    padding: 5rem 0 5rem 18.5rem;
+    padding: 3.5rem 0 5rem 18.5rem;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -11,58 +11,133 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    width: 100%;
 }
 .skills-header {
-    font-size: 5.5rem;
+    position: relative;
+    color: white;
+    font-size: 6.25rem;
+    font-weight: 600;
+    animation: skilsBoxFade 2s ease forwards;
+    opacity: 0;
+}
+.skills-header span {
+    display: inline-block;
+    transition: color .35s ease;
+}
+.skills-header span:hover {
+    color: #08fdd8;
 }
 .skills-description {
-    font-size: 1.65rem;
+    margin-top: 1.5rem;
+    position: relative;
+    font-size: .8rem;
+    line-height: 2;
+    display: flex;
+    width: 62.5vw;
+    height: 2.5rem;
+    font-family: monospace;
 }
 
 
-.skills-front-box {
+.skills-box:first-of-type {
+    margin-top: 6.5rem;
+}
+@keyframes skilsBoxFade {
+    100% {opacity: 1;}
+}
+.skills-box {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
+    margin: 5rem 0 0;
+    padding: 2rem 0;
+    border: 1px solid #08fdd8;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    animation: skilsBoxFade 2s ease forwards;
+    opacity: 0;
 }
-
-
 .skills-title {
-    font-size: 3rem;
+    position: absolute;
+    color: black;
+    text-transform: uppercase;
+    border: 2px solid #08fdd8;
+    background-color: #08fdd8;
+    top: -3.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: .5rem 1.65rem;
+    border-radius: .5rem .5rem 0 0;
+    animation: skilsBoxFade 2s ease forwards;
+    opacity: 0;
 }
 .skills-content {
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
     width: 100%;
 }
 .skills-item {
-    height: 15rem;
-    width: 15rem;
+    height: 17.5rem;
+    width: 22.5rem;
+    padding: 0 2rem;
+    text-align: center;
 }
 .skills-item img {
+    height: 7.5rem;
+    width: 7.5rem;
 }
 .skills-item h2 {
+    font-size: 2.5rem;
+    padding: 1.25rem 0 .5rem;
 }
 .skills-item p {
+    font-size: 1.25rem;
+    line-height: 1.35;
 }
-
-
-.skills-back-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
+#ReactSkill {animation: skilsBoxFade 1s ease 1s forwards; opacity: 0;}
+#ReduxSkill {animation: skilsBoxFade 1s ease 1.5s forwards; opacity: 0;}
+#JavascriptSkill {animation: skilsBoxFade 1s ease 2s forwards; opacity: 0;}
+#RubySkill {animation: skilsBoxFade 1s ease 2.5s forwards; opacity: 0;}
+#CSSSkill {animation: skilsBoxFade 1s ease 3s forwards; opacity: 0;}
+#NodeSkill {animation: skilsBoxFade 1s ease 1s forwards; opacity: 0;}
+#MongoDBSkill {animation: skilsBoxFade 1s ease 1.5s forwards; opacity: 0;}
+#SQLSkill {animation: skilsBoxFade 1s ease 2s forwards; opacity: 0;}
+#RubyonRailsSkill {animation: skilsBoxFade 1s ease 2.5s forwards; opacity: 0;}
+#FirebaseSkill {animation: skilsBoxFade 1s ease 3s forwards; opacity: 0;}
 
 
 .education-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
 }
 .education-header {
+    position: relative;
+    color: white;
+    font-size: 5rem;
+    font-weight: 600;
 }
+.education-header span {
+    /* display: inline-block; */
+    transition: color .35s ease;
+}
+.education-header span:hover {
+    color: #08fdd8;
+}
+
+
 .education-box {
 }
 
