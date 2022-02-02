@@ -1,8 +1,110 @@
 .skills-container {
-    padding: 2.5rem 0 5rem 20rem;
+    padding: 5rem 0 5rem 18.5rem;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.skills-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.skills-header {
+    font-size: 5.5rem;
+}
+.skills-description {
+    font-size: 1.65rem;
+}
+
+
+.skills-front-box {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+}
+
+
+.skills-title {
+    font-size: 3rem;
+}
+.skills-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.skills-item {
+    height: 15rem;
+    width: 15rem;
+}
+.skills-item img {
+}
+.skills-item h2 {
+}
+.skills-item p {
+}
+
+
+.skills-back-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.education-wrapper {
+}
+.education-header {
+}
+.education-box {
+}
+
+
+.education-item {
+}
+.education-item img {
+}
+.education-item-text {
+}
+.education-item-text h1 {
+}
+.education-item-text h4 {
+}
+.education-item-text p {
+}
+
+
+.flatiron-item {
+}
+.flatiron-img-box {
+}
+.flatiron-img-box img {
+}
+.flatiron-img-box p {
+}
+
+.flatiron-item-text {
+}
+.flatiron-item-text h3 {
+}
+.flatiron-item-text h1 {
+}
+.flatiron-item-text h4 {
+}
+.flatiron-item-text p {
+}
+
+
+.note-wrapper {
+}
+.note-wrapper p {
+}
+.note-wrapper p span {
 }
