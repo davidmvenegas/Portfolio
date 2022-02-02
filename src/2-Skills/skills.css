@@ -1,7 +1,8 @@
 .skills-container {
-    padding-left: 20rem;
-    height: 100vh;
-    font-size: 5rem;
-    padding-top: 5rem;
-    text-align: center;
+    padding: 2.5rem 0 5rem 20rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

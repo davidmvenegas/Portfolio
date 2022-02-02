@@ -85,7 +85,7 @@
     right: 0;
     top: 0;
     height: 0;
-    width: .25rem;
+    width: .2rem;
     background-color: transparent;
 }
 .nav-item:hover::after {

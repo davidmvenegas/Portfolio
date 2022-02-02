@@ -261,6 +261,12 @@
     font-size: 1.7rem;
     line-height: 1.5;
 }
+.about-right-description span {
+    text-decoration: underline;
+    font-weight: 500;
+    color: #08fdd8;
+    cursor: pointer;
+}
 .about-right-description:after {
     content: '<p/>';
     position: absolute;
