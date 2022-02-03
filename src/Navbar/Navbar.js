@@ -1,13 +1,15 @@
 import './navbar.css'
 import { NavLink } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import Logo from '../Media/Images/logo.png'
 
 function Navbar() {
+    const navigate = useNavigate()
     return (
         <div className='navbar-container'>
             <div className="navbar-top">
-                <img src={Logo} alt="DV" />
+                <img src={Logo} alt="DV" onClick={() => navigate('/contact')} />
                 <h1>David Venegas</h1>
                 <p>Fullstack Developer</p>
             </div>

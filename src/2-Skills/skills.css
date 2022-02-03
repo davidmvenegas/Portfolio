@@ -1,5 +1,5 @@
 .skills-container {
-    padding: 3.5rem 0 5rem 18.5rem;
+    padding: 3.5rem 0 3.5rem 18.5rem;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -408,8 +408,8 @@
 }
 .note-wrapper p span {
     position: absolute;
-    top: -1rem;
-    left: -2rem;
+    top: -1.125rem;
+    left: -2.125rem;
     width: 2.5rem;
     height: 2.5rem;
     line-height: 3.5rem;
@@ -418,7 +418,7 @@
     color: #08fdd8;
     font-size: 3rem;
     font-weight: 300;
-    animation: flickerNote 3.5s ease infinite;
+    animation: flickerNote 3s ease infinite;
 }
 @keyframes flickerNote {
     0% {color: #08fdd8;}
