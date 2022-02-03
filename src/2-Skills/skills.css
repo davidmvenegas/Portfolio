@@ -135,7 +135,7 @@
     opacity: .8;
     border-radius: 1rem;
     animation: lineAcross 4s ease forwards;
-    margin: 7.5rem 0 5rem;
+    margin: 6.5rem 0 5rem;
 }
 @keyframes lineAcross {
     100% {width: 90%}
@@ -408,15 +408,15 @@
 }
 .note-wrapper p span {
     position: absolute;
-    top: -1.085rem;
-    left: -2.085rem;
+    top: -1rem;
+    left: -2rem;
     width: 2.5rem;
     height: 2.5rem;
     line-height: 3.5rem;
     text-align: center;
     text-justify: auto;
     color: #08fdd8;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 400;
     animation: flickerNote 2s ease infinite;
 }

@@ -1,7 +1,74 @@
 .work-container {
-    padding-left: 20rem;
-    height: 100vh;
-    font-size: 5rem;
-    padding-top: 5rem;
-    text-align: center;
+    padding: 3.5rem 0 3.5rem 18.5rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+.portfolio-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+@keyframes portfolioFade {
+    100% {opacity: 1;}
+}
+.portfolio-header {
+    position: relative;
+    color: white;
+    font-size: 6.25rem;
+    font-weight: 600;
+    animation: portfolioFade 2s ease forwards;
+    opacity: 0;
+}
+.portfolio-header span {
+    display: inline-block;
+    transition: color .35s ease;
+}
+.portfolio-header span:hover {
+    color: #08fdd8;
+}
+.portfolio-description {
+    margin-top: 2rem;
+    font-size: 1.65rem;
+}
+#portfolio-slide1,
+#portfolio-slide2 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#portfolio-slide1 {
+    animation: showup 2s ease forwards;
+}
+#portfolio-slide2 {
+    width: 0;
+    animation: reveal 2.5s ease forwards;
+}
+#portfolio-contact-slide {
+    margin-left: -340px;
+    animation: slidein 2.5s ease forwards;
+}
+@keyframes showup {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+@keyframes slidein {
+    0% {margin-left: -800px}
+    50% {margin-left: -800px}
+    100% {margin-left: 0px}
+}
+@keyframes reveal {
+    0% {opacity: 0; width: 0px}
+    50% {opacity: 1; width: 0px}
+    100% {width: 340px}
+}
+#portfolio-contact-slide span {
+    color: #08fdd8;
+    text-decoration: underline;
+    cursor: pointer;
 }
