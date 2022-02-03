@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    overflow-x: hidden;
 }
 .skills-wrapper {
     display: flex;
@@ -29,14 +30,15 @@
     color: #08fdd8;
 }
 .skills-description {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     position: relative;
+    display: flex;
+    font-family: monospace;
     font-size: .8rem;
     line-height: 2;
-    display: flex;
     width: 62.5vw;
     height: 2.5rem;
-    font-family: monospace;
+    /* border: 1px solid rebeccapurple; */
 }
 .skills-box:first-of-type {
     margin-top: 7.5rem;
@@ -51,7 +53,7 @@
     justify-content: center;
     flex-direction: column;
     width: 90%;
-    margin: 5rem 0 0;
+    margin: 5.5rem 0 0;
     padding: 2.5rem 0;
     border: 1px solid #08fdd8;
     background-color: rgba(0, 0, 0, .25);
@@ -100,7 +102,7 @@
 .skills-item img {
     height: 7.5rem;
     width: 7.5rem;
-    transition: all .6s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 .skills-item img:hover {
     transform: rotate(360deg) scale(1.15);
@@ -124,7 +126,20 @@
 #RubyonRailsSkill {animation: skilsBoxFade 1s ease 2s forwards; opacity: 0}
 #FirebaseSkill {animation: skilsBoxFade 1s ease 2.5s forwards; opacity: 0}
 
-
+.education-separator {
+    width: 0;
+    height: 1px;
+    background: #515152;
+    box-shadow: rgba(15, 15, 15, .65) 0px 2px 4px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    opacity: .8;
+    border-radius: 1rem;
+    animation: lineAcross 5s ease forwards;
+    margin: 7.5rem 0 5rem;
+}
+@keyframes lineAcross {
+    100% {width: 90%}
+}
 
 .education-wrapper {
     display: flex;
@@ -132,14 +147,12 @@
     justify-content: flex-start;
     flex-direction: column;
     width: 100%;
-    margin-top: 7.5rem;
 }
 .education-header {
     position: relative;
     color: white;
-    font-size: 5.25rem;
+    font-size: 6rem;
     font-weight: 600;
-    animation: skilsBoxFade 2s ease forwards;
     opacity: 0;
 }
 .education-header span {
@@ -149,35 +162,54 @@
 .education-header span:hover {
     color: #08fdd8;
 }
-
+#certTitle-active {
+    animation: skilsBoxFade 3s ease forwards;
+}
 
 /* FLATIRON */
 .flatiron-item {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: flex-start;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     width: 100%;
     height: 35rem;
     box-shadow: rgba(0, 0, 0, 0.325) 4px 4px 2px;
+    margin-left: 25rem;
+    opacity: 0;
+}
+#cert1-active {
+    animation: certItemSlide 2s ease forwards;
+}
+@keyframes certItemSlide {
+    100% {opacity: 1; margin-left: 0}
 }
 .flatiron-img-wrapper {
     position: relative;
     display: flex;
     height: 100%;
-    width: auto;
+    width: 37.5%;
+}
+.flatiron-images {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: .25rem 0 0 .25rem;
 }
 .flatiron-img {
+    position: absolute;
+    left: 0;
     height: 100%;
-    width: auto;
+    width: 100%;
     border-radius: .25rem 0 0 .25rem;
+    transition: opacity .5s ease-in-out;
 }
 #flatiron-pointer {
     position: absolute;
     top: 1rem;
     left: 1rem;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     color: whitesmoke;
     opacity: 1;
     transition: all .25s ease;
@@ -186,7 +218,7 @@
     position: absolute;
     top: 1rem;
     left: 1rem;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     color: whitesmoke;
     opacity: 0;
     transition: all .25s ease;
@@ -203,8 +235,14 @@
     transition: all .25s ease;
 }
 .flatiron-img-hover-box h1 {
+    position: absolute;
     font-size: 2.5rem;
     color: white;
+    width: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .5s ease-in-out;
 }
 .flatiron-img-hover-box:hover {
     opacity: 1;
@@ -215,6 +253,7 @@
     justify-content: center;
     flex-direction: column;
     height: 100%;
+    width: 62.5%;
     padding: 0 2.5rem;
     background-color: #111;
     border-radius: .25rem;
@@ -278,6 +317,13 @@
     width: 100%;
     border-radius: .5rem;
     box-shadow: rgba(0, 0, 0, 0.325) 4px 4px 2px;
+    margin-left: 25rem;
+    opacity: 0;
+}
+#cert2-active,
+#cert3-active,
+#cert4-active {
+    animation: certItemSlide 3s ease forwards;
 }
 .cert-img-hover-box {
     position: absolute;
@@ -348,12 +394,34 @@
     color: #08fdd8;
     text-decoration: underline;
 }
-
-
-
 .note-wrapper {
+    margin: 5rem 0 0;
+    width: 90%;
 }
 .note-wrapper p {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #bbb;
 }
 .note-wrapper p span {
+    position: absolute;
+    top: -1rem;
+    left: -2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    text-justify: auto;
+    color: #08fdd8;
+    font-size: 3rem;
+    font-weight: 300;
+    animation: flickerNote 3.5s ease infinite;
+}
+@keyframes flickerNote {
+    0% {color: #08fdd8;}
+    50% {color: #00947e;}
+    100% {color: #08fdd8;}
 }

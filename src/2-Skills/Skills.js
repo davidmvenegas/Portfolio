@@ -18,6 +18,7 @@ import AWSImg from '../Media/Images/aws.jpg'
 import FlatironCert from '../Media/Images/flatiron_cert.png'
 import AtlassianImg from '../Media/Images/atlassian.png'
 import TypeWriterEffect from 'react-typewriter-effect'
+import { useInView } from 'react-intersection-observer'
 
 function Skills() {
     const [mouse1, setMouse1] = useState(false)
@@ -25,6 +26,11 @@ function Skills() {
     const [mouse3, setMouse3] = useState(false)
     const [mouse4, setMouse4] = useState(false)
     const [cert, setCert] = useState(false)
+    const [edTitleRef, edTitleInView] = useInView({threshold: 0, triggerOnce: true})
+    const [ed1Ref, ed1InView] = useInView({threshold: 0, triggerOnce: true})
+    const [ed2Ref, ed2InView] = useInView({threshold: 0, triggerOnce: true})
+    const [ed3Ref, ed3InView] = useInView({threshold: 0, triggerOnce: true})
+    const [ed4Ref, ed4InView] = useInView({threshold: 0, triggerOnce: true})
     return (
         <div className='skills-container'>
             <div className="skills-wrapper">
@@ -116,8 +122,9 @@ function Skills() {
                     </div>
                 </div>
             </div>
+            <div className="education-separator"></div>
             <div className="education-wrapper">
-                <h1 className="education-header">
+                <h1 className="education-header" ref={edTitleRef} id={edTitleInView ? "certTitle-active" : undefined}>
                     <span>E</span>
                     <span>d</span>
                     <span>u</span>
@@ -146,12 +153,16 @@ function Skills() {
                     <span>s</span>
                 </h1>
                 <div className="cert-items">
-                    <div className="flatiron-item" onMouseEnter={() => setMouse1(true)} onMouseLeave={() => setMouse1(false)}>
+                    <div className="flatiron-item" ref={ed1Ref} id={ed1InView ? "cert1-active" : undefined} onMouseEnter={() => setMouse1(true)} onMouseLeave={() => setMouse1(false)}>
                         <div className="flatiron-img-wrapper" onMouseEnter={() => setMouse1(false)} onMouseLeave={() => setMouse1(true)} onClick={() => setCert(!cert)}>
-                            {cert ? <img className="flatiron-img" src={FlatironCert} alt="Flatiron" /> : <img className="flatiron-img" src={FlatironImg} alt="Flatiron" />}
+                            <div className="flatiron-images">
+                                <img className="flatiron-img" src={FlatironImg} alt="Flatiron" style={cert ? {opacity: "0"} : {opacity: "1"}}/>
+                                <img className="flatiron-img" src={FlatironCert} alt="Flatiron" style={cert ? {opacity: "1"} : {opacity: "0"}}/>
+                            </div>
                             <GiClick id={mouse1 ? "flatiron-pointer" : "flatiron-pointer-gone"}/>
                             <div className="flatiron-img-hover-box">
-                                {cert ? <h1>Click to hide certificate</h1> : <h1>Click to view certificate</h1>}
+                                <h1 style={cert ? {opacity: "1"} : {opacity: "0"}}>Click to hide certificate</h1>
+                                <h1 style={cert ? {opacity: "0"} : {opacity: "1"}}>Click to view certificate</h1>
                             </div>
                         </div>
                         <div className="flatiron-text-box">
@@ -171,7 +182,7 @@ function Skills() {
                             <p>I spent 16 weeks full time & in-person at Flatiron School during which I actively improved my skills with 500+ hours of live coding experience.</p>
                         </div>
                     </div>
-                    <div className="cert-item" onMouseEnter={() => setMouse2(true)} onMouseLeave={() => setMouse2(false)}>
+                    <div ref={ed2Ref} className="cert-item" id={ed2InView ? "cert2-active" : undefined} onMouseEnter={() => setMouse2(true)} onMouseLeave={() => setMouse2(false)}>
                         <a href="https://www.credly.com/badges/7414c8a3-6315-4711-b4a3-ead2b9720a2d" target="_blank" rel="noreferrer">
                             <div className="cert-img-wrapper" onMouseEnter={() => setMouse2(false)} onMouseLeave={() => setMouse2(true)}>
                                 <img className='cert-img' src={AWSImg} alt="AWS" />
@@ -187,7 +198,7 @@ function Skills() {
                             <p>The foundational accreditation from the world's largest cloud provider. Cloud technology is expanding at an incredible pace and I intend to earn many more qualifications in the near future.</p>
                         </div>
                     </div>
-                    <div className="cert-item" onMouseEnter={() => setMouse3(true)} onMouseLeave={() => setMouse3(false)}>
+                    <div ref={ed3Ref} className="cert-item" id={ed3InView ? "cert3-active" : undefined} onMouseEnter={() => setMouse3(true)} onMouseLeave={() => setMouse3(false)}>
                         <a href="https://www.credly.com/badges/533f456d-e121-4340-b831-cc361012ce59" target="_blank" rel="noreferrer">
                             <div className="cert-img-wrapper" onMouseEnter={() => setMouse3(false)} onMouseLeave={() => setMouse3(true)}>
                                 <img className='cert-img' src={ComptiaImg} alt="Comptia Security +" />
@@ -203,7 +214,7 @@ function Skills() {
                             <p>A globally recognized certification that validates the baseline skills necessary to perform core security functions. Cybersecurity is a vital aspect of the modern internet and something I care deeply about.</p>
                         </div>
                     </div>
-                    <div className="cert-item" onMouseEnter={() => setMouse4(true)} onMouseLeave={() => setMouse4(false)}>
+                    <div ref={ed4Ref} className="cert-item" id={ed4InView ? "cert4-active" : undefined} onMouseEnter={() => setMouse4(true)} onMouseLeave={() => setMouse4(false)}>
                         <a href="https://university.atlassian.com/student/award/SzMgzKvEBivKWJWuomUu2PR5" target="_blank" rel="noreferrer">
                             <div className="cert-img-wrapper" onMouseEnter={() => setMouse4(false)} onMouseLeave={() => setMouse4(true)}>
                                 <img className='cert-img' src={AtlassianImg} alt="Jira Fundamentals" />
@@ -221,9 +232,9 @@ function Skills() {
                     </div>
                 </div>
             </div>
-            {/* <div className="note-wrapper">
-                <p><span>*</span> While I don't have a computer science degree, I do have a working understanding of the theory and maths behind the code. I've completed Harvard's CS50, finished numerous of MIT's Computer Science courses, read countless textbooks, taken advanced math courses and much more. I'm passionate about the fundamentals of programming - not just at the surface level, and I believe that dedication will show.</p>
-            </div> */}
+            <div className="note-wrapper">
+                <p><span>*</span> While I don't have a computer science degree, I do have a working understanding of the theory and math behind the code. I've completed Harvard's CS50, finished numerous of MIT's Computer Science courses, read countless textbooks, taken advanced math courses and much more. I'm passionate about the fundamentals of programming - not just at the surface level, and I believe that dedication will show.</p>
+            </div>
         </div>
     )
 }
