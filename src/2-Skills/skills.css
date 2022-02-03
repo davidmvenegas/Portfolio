@@ -134,7 +134,7 @@
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
     opacity: .8;
     border-radius: 1rem;
-    animation: lineAcross 5s ease forwards;
+    animation: lineAcross 4s ease forwards;
     margin: 7.5rem 0 5rem;
 }
 @keyframes lineAcross {
@@ -408,8 +408,8 @@
 }
 .note-wrapper p span {
     position: absolute;
-    top: -1.125rem;
-    left: -2.125rem;
+    top: -1.085rem;
+    left: -2.085rem;
     width: 2.5rem;
     height: 2.5rem;
     line-height: 3.5rem;
@@ -417,8 +417,8 @@
     text-justify: auto;
     color: #08fdd8;
     font-size: 3rem;
-    font-weight: 300;
-    animation: flickerNote 3s ease infinite;
+    font-weight: 400;
+    animation: flickerNote 2s ease infinite;
 }
 @keyframes flickerNote {
     0% {color: #08fdd8;}
