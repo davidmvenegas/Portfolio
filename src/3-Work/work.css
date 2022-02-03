@@ -76,140 +76,114 @@
 
 /* PORTFOLIO */
 .port-items {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     width: 90%;
     margin-top: 2.5rem;
+    gap: .25rem 2.5rem;
 }
-
-/* TOP ITEMS */
-.port-items-t {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 1rem;
-}
-.port-item-t {
+.port-item {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 27.5rem;
+    width: 100%;
     margin: 1rem 0;
     border: 1px solid black;
 }
 
-.port-gif-box-t {
+
+.port-gif-box {
     background-color: #08fdd8;
-    height: 27.5rem;
-    width: 27.5rem;
-    flex: 1;
-}
-.port-gif-t {
-}
-.portGifPopup-t {
-}
-.portGifPopup-t p {
-}
-
-.port-text-box-t {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    text-align: center;
-    background-color: whitesmoke;
-    color: black;
     height: 100%;
-}
-.port-title-t {
-    font-size: 3rem;
-}
-.port-title-t span {
-    font-size: 2rem;
-    padding-left: 2px;
-}
-.port-title-site-t {
-    color: #08fdd8;
-    font-size: 1.35rem;
-    line-height: 1.5;
-}
-.port-headline-t {
-    font-size: 1.75rem;
-    font-weight: 300;
-    line-height: 1.25;
-    padding: 2rem 1rem;
-}
-.port-btn-box-t {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     width: 100%;
+    flex: 1;
 }
-.port-btn-visit-t {
-    width: 45%;
-    height: 4.5rem;
-    font-size: 2rem;
-    color: white;
-    background-color: black;
-    outline: 1px solid #08fdd8;
-    border: none;
-    border-radius: .25rem;
+.port-gif {
 }
-.port-btn-more-t {
-    width: 45%;
-    height: 4.5rem;
-    font-size: 1.65rem;
-    color: white;
-    background-color: black;
-    outline: 1px solid #08fdd8;
-    border: none;
-    border-radius: .25rem;
+.portGifPopup {
+}
+.portGifPopup p {
 }
 
 
-/* BOTTOM ITEMS */
-.port-items-b {
+.port-text-box {
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: firebrick;
-    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .35);
+    height: 100%;
+    padding: 0 1rem;
 }
-.port-item-b {
-    flex: 1;
+.port-title {
+    font-size: 2.75rem;
+}
+.port-title span {
+    font-size: 2rem;
+    padding-left: 2px;
+}
+.port-title-site {
+    color: #08fdd8;
+    font-size: 1.35rem;
+    padding-top: .85rem;
+}
+.port-headline {
+    font-size: 1.75rem;
+    font-weight: 200;
+    line-height: 1.5;
+    padding: 1.25rem 1rem 2rem;
+}
+.port-btn-box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 20rem;
+    justify-content: space-evenly;
+    width: 100%;
 }
-
-.port-gif-box-b {
+.port-btn-more {
+    position: relative;
+    display: block;
+    width: 20rem;
+    height: 4.5rem;
+    font-size: 1.85rem;
+    color: white;
+    background-color: black;
+    outline: 1px solid #08fdd8;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .2s ease;
 }
-.port-gif-b {
+.port-btn-more:hover {
+    background-color: #08fdd805;
 }
-.portGifPopup-b {
+.port-btn-more:hover > #port-more-text {
+    left: -125%;
+    transform: translate(125%, -50%);
 }
-.portGifPopup-b p {
+.port-btn-more:hover > #port-more-arrow {
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.25);
 }
-
-.port-text-box-b {
+#port-more-text {
+    position: absolute;
+    width: fit-content;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+    transition: all .2s ease;
 }
-.port-title-b {
-}
-.port-title-t span {
-}
-.port-title-site-b {
-}
-.port-headline-b {
-}
-.port-btn-box-b {
-}
-.port-btn-visit-b {
-}
-.port-btn-more-b {
+#port-more-arrow {
+    position: absolute;
+    font-size: 2.65rem;
+    width: fit-content;
+    top: 50%;
+    left: 82.5%;
+    transform: translate(-82.5%, -50%);
+    transition: all .2s ease;
 }
