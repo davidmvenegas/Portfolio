@@ -39,7 +39,7 @@
     font-family: monospace;
 }
 .skills-box:first-of-type {
-    margin-top: 6.5rem;
+    margin-top: 7.5rem;
 }
 @keyframes skilsBoxFade {
     100% {opacity: 1;}
@@ -52,9 +52,10 @@
     flex-direction: column;
     width: 90%;
     margin: 5rem 0 0;
-    padding: 2rem 0;
+    padding: 2.5rem 0;
     border: 1px solid #08fdd8;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .25);
+    color: whitesmoke;
     border-radius: 1rem;
     animation: skilsBoxFade 2s ease forwards;
     opacity: 0;
@@ -80,9 +81,15 @@
     display: grid;
     align-items: center;
     justify-content: space-around;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
     grid-template-rows: auto;
     width: 100%;
+}
+.skillSeparator {
+    height: 75%;
+    width: 2px;
+    border-radius: 1rem;
+    background-color: #515152;
 }
 .skills-item {
     height: 17.5rem;
@@ -93,14 +100,18 @@
 .skills-item img {
     height: 7.5rem;
     width: 7.5rem;
+    transition: all .6s ease-in-out;
+}
+.skills-item img:hover {
+    transform: rotate(360deg) scale(1.15);
 }
 .skills-item h2 {
-    font-size: 2.5rem;
-    padding: 1.25rem 0 .5rem;
+    font-size: 2.65rem;
+    padding: 1.25rem 0 .65rem;
 }
 .skills-item p {
-    font-size: 1.25rem;
-    line-height: 1.35;
+    font-size: 1.35rem;
+    line-height: 1.4;
 }
 #ReactSkill {animation: skilsBoxFade 1s ease .5s forwards; opacity: 0}
 #ReduxSkill {animation: skilsBoxFade 1s ease 1s forwards; opacity: 0}
@@ -121,12 +132,12 @@
     justify-content: flex-start;
     flex-direction: column;
     width: 100%;
-    margin-top: 5.5rem;
+    margin-top: 7.5rem;
 }
 .education-header {
     position: relative;
     color: white;
-    font-size: 4.75rem;
+    font-size: 5.25rem;
     font-weight: 600;
     animation: skilsBoxFade 2s ease forwards;
     opacity: 0;
@@ -142,67 +153,200 @@
 
 /* FLATIRON */
 .flatiron-item {
-    flex: 3;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 3.5rem;
-    width: 90%;
+    text-align: flex-start;
+    margin-top: 1rem;
+    width: 100%;
+    height: 35rem;
+    box-shadow: rgba(0, 0, 0, 0.325) 4px 4px 2px;
 }
-.flatiron-img-box {
-    flex: 1;
-}
-.flatiron-img-box img {
-}
-.flatiron-img-box p {
-}
-
-.flatiron-text-box {
-    flex: 1;
+.flatiron-img-wrapper {
+    position: relative;
     display: flex;
-    align-items: center;
+    height: 100%;
+    width: auto;
+}
+.flatiron-img {
+    height: 100%;
+    width: auto;
+    border-radius: .25rem 0 0 .25rem;
+}
+#flatiron-pointer {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    opacity: 1;
+    transition: all .25s ease;
+}
+#flatiron-pointer-gone {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    opacity: 0;
+    transition: all .25s ease;
+}
+.flatiron-img-hover-box {
+    position: absolute;
+    display: grid;
+    place-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(50, 50, 50, .85);
+    opacity: 0;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+.flatiron-img-hover-box h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+.flatiron-img-hover-box:hover {
+    opacity: 1;
+}
+.flatiron-text-box {
+    display: flex;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    height: 100%;
+    padding: 0 2.5rem;
+    background-color: #111;
+    border-radius: .25rem;
 }
-.flatiron-item-text h3 {
+.flatiron-text-box h3 {
+    align-self: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
 }
-.flatiron-item-text h1 {
+.flatiron-text-box h1 {
+    align-self: center;
+    font-size: 3.5rem;
+    font-weight: 500;
+    padding-bottom: .25rem;
 }
-.flatiron-item-text h4 {
+.flatiron-text-box h4 {
+    align-self: center;
+    font-size: 2.125rem;
+    padding-bottom: .75rem;
 }
-.flatiron-item-text p {
+.flatiron-text-box p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.25rem;
+    font-style: italic;
 }
-
+.flatiron-description-box ul {
+    padding: .5rem 0 1rem;
+    padding-left: 2.5rem;
+    font-size: 1.65rem;
+}
+.flatiron-description-box p {
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: 900;
+    font-style: normal;
+}
 
 /* CERTS */
 .cert-items {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 3.5rem;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2.5rem;
     width: 90%;
+    gap: 2rem;
+}
+.cert-img-wrapper {
+    position: relative;
+    display: flex;
 }
 .cert-item {
-    flex: 2;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    background-color: #111;
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.325) 4px 4px 2px;
 }
-.cert-item img {
-    flex: 1;
+.cert-img-hover-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(50, 50, 50, .85);
+    opacity: 0;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+.cert-img-hover-box h1 {
+    font-size: 1.85rem;
+    color: white;
+    padding-right: .75rem;
+}
+#cert-arrow {
+    font-size: 1.75rem;
+    color: white;
+}
+.cert-img-hover-box:hover {
+    opacity: 1;
+}
+.cert-img {
+    height: 20rem;
+    width: auto;
+    border-radius: .5rem 0 0 .5rem;
+}
+#cert-pointer {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2.25rem;
+    color: whitesmoke;
+    opacity: 1;
+    transition: all .25s ease;
+}
+#cert-pointer-gone {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2.25rem;
+    color: whitesmoke;
+    opacity: 0;
+    transition: all .25s ease;
 }
 .cert-text-box {
-    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 0 1rem;
 }
-.cert-item-text h1 {
+.cert-title {
+    font-size: 3.25rem;
+    font-weight: 500;
+    margin-bottom: 1.65rem;
 }
-.cert-item-text h4 {
+.cert-text-box p {
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 2.25rem;
+    width: 90%;
 }
-.cert-item-text p {
+.cert-text-box p a {
+    color: #08fdd8;
+    text-decoration: underline;
 }
 
 

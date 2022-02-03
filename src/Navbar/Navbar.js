@@ -1,7 +1,6 @@
 import './navbar.css'
 import { NavLink } from 'react-router-dom'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 import Logo from '../Media/Images/logo.png'
 
 function Navbar() {
@@ -21,8 +20,8 @@ function Navbar() {
                 <li className="nav-item"><NavLink to="/contact" activeClassName="active" className="nav-link"><h1>Contact</h1></NavLink></li>
             </ul>
             <div className="navbar-bottom">
-                <a href="https://www.linkedin.com/in/david-venegas-m/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className='nav-icon' icon={faLinkedin} /></a>
-                <a href="https://github.com/davidmvenegas" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className='nav-icon' icon={faGithub} /></a>
+                <a href="https://www.linkedin.com/in/david-venegas-m/" target="_blank" rel="noopener noreferrer"><FaGithub className='nav-icon'/></a>
+                <a href="https://github.com/davidmvenegas" target="_blank" rel="noopener noreferrer"><FaLinkedin className='nav-icon'/></a>
             </div>
         </div>
     )
