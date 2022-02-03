@@ -134,8 +134,10 @@
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
     opacity: .8;
     border-radius: 1rem;
+    margin: 7.5rem 0 5rem;
+}
+#education-separator-active {
     animation: lineAcross 4s ease forwards;
-    margin: 6.5rem 0 5rem;
 }
 @keyframes lineAcross {
     100% {width: 90%}

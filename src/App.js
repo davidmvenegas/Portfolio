@@ -4,8 +4,9 @@ import Navbar from './Navbar/Navbar'
 import About from './1-About/About'
 import Skills from './2-Skills/Skills'
 import Work from './3-Work/Work'
-import Other from './4-Other/Other'
-import Contact from './5-Contact/Contact'
+import Algorithms from './4-Algorithms/Algorithms'
+import Blogs from './5-Blogs/Blogs'
+import Contact from './6-Contact/Contact'
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Route path="/" element={<About/>} />
         <Route path="/skills" element={<Skills/>} />
         <Route path="/work" element={<Work/>} />
-        <Route path="/other" element={<Other/>} />
+        <Route path="/algorithms" element={<Algorithms/>} />
+        <Route path="/blogs" element={<Blogs/>} />
         <Route path="/contact" element={<Contact/>} />
       </Routes>
     </Fragment>

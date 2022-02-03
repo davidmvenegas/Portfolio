@@ -26,6 +26,7 @@ function Skills() {
     const [mouse3, setMouse3] = useState(false)
     const [mouse4, setMouse4] = useState(false)
     const [cert, setCert] = useState(false)
+    const [edSepRef, edSepInView] = useInView({threshold: 0, triggerOnce: true})
     const [edTitleRef, edTitleInView] = useInView({threshold: 0, triggerOnce: true})
     const [ed1Ref, ed1InView] = useInView({threshold: 0, triggerOnce: true})
     const [ed2Ref, ed2InView] = useInView({threshold: 0, triggerOnce: true})
@@ -122,7 +123,7 @@ function Skills() {
                     </div>
                 </div>
             </div>
-            <div className="education-separator"></div>
+            <div className="education-separator" ref={edSepRef} id={edSepInView ? "education-separator-active" : undefined}></div>
             <div className="education-wrapper">
                 <h1 className="education-header" ref={edTitleRef} id={edTitleInView ? "certTitle-active" : undefined}>
                     <span>E</span>
