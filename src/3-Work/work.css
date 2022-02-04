@@ -221,3 +221,109 @@
     transform: translate(-82.5%, -50%);
     transition: all .2s ease;
 }
+
+/* OTHER WORK */
+.other-separator {
+    width: 0;
+    height: 1px;
+    background: #515152;
+    box-shadow: rgba(15, 15, 15, .65) 0px 2px 4px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    opacity: .8;
+    border-radius: 1rem;
+    margin: 7rem 0 4.5rem;
+    animation: lineAcross 4s ease forwards;
+}
+.other-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+.other-header {
+    position: relative;
+    color: white;
+    font-size: 6rem;
+    font-weight: 600;
+    animation: portFade 2s ease forwards;
+    opacity: 0;
+}
+.other-header span {
+    display: inline-block;
+    transition: color .35s ease;
+}
+.other-header span:hover {
+    color: #08fdd8;
+}
+.other-description {
+    margin-top: 2.75rem;
+    font-size: 1.85rem;
+}
+.other-items {
+}
+.other-item {
+}
+
+
+
+.other-item {
+    border-radius: 3px;
+    height: 200px;
+    margin: 20px auto;
+    width: 320px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transition: all 0.5s;
+}
+.other-item:hover {
+    height: 420px;
+}
+/* CARD TOP */
+.other-item-top {
+    background: #08fdd8;
+    padding: 1px;
+    height: 8px;
+    transition: all 0.5s;
+}
+.other-item:hover .other-item-top {
+    height: 200px;
+}
+.other-item-top img {
+    border: 5px solid #222;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+    width: 120px;
+}
+.other-item-top h1 {
+    color: #08fdd8;
+    font-family: "Open Sans";
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
+    text-align: center;
+    line-height: 1;
+    transition: all 0.5s;
+}
+.other-item:hover .other-item-top h1 {
+    color: #fff;
+}
+/* CAR BOTTOM */
+.other-item-bottom {
+    padding: 20px;
+    position: relative;
+    opacity: 0;
+    transition: all 0.3s 0.25s;
+}
+.other-item:hover .other-item-bottom {
+    opacity: 1;
+}
+.other-item-bottom p {
+    color: #999;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
