@@ -1,5 +1,5 @@
 import './work.css'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { BsArrowRight } from 'react-icons/bs'
 import MySimpleWardrobeGif from '../Media/Gifs/MySimpleWardrobeGif.gif'
@@ -11,9 +11,10 @@ import GroceryMagixLogo from '../Media/Images/portfolio-logos/GroceryMagixLogo.p
 import TheFinancialTrackerLogo from '../Media/Images/portfolio-logos/TheFinancialTrackerLogo.png'
 import MyCryptomaticLogo from '../Media/Images/portfolio-logos/MyCryptomaticLogo.png'
 import { BsBoxArrowUpRight } from "react-icons/bs"
+import FindMyLunchLogo from '../Media/Images/other-work-icons/findMyLunch.png'
 
 function Work() {
-    useEffect(() => {window.scrollTo(0, 0)}, [])
+    // useEffect(() => {window.scrollTo(0, 0)}, [])
     const navigate = useNavigate()
     const [port1, setPort1] = useState(false)
     const [port2, setPort2] = useState(false)
@@ -161,22 +162,20 @@ function Work() {
                     A collection of some other work I've done. Everything is fully mobile responsive.
                 </p>
                 <div className="other-items">
-
-
-
-
-                    <div className="other-item">
-                        <div className='other-item-top'>
-                            <img src="https://i.pravatar.cc/300" alt='fdiuk'/>
-                            <h1>John Doe</h1>
+                    <a href="https://findmylunch.com" target="_blank" rel="noreferrer" className='other-item-link'>
+                        <div className="other-item">
+                            <div className='other-item-top'>
+                                <div className="other-item-img-wrap">
+                                    <img src={FindMyLunchLogo} alt='Find My Lunch'/>
+                                </div>
+                                <h1>Find My Lunch</h1>
+                            </div>
+                            <div className="other-item-bottom">
+                                <p>A restaraunt finder using Yelp's fusion API. <br /> <span id='other-link-andrew'>(Made with Andrew Bussi)</span></p>
+                                <button>Check it out &nbsp;<BsBoxArrowUpRight id='other-link-icon'/></button>
+                            </div>
                         </div>
-                        <div className="other-item-bottom">
-                            <p>Terence is an avid reader of science fiction, especially anything to do with aliens and tweed jackets. Most weekends, he can be found cataloguing his collection of rodent skeletons.</p>
-                        </div>
-                    </div>  
-
-
-
+                    </a>
                 </div>
             </div>
         </div>

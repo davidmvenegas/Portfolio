@@ -262,68 +262,115 @@
     font-size: 1.85rem;
 }
 .other-items {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 3.85rem;
+    gap: 3rem;
+}
+
+/* OTHER ITEMS */
+.other-item-link {
+    text-decoration: none;
 }
 .other-item {
-}
-
-
-
-.other-item {
-    border-radius: 3px;
-    height: 200px;
-    margin: 20px auto;
-    width: 320px;
-    overflow: hidden;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     position: relative;
+    margin: 2rem auto;
+    height: 18.5rem;
+    width: 27.5rem;
+    background-color: #252525;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: .25rem;
     transition: all 0.5s;
+    cursor: pointer;
+    overflow: hidden;
 }
 .other-item:hover {
-    height: 420px;
+    height: 35rem;
 }
 /* CARD TOP */
 .other-item-top {
     background: #08fdd8;
     padding: 1px;
-    height: 8px;
-    transition: all 0.5s;
+    height: .8rem;
+    transition: all 0.5s ease;
 }
 .other-item:hover .other-item-top {
-    height: 200px;
+    height: 17.5rem;
+}
+.other-item-img-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem auto 1rem;
+    background-color: #ddd;
+    border-radius: 50%;
+    height: 10.5rem;
+    width: 10.5rem;
+    border: .5rem solid #252525;
 }
 .other-item-top img {
-    border: 5px solid #222;
-    border-radius: 50%;
-    display: block;
-    margin: 10px auto;
-    width: 120px;
+    width: 6.5rem;
+    height: 6.5rem;
+    transform: scale(.05);
+    animation: bounceInOther .65s ease-in-out forwards;
+}
+@keyframes bounceInOther {
+    50% {transform: scale(1.25)}
+    100% {transform: scale(1)}
 }
 .other-item-top h1 {
     color: #08fdd8;
-    font-family: "Open Sans";
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin: 0;
     text-align: center;
-    line-height: 1;
-    transition: all 0.5s;
+    font-size: 2.35rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
 }
 .other-item:hover .other-item-top h1 {
-    color: #fff;
+    color: #222;
 }
 /* CAR BOTTOM */
 .other-item-bottom {
-    padding: 20px;
     position: relative;
+    padding: 2rem;
     opacity: 0;
-    transition: all 0.3s 0.25s;
+    transition: all .25s ease-out 0s;
 }
 .other-item:hover .other-item-bottom {
     opacity: 1;
+    transition: all 0.25s 0.35s ease-in-out;
 }
 .other-item-bottom p {
     color: #999;
-    font-size: 14px;
-    font-style: italic;
+    font-size: 1.75rem;
+    line-height: 1.35;
     text-align: center;
+}
+.other-item-bottom button {
+    position: absolute;
+    top: 12rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.65rem;
+    font-weight: 500;
+    color: white;
+    width: fit-content;
+    height: 4rem;
+    padding: 0 1.25rem;
+    color: white;
+    background-color: transparent;
+    outline: 1px solid #08fdd8;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: font-size .2s ease-in-out, outline-color .1s ease;
+}
+#other-link-icon {
+    font-size: 1.5rem;
+}
+.other-item-bottom button:hover {
+    outline-color: transparent;
+    font-size: 1.85rem;
 }
