@@ -1,6 +1,10 @@
 import './work.css'
 import { useNavigate } from 'react-router-dom'
 import { BsArrowRight } from 'react-icons/bs'
+import MySimpleWardrobeGif from '../Media/Gifs/MySimpleWardrobeGif.gif'
+import GroceryMagixGif from '../Media/Gifs/GroceryMagixGif.gif'
+import TheFinancialTrackerGif from '../Media/Gifs/TheFinanceTrackerGif.gif'
+import MyCryptomaticGif from '../Media/Gifs/MyCryptomaticGif.gif'
 
 function Work() {
     const navigate = useNavigate()
@@ -29,7 +33,7 @@ function Work() {
                     <div className="port-items">
                         <div className="port-item">
                             <div className="port-gif-box">
-                                <img className='port-gif' src="" alt="My Simple Wardrobe Gif" />
+                                <img className='port-gif' src={MySimpleWardrobeGif} alt="My Simple Wardrobe Gif" />
                                 <div className="portGifPopup">
                                     <p>Visit the site</p>
                                 </div>
@@ -48,7 +52,7 @@ function Work() {
                         </div>
                         <div className="port-item">
                             <div className="port-gif-box">
-                                <img className='port-gif' src="" alt="Grocery Magix Gif" />
+                                <img className='port-gif' src={GroceryMagixGif} alt="Grocery Magix Gif" />
                                 <div className="portGifPopup">
                                     <p>Visit the site</p>
                                 </div>
@@ -67,7 +71,7 @@ function Work() {
                         </div>
                         <div className="port-item">
                             <div className="port-gif-box">
-                                <img className='port-gif' src="" alt="The Financial Tracker Gif" />
+                                <img className='port-gif' src={TheFinancialTrackerGif} alt="The Financial Tracker Gif" />
                                 <div className="portGifPopup">
                                     <p>Visit the site</p>
                                 </div>
@@ -86,7 +90,7 @@ function Work() {
                         </div>
                         <div className="port-item">
                             <div className="port-gif-box">
-                                <img className='port-gif' src="" alt="Grocery Magix Gif" />
+                                <img className='port-gif' src={MyCryptomaticGif} alt="Grocery Magix Gif" />
                                 <div className="portGifPopup">
                                     <p>Visit the site</p>
                                 </div>
