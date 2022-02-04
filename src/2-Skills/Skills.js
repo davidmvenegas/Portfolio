@@ -1,5 +1,5 @@
 import './skills.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { BsBoxArrowUpRight } from "react-icons/bs"
 import { GiClick } from "react-icons/gi"
 import ReactImg from '../Media/Images/skills/react.png'
@@ -21,6 +21,7 @@ import TypeWriterEffect from 'react-typewriter-effect'
 import { useInView } from 'react-intersection-observer'
 
 function Skills() {
+    useEffect(() => window.scrollTo(0, 0), [])
     const [mouse1, setMouse1] = useState(false)
     const [mouse2, setMouse2] = useState(false)
     const [mouse3, setMouse3] = useState(false)

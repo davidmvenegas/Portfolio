@@ -34,13 +34,14 @@
 }
 .port-description {
     margin-top: 2.5rem;
-    font-size: 1.65rem;
+    font-size: 1.85rem;
 }
 #port-slide1,
 #port-slide2 {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
+    /* border: 1px solid rebeccapurple; */
 }
 #port-slide1 {
     animation: showup 2s ease forwards;
@@ -65,15 +66,13 @@
 @keyframes reveal {
     0% {opacity: 0; width: 0px}
     50% {opacity: 1; width: 0px}
-    100% {width: 340px}
+    100% {width: 380px}
 }
 #port-contact-slide span {
     color: #08fdd8;
     text-decoration: underline;
     cursor: pointer;
 }
-
-
 /* PORTFOLIO */
 .port-items {
     display: grid;
@@ -81,39 +80,68 @@
     grid-template-columns: auto;
     width: 90%;
     margin-top: 3.5rem;
-    gap: 2.5rem;
+    gap: 3rem;
 }
 .port-item {
-    flex: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 27.5rem;
     width: 100%;
-    border-radius: .5rem;
+    border-radius: .25rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    overflow: hidden;
 }
-
-
 .port-gif-box {
-    background-color: #08fdd8;
-    height: 100%;
-    width: 100%;
-    flex: 2;
-    border-radius: .5rem 0 0 .5rem;
+    position: relative;
+    height: 27.5rem;
+    width: 48.5rem;
+    border-radius: .25rem 0 0 .25rem;
+}
+.port-gif-wrapper {
+    position: relative;
+    display: flex;
+    height: 27.5rem;
+    width: 48.5rem;
 }
 .port-gif {
-    height: 27.5rem;
-    width: auto;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: .25rem 0 0 .25rem;
+    transition: opacity .5s ease-in-out;
+}
+.port-gif-box:hover .portGifPopup {
+    bottom: 0;
 }
 .portGifPopup {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    bottom: -6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    padding: 1.25rem 0;
+    color: white;
+    background-color: rgba(0, 0, 0, .8);
+    transition: all .35s ease-in-out;
+    cursor: pointer;
 }
 .portGifPopup p {
+    font-size: 2.25rem;
+    font-weight: 200;
+    -webkit-text-stroke: 1px white;
 }
-
-
+#goToSitePort {
+    font-size: 1.85rem;
+    color: white;
+}
 .port-text-box {
-    flex: 3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,25 +150,27 @@
     background-color: rgba(0, 0, 0, .35);
     height: 100%;
     padding: 0 1rem;
-    border-radius: 0 .5rem .5rem 0;
+    border-radius: 0 .25rem .25rem 0;
 }
 .port-title {
-    font-size: 2.75rem;
+    font-size: 4rem;
+    font-weight: 300;
 }
 .port-title span {
-    font-size: 2rem;
+    font-size: 3rem;
     padding-left: 2px;
 }
 .port-title-site {
     color: #08fdd8;
-    font-size: 1.35rem;
-    padding-top: .85rem;
+    font-size: 1.65rem;
+    padding-top: .75rem;
 }
 .port-headline {
-    font-size: 1.75rem;
-    font-weight: 200;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ccc;
     line-height: 1.5;
-    padding: 1.25rem 1rem 2rem;
+    padding: 2rem;
 }
 .port-btn-box {
     display: flex;
