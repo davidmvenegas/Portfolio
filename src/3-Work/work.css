@@ -33,7 +33,7 @@
     color: #08fdd8;
 }
 .port-description {
-    margin-top: 2.5rem;
+    margin-top: 2.75rem;
     font-size: 1.85rem;
 }
 #port-slide1,
@@ -79,7 +79,7 @@
     grid-template-rows: auto auto auto auto;
     grid-template-columns: auto;
     width: 90%;
-    margin-top: 3.5rem;
+    margin-top: 3.85rem;
     gap: 3rem;
 }
 .port-item {
@@ -128,8 +128,8 @@
     width: 100%;
     padding: 1.25rem 0;
     color: white;
-    background-color: rgba(0, 0, 0, .8);
-    transition: all .35s ease-in-out;
+    background-color: rgba(0, 0, 0, .75);
+    transition: all .25s ease-in-out;
     cursor: pointer;
 }
 .portGifPopup p {
@@ -154,7 +154,7 @@
 }
 .port-title {
     font-size: 4rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 .port-title span {
     font-size: 3rem;
@@ -166,9 +166,9 @@
     padding-top: .75rem;
 }
 .port-headline {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #ccc;
+    font-size: 1.85rem;
+    font-weight: 500;
+    color: #888;
     line-height: 1.5;
     padding: 2rem;
 }
@@ -194,7 +194,7 @@
     transition: all .2s ease;
 }
 .port-btn-more:hover {
-    background-color: #08fdd805;
+    background-color: rgba(255, 255, 255, .05);
 }
 .port-btn-more:hover > #port-more-text {
     left: -125%;
