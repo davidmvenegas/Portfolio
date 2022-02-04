@@ -1,0 +1,132 @@
+.other-item {
+    position: relative;
+    margin: 1rem auto 0;
+    height: 17.5rem;
+    width: 28.5rem;
+    background-color: #252525;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: .25rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+}
+.other-item.active {
+    height: 25rem;
+}
+/* CARD TOP */
+.other-item-top {
+    background: #08fdd8;
+    padding: 1px;
+    height: .8rem;
+    transition: all 0.5s ease;
+}
+.other-item.active .other-item-top {
+    height: 17.5rem;
+}
+.other-item-img-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem auto 1rem;
+    height: 9.5rem;
+    width: 100%;
+}
+.other-item-top img {
+    width: 7.5rem;
+    height: 7.5rem;
+    transform: scale(.05);
+    animation: bounceInOther .65s ease-in-out forwards;
+}
+@keyframes bounceInOther {
+    50% {transform: scale(1.25)}
+    100% {transform: scale(1)}
+}
+.other-item-top h1 {
+    color: #08fdd8;
+    text-align: center;
+    font-size: 2.35rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+    padding: 3rem 0;
+    margin-top: -3rem;
+}
+#smaller-other-title {
+    font-size: 2rem;
+}
+.other-item.active .other-item-top h1 {
+    color: #222;
+}
+/* CARD BOTTOM */
+.other-item-bottom {
+    position: relative;
+    opacity: 0;
+    padding: 1.5rem 2rem;
+    pointer-events: none;
+    transition: all .25s ease-out 0s;
+}
+.other-item.active .other-item-bottom {
+    opacity: 1;
+    pointer-events: all;
+    transition: all 0.25s 0.35s ease-in-out;
+}
+.other-item-link {
+    text-decoration: none;
+    position: absolute;
+    top: 2rem;
+    left: 25%;
+    transform: translateX(-25%);
+    font-size: 1.65rem;
+    font-weight: 400;
+    color: white;
+    width: fit-content;
+    padding: 1rem 1.75rem;
+    color: white;
+    background-color: transparent;
+    outline: 1px solid #08fdd8;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .65s ease;
+    overflow: hidden;
+}
+.other-item-link:after {
+    background: #08fdd8;
+    content: "";
+    height: 250px;
+    left: -400px;
+    position: absolute;
+    top: -100px;
+    transform: rotate(45deg);
+    transition: all .65s ease;
+    width: 350px;
+    z-index: -10;
+}
+.other-item-link:hover:after {
+    left: -50px;
+}
+.other-item-link:hover {
+    color: black;
+}
+#other-link-icon {
+    font-size: 1.5rem;
+}
+.other-item-github {
+    position: absolute;
+    top: 2.4rem;
+    left: 83.5%;
+    transform: translateX(-83.5%);
+}
+#other-item-github {
+    font-size: 2.75rem;
+    border-radius: 50%;
+    color: white;
+    margin-top: .25rem;
+    margin-bottom: -.25rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+#other-item-github:hover {
+    transform: scale(1.15);
+}

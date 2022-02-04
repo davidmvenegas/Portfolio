@@ -129,7 +129,6 @@
 .education-separator {
     width: 0;
     height: 1px;
-    background: #515152;
     box-shadow: rgba(15, 15, 15, .65) 0px 2px 4px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
     opacity: .8;
@@ -403,7 +402,7 @@
 .note-wrapper p {
     position: relative;
     font-family: 'Lato', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.65rem;
     font-weight: 300;
     line-height: 1.4;
     color: #bbb;
