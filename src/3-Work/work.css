@@ -133,7 +133,7 @@
     width: 100%;
     padding: 1.25rem 0;
     color: white;
-    background-color: rgba(0, 0, 0, .75);
+    background-color: rgba(0, 0, 0, .8);
     transition: all .25s ease-in-out;
     cursor: pointer;
 }

@@ -4,6 +4,7 @@ import OtherItem from './OtherItem'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { BsArrowRight, BsBoxArrowUpRight } from 'react-icons/bs'
+import { SiReact, SiRedux, SiFirebase, SiCss3 } from 'react-icons/si'
 import Modal from './Modal/Modal'
 // Main Logos
 import MySimpleWardrobeGif from '../Media/Gifs/MySimpleWardrobeGif.gif'
@@ -14,6 +15,10 @@ import MySimpleWardrobeLogo from '../Media/Images/portfolio-logos/MySimpleWardro
 import GroceryMagixLogo from '../Media/Images/portfolio-logos/GroceryMagixLogo.png'
 import TheFinancialTrackerLogo from '../Media/Images/portfolio-logos/TheFinancialTrackerLogo.png'
 import MyCryptomaticLogo from '../Media/Images/portfolio-logos/MyCryptomaticLogo.png'
+// import MySimpleWardrobeIcon from '../Media/Images/portfolio-icons/MSW.png'
+import GroceryMagixIcon from '../Media/Images/portfolio-icons/GM.png'
+// import TheFinancialTrackerIcon from '../Media/Images/portfolio-icons/TFT.png'
+// import MyCryptomaticIcon from '../Media/Images/portfolio-icons/MC.png'
 // Other Logos
 import WeatherLogo from '../Media/Images/other-work-icons/WeatherAppLogo.png'
 import BooklistLogo from '../Media/Images/other-work-icons/MyBooklistLogo.png'
@@ -51,16 +56,12 @@ function Work() {
         {id: 12, title: 'New Years Timer', image: NewYearsLogo, github: "https://github.com/davidmvenegas/JS-CountdownTimer", link: "https://davidmvenegas.github.io/JS-CountdownTimer", largeTitle: false},
     ]
     const modalData = [
-        {id: 1, title: "My Simple Wardrobe.", 
+        {id: 1, 
+            title: "My Simple Wardrobe.",
+            logo: GroceryMagixIcon,
             desc: "lorem3", 
-            features: [
-                {id: 1, image: "_URL", text: "FEATURE"},
-                {id: 2, image: "_URL", text: "FEATURE"}
-            ],
-            tools: [
-                {id: 1, image: "_URL", text: "FEATURE"},
-                {id: 2, image: "_URL", text: "FEATURE"}
-            ],
+            features: ["thing", "thing" ],
+            tools: [SiReact, SiRedux, SiFirebase, SiCss3],
             url: "_LINK",
             video: "https://www.youtube.com/embed/05RJu6q-kU0"
         }
@@ -221,7 +222,7 @@ function Work() {
                 </div>
             </div>
             <div className="ending-work-this-wrapper">
-                <p className="ending-work-this"><span>*</span>I built this website (www.davidmvenegas.com) from the ground up. You can follow it's progress <span><a href='https://github.com/davidmvenegas/Portfolio' target="_blank" rel="noreferrer">here</a></span>.</p>
+                <p className="ending-work-this"><span>*</span>I also built this website (www.davidmvenegas.com) from the ground up. You can follow it's progress <span><a href='https://github.com/davidmvenegas/Portfolio' target="_blank" rel="noreferrer">here</a></span>.</p>
             </div>
         </div>
     )
