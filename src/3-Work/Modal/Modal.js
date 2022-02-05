@@ -8,6 +8,11 @@ function Modal({open, setOpenModal}) {
         <div className='modal-container' style={open ? null : {display: "none"}}>
             <ImCross id="leave-modal" onClick={() => setOpenModal(false)}/>
             <p>THIS IS A MODAL</p>
+            <div className="modal-video-wrapper">
+                <h1 className="modal-title">My Simple Wardrobe</h1>
+                
+            </div>
+            <div className="modal-text-wrapper"></div>
         </div>
     )
 }
