@@ -4,7 +4,6 @@ import OtherItem from './OtherItem'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { BsArrowRight, BsBoxArrowUpRight } from 'react-icons/bs'
-import { SiReact, SiRedux, SiFirebase, SiCss3 } from 'react-icons/si'
 import Modal from './Modal/Modal'
 // Main Logos
 import MySimpleWardrobeGif from '../Media/Gifs/MySimpleWardrobeGif.gif'
@@ -15,10 +14,6 @@ import MySimpleWardrobeLogo from '../Media/Images/portfolio-logos/MySimpleWardro
 import GroceryMagixLogo from '../Media/Images/portfolio-logos/GroceryMagixLogo.png'
 import TheFinancialTrackerLogo from '../Media/Images/portfolio-logos/TheFinancialTrackerLogo.png'
 import MyCryptomaticLogo from '../Media/Images/portfolio-logos/MyCryptomaticLogo.png'
-// import MySimpleWardrobeIcon from '../Media/Images/portfolio-icons/MSW.png'
-import GroceryMagixIcon from '../Media/Images/portfolio-icons/GM.png'
-// import TheFinancialTrackerIcon from '../Media/Images/portfolio-icons/TFT.png'
-// import MyCryptomaticIcon from '../Media/Images/portfolio-icons/MC.png'
 // Other Logos
 import WeatherLogo from '../Media/Images/other-work-icons/WeatherAppLogo.png'
 import BooklistLogo from '../Media/Images/other-work-icons/MyBooklistLogo.png'
@@ -40,6 +35,7 @@ function Work() {
     const [port2, setPort2] = useState(false)
     const [port3, setPort3] = useState(false)
     const [port4, setPort4] = useState(false)
+    const [modalID, setModalID] = useState(null)
     const [openModal, setOpenModal] = useState(false)
     const otherData = [
         {id: 1, title: 'Weather App', image: WeatherLogo, github: "https://github.com/davidmvenegas/weather_app", link: "https://davidmvenegas.github.io/weather_app", largeTitle: false},
@@ -55,18 +51,8 @@ function Work() {
         {id: 11, title: 'Password Generator', image: PasswordLogo, github: "https://github.com/davidmvenegas/PasswordGenerator", link: "https://davidmvenegas.github.io/PasswordGenerator", largeTitle: true},
         {id: 12, title: 'New Years Timer', image: NewYearsLogo, github: "https://github.com/davidmvenegas/JS-CountdownTimer", link: "https://davidmvenegas.github.io/JS-CountdownTimer", largeTitle: false},
     ]
-    const modalData = [
-        {id: 1, 
-            title: "My Simple Wardrobe.",
-            logo: GroceryMagixIcon,
-            desc: "lorem3", 
-            features: ["thing", "thing" ],
-            tools: [SiReact, SiRedux, SiFirebase, SiCss3],
-            url: "_LINK",
-            video: "https://www.youtube.com/embed/05RJu6q-kU0"
-        }
-    ]
-    function handleOpenModal() {
+    function handleOpenModal(id) {
+        setModalID(id)
         setPort1(false)
         setPort2(false)
         setPort3(false)
@@ -75,7 +61,7 @@ function Work() {
     }
     return (
         <div className='work-container'>
-            <Modal open={openModal} setOpenModal={setOpenModal} data={modalData}/>
+            <Modal open={openModal} setOpenModal={setOpenModal} modalID={modalID}/>
             <div className="port-wrapper">
                 <h1 className="port-header">
                         <span>M</span>
@@ -115,7 +101,7 @@ function Work() {
                             <a className="port-title-site" href='https://www.mysimplewardrobe.com/' target="_blank" rel="noreferrer">www.mysimplewardrobe.com</a>
                             <p className="port-headline">A fully functional eCommerce clothing store with Stripe&trade; checkout and an Admin panel.</p>
                             <div className="port-btn-box">
-                                <div className='port-btn-more' onClick={() => handleOpenModal()}>
+                                <div className='port-btn-more' onClick={() => handleOpenModal(1)}>
                                     <span id='port-more-text'>More Details</span>
                                     <BsArrowRight id='port-more-arrow'/>
                                 </div>
@@ -140,7 +126,7 @@ function Work() {
                             <a className="port-title-site" href='https://www.grocerymagix.com/' target="_blank" rel="noreferrer">www.grocerymagix.com</a>
                             <p className="port-headline">Search through millions of recipes, pick your favorites and instantly generate a shopping list.</p>
                             <div className="port-btn-box">
-                                <div className='port-btn-more' onClick={() => handleOpenModal()}>
+                                <div className='port-btn-more' onClick={() => handleOpenModal(2)}>
                                     <span id='port-more-text'>More Details</span>
                                     <BsArrowRight id='port-more-arrow'/>
                                 </div>
@@ -165,7 +151,7 @@ function Work() {
                             <a className="port-title-site" href='https://www.thefinancialtracker.com/' target="_blank" rel="noreferrer">www.thefinancialtracker.com</a>
                             <p className="port-headline">Track your income, set a budget and visualize your saving goals with this personal finance tracker.</p>
                             <div className="port-btn-box">
-                                <div className='port-btn-more' onClick={() => handleOpenModal()}>
+                                <div className='port-btn-more' onClick={() => handleOpenModal(3)}>
                                     <span id='port-more-text'>More Details</span>
                                     <BsArrowRight id='port-more-arrow'/>
                                 </div>
@@ -190,7 +176,7 @@ function Work() {
                             <a className="port-title-site" href='https://www.mycryptomatic.com/' target="_blank" rel="noreferrer">www.mycryptomatic.com</a>
                             <p className="port-headline">A cryptocurrency tracker with a view of the markets, watchlist, portfolio calculator and news.</p>
                             <div className="port-btn-box">
-                                <div className='port-btn-more' onClick={() => handleOpenModal()}>
+                                <div className='port-btn-more' onClick={() => handleOpenModal(4)}>
                                     <span id='port-more-text'>More Details</span>
                                     <BsArrowRight id='port-more-arrow'/>
                                 </div>
