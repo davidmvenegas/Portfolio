@@ -62,7 +62,7 @@ function Work() {
                 {id: 2, image: "_URL", text: "FEATURE"}
             ],
             url: "_LINK",
-            video: "_LINK"
+            video: "https://www.youtube.com/embed/05RJu6q-kU0"
         }
     ]
     function handleOpenModal() {
