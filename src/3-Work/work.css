@@ -145,7 +145,7 @@
 #portItem4 .portGifPopup {animation: portAnimPop 1s ease 4.5s forwards}
 
 @keyframes portAnimItem {
-    60% {transform: scale(.8)}
+    60% {transform: scale(.9)}
     100% {width: 100%; transform: scale(1)}
 }
 @keyframes portAnimBox {
@@ -305,7 +305,7 @@
     opacity: 0;
 }
 #otherDesc-active {
-    animation: portFade 3s ease 1s forwards;
+    animation: portFade 2s ease 1s forwards;
 }
 .other-items {
     display: grid;

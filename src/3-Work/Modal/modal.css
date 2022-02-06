@@ -30,6 +30,13 @@
     padding: 2rem;
     border-radius: .75rem;
     background-color: #222;
+    animation: modalAnim .65s ease forwards;
+    margin-right: 75rem;
+    opacity: 0;
+}
+@keyframes modalAnim {
+    60% {opacity: 1}
+    100% {opacity: 1; margin-right: 0}
 }
 .modal-video-wrapper {
     width: 50%;
@@ -38,6 +45,11 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    animation: modalFade 1s ease-in-out .85s forwards;
+    opacity: 0;
+}
+@keyframes modalFade {
+    100% {opacity: 1}
 }
 .modal-video-title {
     font-size: 3.5rem;
@@ -54,9 +66,9 @@
     color: #949494;
 }
 .modal-video-title span:last-of-type {
-    font-size: 3.25rem;
+    font-size: 3rem;
     font-weight: 600;
-    color: #949494;
+    color: #08fdd8;
 }
 #modal-trade {
     display: inline-block;
@@ -116,6 +128,12 @@
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     background-color: #373737;
+    animation: modalScale .65s ease-in-out .35s forwards;
+    opacity: 0;
+    transform: scale(.75);
+}
+@keyframes modalScale {
+    100% {opacity: 1; transform: scale(1)}
 }
 .modal-header {
     align-self: center;

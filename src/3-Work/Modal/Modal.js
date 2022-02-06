@@ -13,7 +13,7 @@ function Modal({open, setOpenModal, modalID}) {
         {id: 1, 
             title: "My Simple Wardrobe.",
             logo: MySimpleWardrobeIcon,
-            desc: "My Simple Wardrobe™ is a fully functional eCommerce clothing store with Stripe™. Users can either checkout as a guest or register to add items to their wishlist, leave product reviews and see their order history. A separate admin panel allows for easy control of products, users and orders.", 
+            desc: "My Simple Wardrobe™ is a fully functional eCommerce clothing store with Stripe™. Users can either checkout as a guest or sign up to add items to their wishlist, leave product reviews and see their order history. A separate admin panel allows for easy control of products, users and orders.", 
             features: ["Guest checkout", "Product review system", "Personal order history", "256-bit AES encryption"],
             tools: [SiReact, SiRedux, SiNodedotjs, SiExpress, SiMongodb],
             technologies: {

@@ -35,8 +35,10 @@
 .other-item-top img {
     width: 7.5rem;
     height: 7.5rem;
-    transform: scale(.05);
-    animation: bounceInOther .65s ease-in-out forwards;
+    transform: scale(0);
+}
+#otherItem-active {
+    animation: bounceInOther .65s ease-in-out .25s forwards;
 }
 @keyframes bounceInOther {
     50% {transform: scale(1.25)}
@@ -81,7 +83,7 @@
     font-weight: 400;
     color: white;
     width: fit-content;
-    padding: 1rem 1.75rem;
+    padding: 1rem 2rem;
     color: white;
     background-color: transparent;
     outline: 1px solid #08fdd8;
