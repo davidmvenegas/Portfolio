@@ -22,7 +22,9 @@
     color: white;
     font-size: 6.25rem;
     font-weight: 600;
-    animation: portFade 2s ease forwards;
+    animation: skilsHeadFade 2s ease forwards;
+    margin-top: 3.5rem;
+    margin-bottom: -3.5rem;
     opacity: 0;
 }
 .port-header span {
@@ -44,15 +46,16 @@
     /* border: 1px solid rebeccapurple; */
 }
 #port-slide1 {
-    animation: showup 2s ease forwards;
+    opacity: 0;
+    animation: showup 2s ease 2s forwards;
 }
 #port-slide2 {
     width: 0;
-    animation: reveal 2.5s ease forwards;
+    animation: reveal 2.5s ease 2s forwards;
 }
 #port-contact-slide {
     margin-left: -340px;
-    animation: slidein 2.5s ease forwards;
+    animation: slidein 2.5s ease 2s forwards;
 }
 @keyframes showup {
     0% {opacity: 0}
@@ -81,13 +84,16 @@
     width: 90%;
     margin-top: 3.85rem;
     gap: 3rem;
+    animation: portFade 3s ease forwards;
+    opacity: 0;
 }
 .port-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 27.5rem;
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
     border-radius: .5rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     overflow: hidden;
@@ -100,18 +106,19 @@
 .port-gif-box {
     position: relative;
     height: 27.5rem;
-    width: 48.5rem;
+    width: 0;
     border-radius: .5rem 0 0 .5rem;
 }
 .port-gif-wrapper {
     position: relative;
     display: flex;
     height: 27.5rem;
-    width: 48.5rem;
+    width: 0;
+    opacity: 0;
 }
 .port-gif {
     position: absolute;
-    left: 0;
+    right: 0;
     height: 100%;
     width: 100%;
     border-radius: .5rem 0 0 .5rem;
@@ -119,6 +126,37 @@
 }
 .port-gif-box:hover .portGifPopup {
     bottom: 0;
+}
+#portItem1 {animation: portAnimItem 1s ease 1s forwards}
+#portItem1 .port-gif-box {animation: portAnimBox 1s ease 1s forwards}
+#portItem1 .port-gif-wrapper {animation: portAnimWrap 1s ease 1s forwards}
+#portItem1 .portGifPopup {animation: portAnimPop 1s ease 3s forwards}
+#portItem2 {animation: portAnimItem 1s ease 1.5s forwards}
+#portItem2 .port-gif-box {animation: portAnimBox 1s ease 1.5s forwards}
+#portItem2 .port-gif-wrapper {animation: portAnimWrap 1s ease 1.5s forwards}
+#portItem2 .portGifPopup {animation: portAnimPop 1s ease 3.5s forwards}
+#portItem3 {animation: portAnimItem 1s ease 2s forwards}
+#portItem3 .port-gif-box {animation: portAnimBox 1s ease 2s forwards}
+#portItem3 .port-gif-wrapper {animation: portAnimWrap 1s ease 2s forwards}
+#portItem3 .portGifPopup {animation: portAnimPop 1s ease 4s forwards}
+#portItem4 {animation: portAnimItem 1s ease 2.5s forwards}
+#portItem4 .port-gif-box {animation: portAnimBox 1s ease 2.5s forwards}
+#portItem4 .port-gif-wrapper {animation: portAnimWrap 1s ease 2.5s forwards}
+#portItem4 .portGifPopup {animation: portAnimPop 1s ease 4.5s forwards}
+
+@keyframes portAnimItem {
+    60% {transform: scale(.8)}
+    100% {width: 100%; transform: scale(1)}
+}
+@keyframes portAnimBox {
+    100% {width: 48.5rem}
+}
+@keyframes portAnimWrap {
+    80% {opacity: 0}
+    100% {width: 48.5rem; opacity: 1}
+}
+@keyframes portAnimPop {
+    100% {opacity: 1}
 }
 .portGifPopup {
     position: absolute;
@@ -136,6 +174,7 @@
     background-color: rgba(0, 0, 0, .8);
     transition: all .25s ease-in-out;
     cursor: pointer;
+    opacity: 0;
 }
 .portGifPopup p {
     font-size: 2.25rem;
@@ -235,8 +274,7 @@
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
     opacity: .8;
     border-radius: 1rem;
-    margin: 7rem 0 4.5rem;
-    animation: lineAcross 4s ease forwards;
+    margin: 6.5rem 0 3.5rem;
 }
 .other-wrapper {
     display: flex;
@@ -250,7 +288,8 @@
     color: white;
     font-size: 6rem;
     font-weight: 600;
-    animation: portFade 2s ease forwards;
+    margin-top: 5rem;
+    margin-bottom: -5rem;
     opacity: 0;
 }
 .other-header span {
@@ -263,6 +302,10 @@
 .other-description {
     margin-top: 2.75rem;
     font-size: 1.85rem;
+    opacity: 0;
+}
+#otherDesc-active {
+    animation: portFade 3s ease 1s forwards;
 }
 .other-items {
     display: grid;

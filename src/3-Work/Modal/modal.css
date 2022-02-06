@@ -4,7 +4,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .75);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,6 @@
 #leave-modal:hover {
     transform: rotate(-90deg);
 }
-
 .modal-wrapper {
     height: 80%;
     width: 80%;
@@ -32,7 +31,6 @@
     border-radius: .75rem;
     background-color: #222;
 }
-
 .modal-video-wrapper {
     width: 50%;
     height: 95%;
@@ -42,20 +40,21 @@
     flex-direction: column;
 }
 .modal-video-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
     width: fit-content;
     text-align: center;
-    line-height: 3.125rem;
+    line-height: 3rem;
     margin-bottom: -1rem;
     margin-top: 1rem;
 }
 .modal-video-title span:first-of-type {
-    font-size: 2rem;
+    font-size: 1.85rem;
+    line-height: 2.75rem;
     color: #949494;
 }
 .modal-video-title span:last-of-type {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
     font-weight: 600;
     color: #949494;
 }
@@ -168,8 +167,6 @@
     75% {transform: scale3d(1.05, .95, 1)}
     to {transform: scale3d(1, 1, 1)}
 }
-
-
 .modal-body {
     align-self: center;
     width: 90%;
@@ -184,9 +181,8 @@
     height: 45%;
 }
 .modal-features-header {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 500;
-    color: #ddd;
     text-shadow: 1.5px 1.5px 2px black;
     line-height: 2rem;
     padding: .65rem 0 .35rem;
@@ -205,8 +201,6 @@
     line-height: 2.4rem;
     font-weight: 600;
 }
-
-
 .modal-visit-site {
     align-self: center;
     position: relative;

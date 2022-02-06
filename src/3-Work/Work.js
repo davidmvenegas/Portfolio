@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { BsArrowRight, BsBoxArrowUpRight } from 'react-icons/bs'
 import Modal from './Modal/Modal'
+import { useInView } from 'react-intersection-observer'
 // Main Logos
 import MySimpleWardrobeGif from '../Media/Gifs/MySimpleWardrobeGif.gif'
 import GroceryMagixGif from '../Media/Gifs/GroceryMagixGif.gif'
@@ -37,6 +38,9 @@ function Work() {
     const [port4, setPort4] = useState(false)
     const [modalID, setModalID] = useState(null)
     const [openModal, setOpenModal] = useState(false)
+    const [otherSepRef, otherSepInView] = useInView({threshold: 0, triggerOnce: true})
+    const [otherTitleRef, otherTitleInView] = useInView({threshold: 0, triggerOnce: true})
+    const [otherDescRef, otherDescInView] = useInView({threshold: 0, triggerOnce: true})
     const otherData = [
         {id: 1, title: 'Weather App', image: WeatherLogo, github: "https://github.com/davidmvenegas/weather_app", link: "https://davidmvenegas.github.io/weather_app", largeTitle: false},
         {id: 2, title: 'Favorite Books', image: BooklistLogo, github: "https://github.com/davidmvenegas/booklist", link: "https://davyvegasbooklist.com", largeTitle: false},
@@ -83,7 +87,7 @@ function Work() {
                     </div>
                 </p>
                 <div className="port-items">
-                    <div className="port-item" onMouseEnter={() => setPort1(true)} onMouseLeave={() => setPort1(false)}>
+                    <div className="port-item" id='portItem1' onMouseEnter={() => setPort1(true)} onMouseLeave={() => setPort1(false)}>
                         <div className="port-gif-box">
                             <div className="port-gif-wrapper">
                                 <img className='port-gif' src={MySimpleWardrobeGif} alt="My Simple Wardrobe Gif" style={port1 ? {opacity: "1"} : {opacity: "0"}}/>
@@ -108,7 +112,7 @@ function Work() {
                             </div>
                         </div>
                     </div>
-                    <div className="port-item" onMouseEnter={() => setPort2(true)} onMouseLeave={() => setPort2(false)}>
+                    <div className="port-item" id='portItem2' onMouseEnter={() => setPort2(true)} onMouseLeave={() => setPort2(false)}>
                         <div className="port-gif-box">
                             <div className="port-gif-wrapper">
                                 <img className='port-gif' src={GroceryMagixGif} alt="Grocery Magix Gif" style={port2 ? {opacity: "1"} : {opacity: "0"}}/>
@@ -133,7 +137,7 @@ function Work() {
                             </div>
                         </div>
                     </div>
-                    <div className="port-item" onMouseEnter={() => setPort3(true)} onMouseLeave={() => setPort3(false)}>
+                    <div className="port-item" id='portItem3' onMouseEnter={() => setPort3(true)} onMouseLeave={() => setPort3(false)}>
                         <div className="port-gif-box">
                             <div className="port-gif-wrapper">
                                 <img className='port-gif' src={TheFinancialTrackerGif} alt="The Financial Tracker Gif" style={port3 ? {opacity: "1"} : {opacity: "0"}}/>
@@ -158,7 +162,7 @@ function Work() {
                             </div>
                         </div>
                     </div>
-                    <div className="port-item" onMouseEnter={() => setPort4(true)} onMouseLeave={() => setPort4(false)}>
+                    <div className="port-item" id='portItem4' onMouseEnter={() => setPort4(true)} onMouseLeave={() => setPort4(false)}>
                         <div className="port-gif-box">
                             <div className="port-gif-wrapper">
                                 <img className='port-gif' src={MyCryptomaticGif} alt="Grocery Magix Gif" style={port4 ? {opacity: "1"} : {opacity: "0"}}/>
@@ -185,9 +189,9 @@ function Work() {
                     </div>
                 </div>
             </div>
-            <div className="other-separator"></div>
+            <div className="other-separator" ref={otherSepRef} id={otherSepInView ? "education-separator-active" : undefined}></div>
             <div className="other-wrapper">
-                <h1 className="other-header">
+                <h1 className="other-header" ref={otherTitleRef} id={otherTitleInView ? "certTitle-active" : undefined}>
                         <span>O</span>
                         <span>t</span>
                         <span>h</span>
@@ -198,8 +202,8 @@ function Work() {
                         <span>r</span>
                         <span>k</span>
                 </h1>
-                <p className="other-description">
-                    A collection of a few other things I've built. Everything is fully mobile responsive.
+                <p className="other-description" ref={otherDescRef} id={otherDescInView ? "otherDesc-active" : undefined}>
+                    A collection of a few other things I've built. <span>Everything is fully mobile responsive.</span>
                 </p>
                 <div className="other-items">
                     {otherData.map((data) => (

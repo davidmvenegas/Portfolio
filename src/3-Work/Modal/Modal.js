@@ -13,7 +13,7 @@ function Modal({open, setOpenModal, modalID}) {
         {id: 1, 
             title: "My Simple Wardrobe.",
             logo: MySimpleWardrobeIcon,
-            desc: "My Simple Wardrobe™ is a fully functional eCommerce clothing store with Stripe™. Users can checkout as a guest or register to add items to their wishlist, leave product reviews and see their order history. A separate admin panel allows for easy control of products, users and orders.", 
+            desc: "My Simple Wardrobe™ is a fully functional eCommerce clothing store with Stripe™. Users can either checkout as a guest or register to add items to their wishlist, leave product reviews and see their order history. A separate admin panel allows for easy control of products, users and orders.", 
             features: ["Guest checkout", "Product review system", "Personal order history", "256-bit AES encryption"],
             tools: [SiReact, SiRedux, SiNodedotjs, SiExpress, SiMongodb],
             technologies: {
@@ -22,12 +22,12 @@ function Modal({open, setOpenModal, modalID}) {
             },
             link: "www.mysimplewardrobe.com",
             url: "https://www.mysimplewardrobe.com/",
-            video: ""
+            video: "https://www.youtube.com/embed/ZwveyK1Ag60"
         },
         {id: 2, 
             title: "Grocery Magix",
             logo: GroceryMagixIcon,
-            desc: "With Grocery Magix™ you can search through millions of recipes, pick their favorites and instantly generate a shopping list. It uses Edamam's Recipe API to provide over 2.3 million recipes which can be adjusted by serving and then aggregated into a single, concise shopping list.", 
+            desc: "With Grocery Magix™ you can search through millions of recipes, pick your favorites and instantly generate a shopping list. It uses Edamam's Recipe API to provide over 2.3 million recipes which can be adjusted by serving and then aggregated into a single, concise shopping list.", 
             features: ["Millions of recipes", "Over 30 recipe search filters", "Secure Register/Login system", "Fully responsive"],
             tools: [SiReact, SiRedux, SiFirebase, SiCss3],
             technologies: {
@@ -50,7 +50,7 @@ function Modal({open, setOpenModal, modalID}) {
             },
             link: "www.thefinancialtracker.com",
             url: "https://www.thefinancialtracker.com/",
-            video: ""
+            video: "https://www.youtube.com/embed/KX3mJggp4h0"
         },
         {id: 4, 
             title: "My Cryptomatic",
@@ -64,7 +64,7 @@ function Modal({open, setOpenModal, modalID}) {
             },
             link: "www.mycryptomatic.com",
             url: "https://www.mycryptomatic.com/",
-            video: ""
+            video: "https://www.youtube.com/embed/2kEOdCkTEzk"
         },
     ]
     useEffect(() => {
@@ -72,29 +72,29 @@ function Modal({open, setOpenModal, modalID}) {
             const currentID = modalData.findIndex(x => x.id === modalID)
             setCurrentData(modalData[currentID])
         }
+        if (!open) setCurrentData({})
     // eslint-disable-next-line
-    }, [modalID])
-
+    }, [modalID, open])
     const [currentData, setCurrentData] = useState({})
     return (
         <div className='modal-container' style={open ? null : {display: "none"}}>
             <ImCross id="leave-modal" onClick={() => setOpenModal(false)}/>
             <div className="modal-wrapper">
                 <div className="modal-video-wrapper">
-                    <h1 className="modal-video-title">2 Minute Video Demonstration <br /><span>of</span><br /> <span>{currentData?.title}<span id='modal-trade'>&trade;</span></span></h1>
+                    <h1 className="modal-video-title">2 Minute Video Demonstration <br /><span>of</span><br /> <span>{currentData?.title}</span></h1>
                     <div className="iframe-wrapper">
                         <iframe 
                             width="560" 
                             height="315" 
                             src={currentData?.video} 
-                            title={currentData?.title} 
+                            title={currentData?.title}
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
                             allowfullscreen="allowfullscreen"
                         ></iframe>
                     </div>
                     <div className="modal-tech-wrapper">
-                        <h1>Technologies</h1>
+                        <h1>Technologies Used</h1>
                         <div className="modal-techs"><span>Frontend:&nbsp;</span>{currentData?.technologies?.frontend}</div>
                         <div className="modal-techs"><span>Backend:&nbsp;</span>{currentData?.technologies?.backend}</div>
                     </div>

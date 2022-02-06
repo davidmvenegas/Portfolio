@@ -19,7 +19,9 @@
     color: white;
     font-size: 6.25rem;
     font-weight: 600;
-    animation: skilsBoxFade 2s ease forwards;
+    animation: skilsHeadFade 2s ease forwards;
+    margin-top: 3.5rem;
+    margin-bottom: -3.5rem;
     opacity: 0;
 }
 .skills-header span {
@@ -42,6 +44,11 @@
 }
 .skills-box:first-of-type {
     margin-top: 7.5rem;
+}
+@keyframes skilsHeadFade {
+    10% {opacity: 0;}
+    50% {margin-top: 0rem; margin-bottom: 0rem;}
+    100% {opacity: 1; margin-top: 0rem; margin-bottom: 0rem;}
 }
 @keyframes skilsBoxFade {
     100% {opacity: 1;}
@@ -154,6 +161,8 @@
     color: white;
     font-size: 6rem;
     font-weight: 600;
+    margin-top: 3.5rem;
+    margin-bottom: -3.5rem;
     opacity: 0;
 }
 .education-header span {
@@ -164,7 +173,7 @@
     color: #08fdd8;
 }
 #certTitle-active {
-    animation: skilsBoxFade 3s ease forwards;
+    animation: skilsHeadFade 2s ease forwards;
 }
 
 /* FLATIRON */
