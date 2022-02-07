@@ -1,7 +1,59 @@
-.algorithms-container {
-    padding-left: 20rem;
-    height: 100vh;
-    font-size: 5rem;
-    padding-top: 5rem;
-    text-align: center;
+.algo-container {
+    padding: 3.5rem 0 3.5rem 18.5rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-x: hidden;
 }
+.algo-header {
+    position: relative;
+    color: white;
+    font-size: 6.25rem;
+    font-weight: 600;
+    animation: skilsHeadFade 2s ease forwards;
+    margin-top: 3.5rem;
+    margin-bottom: -3.5rem;
+    opacity: 0;
+}
+.algo-header span {
+    display: inline-block;
+    transition: color .35s ease;
+}
+.algo-header span:hover {
+    color: #08fdd8;
+}
+
+/* #port-slide1,
+#port-slide2 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#port-slide1 {
+    opacity: 0;
+    animation: showup 2s ease 2s forwards;
+}
+#port-slide2 {
+    width: 0;
+    animation: reveal 2.5s ease 2s forwards;
+}
+#port-contact-slide {
+    margin-left: -340px;
+    animation: slidein 2.5s ease 2s forwards;
+}
+@keyframes showup {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+@keyframes slidein {
+    0% {margin-left: -800px}
+    50% {margin-left: -800px}
+    100% {margin-left: 0px}
+}
+@keyframes reveal {
+    0% {opacity: 0; width: 0px}
+    50% {opacity: 1; width: 0px}
+    100% {width: 380px}
+} */
