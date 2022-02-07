@@ -60,3 +60,36 @@
     50% {opacity: 1; width: 0px}
     100% {width: 260px}
 }
+
+.algo-wrapper {
+}
+.algo-item {
+}
+.algo-item p {
+}
+.algo-item h1 {
+}
+.algo-iframe-wrapper {
+}
+.algo-iframe-wrapper iframe {
+}
+
+
+
+
+/* .algo-iframe-wrapper {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.algo-iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+} */

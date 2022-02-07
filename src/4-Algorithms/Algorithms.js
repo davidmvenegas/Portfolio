@@ -24,6 +24,63 @@ function Algorithms() {
                 <div className="algo-wrapper">
                     <div className="algo-item">
                         <p>Javascript</p>
+                        <h1>Two Sum</h1>
+                        <div className="algo-iframe-wrapper">
+                            <iframe 
+                                width="560" 
+                                height="315" 
+                                src=""
+                                title="Title"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
+                                allowfullscreen="allowfullscreen"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div className="algo-item">
+                        <p>Javascript</p>
+                        <h1>Two Sum</h1>
+                        <div className="algo-iframe-wrapper">
+                            <iframe 
+                                width="560" 
+                                height="315" 
+                                src=""
+                                title="Title"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
+                                allowfullscreen="allowfullscreen"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div className="algo-item">
+                        <p>Javascript</p>
+                        <h1>Two Sum</h1>
+                        <div className="algo-iframe-wrapper">
+                            <iframe 
+                                width="560" 
+                                height="315" 
+                                src=""
+                                title="Title"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
+                                allowfullscreen="allowfullscreen"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div className="algo-item">
+                        <p>Javascript</p>
+                        <h1>Two Sum</h1>
+                        <div className="algo-iframe-wrapper">
+                            <iframe 
+                                width="560" 
+                                height="315" 
+                                src=""
+                                title="Title"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
+                                allowfullscreen="allowfullscreen"
+                            ></iframe>
+                        </div>
                     </div>
                 </div>
         </div>
