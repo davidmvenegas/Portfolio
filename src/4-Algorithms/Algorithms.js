@@ -15,12 +15,17 @@ function Algorithms() {
                         <span>m</span>
                         <span>s</span>
                 </h1>
-                {/* <p className="port-description">
-                    <div id='port-slide1'>A gallery of recent projects I've built.&nbsp;&nbsp;</div> 
-                    <div id='port-slide2'> 
-                        <span id='port-contact-slide'><span>Contact me</span> for a complete code walkthrough.</span>
+                <p className="algo-description">
+                    <div id='algo-slide1'>Algorithms improve my ability to solve problems.&nbsp;&nbsp;</div> 
+                    <div id='algo-slide2'> 
+                        <span id='algo-child-slide'>Here are a few of my favorites.</span>
                     </div>
-                </p> */}
+                </p>
+                <div className="algo-wrapper">
+                    <div className="algo-item">
+                        <p>Javascript</p>
+                    </div>
+                </div>
         </div>
     )
 }

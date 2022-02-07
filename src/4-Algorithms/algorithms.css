@@ -24,24 +24,27 @@
 .algo-header span:hover {
     color: #08fdd8;
 }
-
-/* #port-slide1,
-#port-slide2 {
+.algo-description {
+    margin-top: 2.75rem;
+    font-size: 1.85rem;
+}
+#algo-slide1,
+#algo-slide2 {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
 }
-#port-slide1 {
+#algo-slide1 {
     opacity: 0;
-    animation: showup 2s ease 2s forwards;
+    animation: showup 2s ease 1.25s forwards;
 }
-#port-slide2 {
+#algo-slide2 {
     width: 0;
-    animation: reveal 2.5s ease 2s forwards;
+    animation: reveal 2.5s ease 1.25s forwards;
 }
-#port-contact-slide {
+#algo-child-slide {
     margin-left: -340px;
-    animation: slidein 2.5s ease 2s forwards;
+    animation: slidein 2.5s ease 1.25s forwards;
 }
 @keyframes showup {
     0% {opacity: 0}
@@ -55,5 +58,5 @@
 @keyframes reveal {
     0% {opacity: 0; width: 0px}
     50% {opacity: 1; width: 0px}
-    100% {width: 380px}
-} */
+    100% {width: 260px}
+}

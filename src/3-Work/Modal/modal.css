@@ -156,12 +156,25 @@
 .modal-title {
     font-size: 4.35rem;
 }
-.modal-link {
+.modal-links {
+    position: relative;
+    padding: .5rem 0 1rem;
+    margin-right: 2rem;
+}
+.modal-link1 {
     font-size: 1.85rem;
     font-weight: 300;
     color: white;
-    padding: .5rem 0 1rem;
     text-decoration: underline;
+}
+.modal-link2 {
+    position: absolute;
+    color: white;
+    font-size: 2.65rem;
+    transition: all .25s ease;
+}
+.modal-link2:hover {
+    transform: scale(1.125);
 }
 .modal-tools-wrapper {
     padding: 1.25rem 0 0;

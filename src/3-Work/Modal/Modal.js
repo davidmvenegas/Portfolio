@@ -1,6 +1,7 @@
 import './modal.css'
 import { useEffect, useState } from 'react'
 import { ImCross } from 'react-icons/im'
+import { FaGithub } from "react-icons/fa"
 import { SiReact, SiRedux, SiFirebase, SiCss3, SiNodedotjs, SiExpress, SiMongodb, SiSass, SiRubyonrails, SiPostgresql } from 'react-icons/si'
 import MySimpleWardrobeIcon from '../../Media/Images/portfolio-icons/MSW.png'
 import GroceryMagixIcon from '../../Media/Images/portfolio-icons/GM.png'
@@ -22,6 +23,7 @@ function Modal({open, setOpenModal, modalID}) {
             },
             link: "www.mysimplewardrobe.com",
             url: "https://www.mysimplewardrobe.com/",
+            github: "https://github.com/davidmvenegas/my-simple-wardrobe",
             video: "https://www.youtube.com/embed/ZwveyK1Ag60"
         },
         {id: 2, 
@@ -36,6 +38,7 @@ function Modal({open, setOpenModal, modalID}) {
             },
             link: "www.grocerymagix.com",
             url: "https://www.grocerymagix.com/",
+            github: "https://github.com/davidmvenegas/GroceryMagix",
             video: "https://www.youtube.com/embed/05RJu6q-kU0"
         },
         {id: 3, 
@@ -50,6 +53,7 @@ function Modal({open, setOpenModal, modalID}) {
             },
             link: "www.thefinancialtracker.com",
             url: "https://www.thefinancialtracker.com/",
+            github: "https://github.com/davidmvenegas/my-cryptomatic",
             video: "https://www.youtube.com/embed/KX3mJggp4h0"
         },
         {id: 4, 
@@ -64,6 +68,7 @@ function Modal({open, setOpenModal, modalID}) {
             },
             link: "www.mycryptomatic.com",
             url: "https://www.mycryptomatic.com/",
+            github: "https://github.com/davidmvenegas/GroceryMagix",
             video: "https://www.youtube.com/embed/2kEOdCkTEzk"
         },
     ]
@@ -105,7 +110,11 @@ function Modal({open, setOpenModal, modalID}) {
                             <img src={currentData?.logo} alt="Logo" />
                             <h1 className="modal-title">{currentData?.title}</h1>
                         </div>
-                        <a className="modal-link" href={currentData?.url} target="_blank" rel="noreferrer">{currentData?.link}</a>
+                        <div className="modal-links">
+                            <a className="modal-link1" href={currentData?.url} target="_blank" rel="noreferrer">{currentData?.link}</a>
+                            &nbsp;&nbsp; - &nbsp;&nbsp;
+                            <a className="modal-link2" href={currentData?.github} target="_blank" rel="noreferrer"><FaGithub/></a>
+                        </div>
                         <div className="modal-tools-wrapper">
                             {currentData?.tools?.map(Tool => 
                                 <Tool className="modal-tool"/>
