@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import ReactBanner from '../Media/Images/blog-banners/react-banner.jpg'
 import JavascriptBanner from '../Media/Images/blog-banners/javascript-banner.jpg'
 import RubyBanner from '../Media/Images/blog-banners/ruby-banner.png'
+import MediumClap from '../Media/Images/medium-clap.png'
 
 function Blogs() {
     useEffect(() => {window.scrollTo(0, 0)}, [])
@@ -33,7 +34,7 @@ function Blogs() {
                 <span>g</span>
                 <span>s</span>
             </h1>
-            <p className="blog-description">A few things I've written.</p>
+            <p className="blog-description">I like to keep myself informed. Here's a few things I've written.</p>
             <div className="blog-wrapper">
                 <input type="radio" name="slider" id="blog-item-1" defaultChecked/>
                 <input type="radio" name="slider" id="blog-item-2"/>
@@ -49,9 +50,12 @@ function Blogs() {
                                 </div>
                             </div>
                             <div className="blog-facts">
-                                <h4 className="blog-date">Aug 23rd, 2021</h4>
-                                <h2 className="blog-read">3 min read</h2>
-                                <div className="blog-likes">14</div>
+                                <h4 className="blog-date">Nov 17, 2021</h4>
+                                <h2 className="blog-read">3 Minute Read</h2>
+                                <div className="blog-likes">
+                                    <img src={MediumClap} alt="Claps" />
+                                    <p>101</p>
+                                </div>
                             </div>
                         </div>
                     </label>
@@ -65,9 +69,12 @@ function Blogs() {
                                 </div>
                             </div>
                             <div className="blog-facts">
-                                <h4 className="blog-date">Aug 23rd, 2021</h4>
-                                <h2 className="blog-read">3 min read</h2>
-                                <div className="blog-likes">14</div>
+                                <h4 className="blog-date">Oct 19, 2021</h4>
+                                <h2 className="blog-read">2 Minute Read</h2>
+                                <div className="blog-likes">
+                                    <img src={MediumClap} alt="Claps" />
+                                    <p>57</p>
+                                </div>
                             </div>
                         </div>
                     </label>
@@ -81,9 +88,12 @@ function Blogs() {
                                 </div>
                             </div>
                             <div className="blog-facts">
-                                <h4 className="blog-date">Aug 23rd, 2021</h4>
-                                <h2 className="blog-read">3 min read</h2>
-                                <div className="blog-likes">14</div>
+                                <h4 className="blog-date">Nov 23, 2021</h4>
+                                <h2 className="blog-read">2 Minute Read</h2>
+                                <div className="blog-likes">
+                                    <img src={MediumClap} alt="Claps" />
+                                    <p>63</p>
+                                </div>
                             </div>
                         </div>
                     </label>

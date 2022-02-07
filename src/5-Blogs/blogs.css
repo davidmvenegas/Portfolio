@@ -35,7 +35,7 @@
 
 
 .blog-wrapper {
-    margin-top: 5rem;
+    margin-top: 4.5rem;
     width: 90%;
     height: 57.5rem;
     display: flex;
@@ -106,6 +106,8 @@
 }
 .blog-title {
     font-size: 3rem;
+    color: #121212;
+    text-shadow: 1.5px 1.5px 1px gray;
     padding: .5rem 0 1rem;
 }
 .blog-start-wrap {
@@ -136,19 +138,49 @@
 }
 .blog-start a:hover {
     cursor: pointer;
-    color: #252525;
+    color: #242424;
 }
 
 .blog-facts {
+    position: relative;
     background-color: #252525;
-    border: 2px solid #333;
-    border-top: none;
+    border-top: 2px solid #222;
     border-radius: 0 0 1rem 1rem;
     height: 6.25rem;
+    font-size: 1.75rem;
+    color: #888;
 }
 .blog-date {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5rem;
+    font-weight: 400;
+    color: #585858;
 }
 .blog-read {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.85rem;
+    font-weight: 500;
 }
 .blog-likes {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5rem;
+    color: #555;
+    -webkit-text-stroke: 1px #222;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    font-weight: 900;
+}
+.blog-likes img {
+    height: 3.5rem;
+    padding-right: .5rem;
 }
