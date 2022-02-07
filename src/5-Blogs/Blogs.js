@@ -1,4 +1,7 @@
 import './blogs.css'
+import ReactBanner from '../Media/Images/blog-banners/react-banner.jpg'
+import JavascriptBanner from '../Media/Images/blog-banners/javascript-banner.jpg'
+import RubyBanner from '../Media/Images/blog-banners/ruby-banner.png'
 
 function Blogs() {
     return (
@@ -10,20 +13,53 @@ function Blogs() {
                 <span>g</span>
                 <span>s</span>
             </h1>
-            <p className="blog-description">Lorem ipsum dolor sit amet.</p>
+            <p className="blog-description">A few things I've written.</p>
             <div className="blog-wrapper">
-                <input onChange={() => console.log("asd")} type="radio" name="slider" id="blog-item-1" defaultChecked/>
-                <input onChange={() => console.log("asd")} type="radio" name="slider" id="blog-item-2"/>
-                <input onChange={() => console.log("asd")} type="radio" name="slider" id="blog-item-3"/>
+                <input type="radio" name="slider" id="blog-item-1" defaultChecked/>
+                <input type="radio" name="slider" id="blog-item-2"/>
+                <input type="radio" name="slider" id="blog-item-3"/>
                 <div className="blog-cards">
                     <label className="blog-card" htmlFor="blog-item-1" id="blog-slide-1">
-                        <img src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80" alt="song"/>
+                        <div className="blog-content">
+                            <img className='blog-image' src={ReactBanner} alt="React Banner" />
+                            <div className="blog-text-content">
+                                <h1 className='blog-title'>Title</h1>
+                                <p className='blog-start'>Lorem ipsum dolor sit amet. <span>Read more...</span></p>
+                            </div>
+                            <div className="blog-facts">
+                                <h4 className="blog-date">Aug 23rd, 2021</h4>
+                                <h2 className="blog-read">3 min read</h2>
+                                <div className="blog-likes">14</div>
+                            </div>
+                        </div>
                     </label>
                     <label className="blog-card" htmlFor="blog-item-2" id="blog-slide-2">
-                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="song"/>
+                        <div className="blog-content">
+                            <img className='blog-image' src={JavascriptBanner} alt="Javascript Banner" />
+                            <div className="blog-text-content">
+                                <h1 className='blog-title'>Title</h1>
+                                <p className='blog-start'>Lorem ipsum dolor sit amet. <span>Read more...</span></p>
+                            </div>
+                            <div className="blog-facts">
+                                <h4 className="blog-date">Aug 23rd, 2021</h4>
+                                <h2 className="blog-read">3 min read</h2>
+                                <div className="blog-likes">14</div>
+                            </div>
+                        </div>
                     </label>
                     <label className="blog-card" htmlFor="blog-item-3" id="blog-slide-3">
-                        <img src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="song"/>
+                        <div className="blog-content">
+                            <img className='blog-image' src={RubyBanner} alt="Ruby Banner" />
+                            <div className="blog-text-content">
+                                <h1 className='blog-title'>Title</h1>
+                                <p className='blog-start'>Lorem ipsum dolor sit amet. <span>Read more...</span></p>
+                            </div>
+                            <div className="blog-facts">
+                                <h4 className="blog-date">Aug 23rd, 2021</h4>
+                                <h2 className="blog-read">3 min read</h2>
+                                <div className="blog-likes">14</div>
+                            </div>
+                        </div>
                     </label>
                 </div>
             </div>

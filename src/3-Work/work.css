@@ -37,7 +37,7 @@
 .port-description {
     margin-top: 2.75rem;
     font-size: 1.85rem;
-    transform: scale(0.8);
+    transform: scale(0.9);
     animation: portDescScale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
 @keyframes portDescScale {
