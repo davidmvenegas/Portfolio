@@ -1,4 +1,8 @@
 import './algorithms.css'
+import CaesarCipherThumbnail from '../Media/Images/algo-thumbnails/CaesarCipher.png'
+import PalindromeThumbnail from '../Media/Images/algo-thumbnails/Palindrome.png'
+import TwoSumThumbnail from '../Media/Images/algo-thumbnails/TwoSum.png'
+import FibonacciThumbnail from '../Media/Images/algo-thumbnails/Fibonacci.png'
 
 function Algorithms() {
     return (
@@ -22,60 +26,72 @@ function Algorithms() {
                     </div>
                 </p>
                 <div className="algo-wrapper">
-                    <div className="algo-item">
-                        <p>Javascript</p>
-                        <h1>Two Sum</h1>
+                    <div id='algoJavascript' className="algo-item">
+                        <div className="algo-title-box">
+                            <p>Javascript</p>
+                            <p>2 Min</p>
+                        </div>
                         <div className="algo-iframe-wrapper">
+                            <img src={TwoSumThumbnail} alt="Two Sum" />
                             <iframe 
                                 width="560" 
                                 height="315" 
-                                src=""
-                                title="Title"
+                                src="https://www.youtube.com/embed/9bAy8m7AqtI"
+                                title="Two Sum"
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
                                 allowfullscreen="allowfullscreen"
                             ></iframe>
                         </div>
                     </div>
-                    <div className="algo-item">
-                        <p>Javascript</p>
-                        <h1>Two Sum</h1>
+                    <div id='algoRuby' className="algo-item">
+                        <div className="algo-title-box">
+                            <p>Ruby</p>
+                            <p>1 Min</p>
+                        </div>
                         <div className="algo-iframe-wrapper">
+                            <img src={FibonacciThumbnail} alt="Fibonnaci" />
                             <iframe 
                                 width="560" 
                                 height="315" 
-                                src=""
-                                title="Title"
+                                src="https://www.youtube.com/embed/H-li91AOe-0"
+                                title="Fibonnaci"
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
                                 allowfullscreen="allowfullscreen"
                             ></iframe>
                         </div>
                     </div>
-                    <div className="algo-item">
-                        <p>Javascript</p>
-                        <h1>Two Sum</h1>
+                    <div id='algoJavascriptRuby' className="algo-item">
+                        <div className="algo-title-box">
+                            <p>Javascript <span>&</span> <span>Ruby</span></p>
+                            <p>2 Min</p>
+                        </div>
                         <div className="algo-iframe-wrapper">
+                            <img src={PalindromeThumbnail} alt="Palindrome" />
                             <iframe 
                                 width="560" 
                                 height="315" 
-                                src=""
-                                title="Title"
+                                src="https://www.youtube.com/embed/uy5zOUKYgyo"
+                                title="Palindrome"
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
                                 allowfullscreen="allowfullscreen"
                             ></iframe>
                         </div>
                     </div>
-                    <div className="algo-item">
-                        <p>Javascript</p>
-                        <h1>Two Sum</h1>
+                    <div id='algoJavascript' className="algo-item">
+                        <div className="algo-title-box">
+                            <p>Javascript</p>
+                            <p>1 Min</p>
+                        </div>
                         <div className="algo-iframe-wrapper">
+                            <img src={CaesarCipherThumbnail} alt="Caesar Cipher" />
                             <iframe 
                                 width="560" 
                                 height="315" 
-                                src=""
-                                title="Title"
+                                src="https://www.youtube.com/embed/kD7N_JpoV8A"
+                                title="Caesar Cipher"
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
                                 allowfullscreen="allowfullscreen"
