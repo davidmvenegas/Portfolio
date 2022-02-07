@@ -1,9 +1,4 @@
 import './algorithms.css'
-import CaesarCipherThumbnail from '../Media/Images/algo-thumbnails/CaesarCipher.png'
-import PalindromeThumbnail from '../Media/Images/algo-thumbnails/Palindrome.png'
-import TwoSumThumbnail from '../Media/Images/algo-thumbnails/TwoSum.png'
-import FibonacciThumbnail from '../Media/Images/algo-thumbnails/Fibonacci.png'
-
 function Algorithms() {
     return (
         <div className='algo-container'>
@@ -26,13 +21,12 @@ function Algorithms() {
                     </div>
                 </p>
                 <div className="algo-wrapper">
-                    <div id='algoJavascript' className="algo-item">
+                    <div id='algoJavascript' className="algo-item algo-item1">
                         <div className="algo-title-box">
                             <p>Javascript</p>
                             <p>2 Min</p>
                         </div>
                         <div className="algo-iframe-wrapper">
-                            <img src={TwoSumThumbnail} alt="Two Sum" />
                             <iframe 
                                 width="560" 
                                 height="315" 
@@ -44,13 +38,12 @@ function Algorithms() {
                             ></iframe>
                         </div>
                     </div>
-                    <div id='algoRuby' className="algo-item">
+                    <div id='algoRuby' className="algo-item algo-item2">
                         <div className="algo-title-box">
                             <p>Ruby</p>
                             <p>1 Min</p>
                         </div>
                         <div className="algo-iframe-wrapper">
-                            <img src={FibonacciThumbnail} alt="Fibonnaci" />
                             <iframe 
                                 width="560" 
                                 height="315" 
@@ -62,13 +55,12 @@ function Algorithms() {
                             ></iframe>
                         </div>
                     </div>
-                    <div id='algoJavascriptRuby' className="algo-item">
+                    <div id='algoJavascriptRuby' className="algo-item algo-item3">
                         <div className="algo-title-box">
                             <p>Javascript <span>&</span> <span>Ruby</span></p>
                             <p>2 Min</p>
                         </div>
                         <div className="algo-iframe-wrapper">
-                            <img src={PalindromeThumbnail} alt="Palindrome" />
                             <iframe 
                                 width="560" 
                                 height="315" 
@@ -80,13 +72,12 @@ function Algorithms() {
                             ></iframe>
                         </div>
                     </div>
-                    <div id='algoJavascript' className="algo-item">
+                    <div id='algoJavascript' className="algo-item algo-item4">
                         <div className="algo-title-box">
                             <p>Javascript</p>
                             <p>1 Min</p>
                         </div>
                         <div className="algo-iframe-wrapper">
-                            <img src={CaesarCipherThumbnail} alt="Caesar Cipher" />
                             <iframe 
                                 width="560" 
                                 height="315" 

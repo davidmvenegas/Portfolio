@@ -5,7 +5,6 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    overflow-x: hidden;
 }
 .algo-header {
     position: relative;
@@ -36,15 +35,15 @@
 }
 #algo-slide1 {
     opacity: 0;
-    animation: showup 2s ease 1.25s forwards;
+    animation: showup 2s ease 1.5s forwards;
 }
 #algo-slide2 {
     width: 0;
-    animation: reveal 2.5s ease 1.25s forwards;
+    animation: reveal 2.5s ease 1.5s forwards;
 }
 #algo-child-slide {
     margin-left: -340px;
-    animation: slidein 2.5s ease 1.25s forwards;
+    animation: slidein 2.5s ease 1.5s forwards;
 }
 @keyframes showup {
     0% {opacity: 0}
@@ -74,7 +73,17 @@
     width: 92.5%;
     margin: 0 auto;
     box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+    margin-top: 10rem;
+    margin-bottom: -10rem;
+    opacity: 0;
 }
+@keyframes algoFadeUp {
+    100% {opacity: 1; margin-top: 0; margin-bottom: 0}
+}
+.algo-item1 {animation: algoFadeUp 1.25s ease .5s forwards}
+.algo-item2 {animation: algoFadeUp 1.25s ease .75s forwards}
+.algo-item3 {animation: algoFadeUp 1.25s ease 1s forwards}
+.algo-item4 {animation: algoFadeUp 1.25s ease 1.25s forwards}
 #algoJavascript::before {
     content: "";
     display: block;
@@ -156,15 +165,4 @@
     width: 100%;
     height: 100%;
     border-radius: .5rem;
-}
-.algo-iframe-wrapper img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: .5rem;
-    background-color: black;
 }

@@ -46,7 +46,7 @@
 .port-description span {
     display: inline-block;
     opacity: 0;
-    filter: blur(3px);
+    filter: blur(2px);
     padding-right: 1px;
 } 
 .port-description span:nth-child(1) {animation: descFadeIn 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0)}
@@ -266,7 +266,7 @@
     width: 0;
     height: 1px;
     box-shadow: rgba(15, 15, 15, .65) 0px 2px 4px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255), rgba(255, 255, 255, 0));
     opacity: .8;
     border-radius: 1rem;
     margin: 6.5rem 0 3.5rem;
