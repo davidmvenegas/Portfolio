@@ -46,7 +46,7 @@
 .port-description span {
     display: inline-block;
     opacity: 0;
-    filter: blur(2px);
+    filter: blur(1.5px);
     padding-right: 1px;
 } 
 .port-description span:nth-child(1) {animation: descFadeIn 0.8s .7s forwards cubic-bezier(0.11, 0, 0.5, 0)}

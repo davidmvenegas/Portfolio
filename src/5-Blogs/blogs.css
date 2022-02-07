@@ -24,7 +24,7 @@
     color: #08fdd8;
 }
 .blog-description {
-    margin-top: 2.75rem;
+    margin-top: 3rem;
     font-size: 1.85rem;
     opacity: 0;
     animation: blogDesc 1.85s ease 1.5s forwards;
