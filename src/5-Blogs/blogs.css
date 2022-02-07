@@ -27,7 +27,7 @@
     margin-top: 2.75rem;
     font-size: 1.85rem;
     opacity: 0;
-    animation: blogDesc 1.85s ease 1s forwards;
+    animation: blogDesc 1.85s ease 1.5s forwards;
 }
 @keyframes blogDesc {
     100% {opacity: 1}
@@ -43,6 +43,12 @@
     justify-content: center;
     flex-direction: column;
     transform-style: preserve-3d;
+    opacity: 0;
+    margin-top: 7.5rem;
+    animation: blogWrapUp 1s ease .5s forwards;
+}
+@keyframes blogWrapUp {
+    100% {opacity: 1; margin-top: 5rem}
 }
 .blog-wrapper input[type=radio] {
     display: none;
@@ -55,23 +61,22 @@
 }
 .blog-card {
     position: absolute;
-    width: 60%;
+    width: 70rem;
     height: 100%;
     left: 0;
     right: 0;
     margin: auto;
-    transition: transform 0.4s ease;
-    cursor: pointer;
-    background-color: #08fdd8;
+    transition: transform 0.5s ease;
+    border-radius: 1rem;
 }
 #blog-item-1:checked ~ .blog-cards #blog-slide-3, #blog-item-2:checked ~ .blog-cards #blog-slide-1, #blog-item-3:checked ~ .blog-cards #blog-slide-2 {
     transform: translatex(-40%) scale(0.8);
-    opacity: 0.4;
+    opacity: 0.35;
     z-index: 0;
 }
 #blog-item-1:checked ~ .blog-cards #blog-slide-2, #blog-item-2:checked ~ .blog-cards #blog-slide-3, #blog-item-3:checked ~ .blog-cards #blog-slide-1 {
     transform: translatex(40%) scale(0.8);
-    opacity: 0.4;
+    opacity: 0.35;
     z-index: 1;
 }
 #blog-item-1:checked ~ .blog-cards #blog-slide-1, #blog-item-2:checked ~ .blog-cards #blog-slide-2, #blog-item-3:checked ~ .blog-cards #blog-slide-3 {
@@ -87,16 +92,59 @@
     width: 100%;
 }
 .blog-image {
+    width: 100%;
+    height: 25rem;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
 }
-
 .blog-text-content {
+    height: 21.5rem;
+    border-bottom: 1px solid gray;
+    color: black;
+    background-color: #08fdd8;
+    padding: 1rem 2rem;
 }
 .blog-title {
+    font-size: 3rem;
+    padding: .5rem 0 1rem;
+}
+.blog-start-wrap {
+    width: calc(100% + 4rem);
+    height: 100%;
+    margin-left: -2rem;
+    padding: 0 2.5rem;
+    background-image: linear-gradient(to bottom, transparent, black)
 }
 .blog-start {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    color: #181818;
+}
+.blog-start b {
+    display: inline-block;
+    margin-top: .5rem;
+    margin-bottom: -.5rem;
+    line-height: 2.65rem;
+}
+.blog-start a {
+    color: #121212;
+    text-decoration: underline;
+    font-size: 1.9rem;
+    font-weight: 600;
+    line-height: 1rem;
+    z-index: 100;
+}
+.blog-start a:hover {
+    cursor: pointer;
+    color: #252525;
 }
 
 .blog-facts {
+    background-color: #252525;
+    border: 2px solid #333;
+    border-top: none;
+    border-radius: 0 0 1rem 1rem;
+    height: 6.25rem;
 }
 .blog-date {
 }
