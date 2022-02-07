@@ -82,7 +82,7 @@ function Modal({open, setOpenModal, modalID}) {
     }, [modalID, open])
     const [currentData, setCurrentData] = useState({})
     return (
-        <div className='modal-container' style={open ? null : {display: "none"}}>
+        <div key={currentData?.id} className='modal-container' style={open ? null : {display: "none"}}>
             <ImCross id="leave-modal" onClick={() => setOpenModal(false)}/>
             <div className="modal-wrapper">
                 <div className="modal-video-wrapper">
@@ -95,7 +95,7 @@ function Modal({open, setOpenModal, modalID}) {
                             title={currentData?.title}
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
-                            allowfullscreen="allowfullscreen"
+                            allowFullScreen="allowfullscreen"
                         ></iframe>
                     </div>
                     <div className="modal-tech-wrapper">

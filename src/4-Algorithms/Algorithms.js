@@ -37,7 +37,7 @@ function Algorithms() {
                                 title="Two Sum"
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
-                                allowfullscreen="allowfullscreen"
+                                allowFullScreen="allowfullscreen"
                             ></iframe>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ function Algorithms() {
                                 title="Fibonnaci"
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
-                                allowfullscreen="allowfullscreen"
+                                allowFullScreen="allowfullscreen"
                             ></iframe>
                         </div>
                     </div>
@@ -71,7 +71,7 @@ function Algorithms() {
                                 title="Palindrome"
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
-                                allowfullscreen="allowfullscreen"
+                                allowFullScreen="allowfullscreen"
                             ></iframe>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ function Algorithms() {
                                 title="Caesar Cipher"
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
-                                allowfullscreen="allowfullscreen"
+                                allowFullScreen="allowfullscreen"
                             ></iframe>
                         </div>
                     </div>
