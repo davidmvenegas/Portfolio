@@ -1,5 +1,8 @@
 import './algorithms.css'
+import { useEffect } from 'react'
+
 function Algorithms() {
+    useEffect(() => {window.scrollTo(0, 0)}, [])
     return (
         <div className='algo-container'>
             <h1 className="algo-header">
@@ -24,7 +27,7 @@ function Algorithms() {
                     <div id='algoJavascript' className="algo-item algo-item1">
                         <div className="algo-title-box">
                             <p>Javascript</p>
-                            <p>2 Min</p>
+                            <p>3 Min</p>
                         </div>
                         <div className="algo-iframe-wrapper">
                             <iframe 

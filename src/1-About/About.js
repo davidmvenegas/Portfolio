@@ -1,10 +1,12 @@
 import './about.css'
+import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PDF_Icon from '../Media/Images/pdf.png'
 import GoogleDocs_Icon from '../Media/Images/googleDocs.png'
 
 function About() {
     const navigate = useNavigate()
+    useEffect(() => {window.scrollTo(0, 0)}, [])
     return (
         <div className='about-container'>
             <div className="about-left-box">
