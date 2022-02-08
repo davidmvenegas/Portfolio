@@ -39,7 +39,7 @@
     width: 90%;
     padding-left: 5%;
     min-width: 320px;
-    font-size: 1.85rem;
+    font-size: 1.75rem;
     line-height: 1.65;
 }
 .contact-form {
@@ -49,6 +49,15 @@
     margin-left: 5%;
     padding-top: 4rem;
     min-height: 20rem;
+}
+.contact-form ul li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    display: block;
+    clear: both;
 }
 .contact-form input[type="text"],
 .contact-form input[type="email"] {
@@ -61,21 +70,7 @@
     border: 0;
     outline: 0;
 }
-.profile-input:focus + .profile-input-focus::before {
-    width: 100%;
-}
-#contact-name::after {
-    content: "";
-    position: absolute;
-    display: block;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #009879;
-}
 #contact-name {
-    position: relative;
     float: left;
     width: 49%;
     clear: none;
@@ -113,7 +108,7 @@
     margin-top: 2rem;
     font-size: 14px;
     letter-spacing: 4px;
-    height: 45px;
+    height: 48px;
     width: 200px;
     background-color: transparent;
     border: 1px solid #08fdd8;

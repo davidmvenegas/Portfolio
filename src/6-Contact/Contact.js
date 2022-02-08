@@ -21,10 +21,14 @@ function Contact() {
                     I'm interested and actively searching for a developer position. I currently reside in New York City, but am open to relocation. If you have any questions or requests, don't hesitate to reach out.
                 </p>
                 <form className="contact-form">
-                    <input id='contact-name' type="text" placeholder='Name'/>
-                    <input id='contact-email' type="email" placeholder='Email'/>
-                    <input id='contact-subject' type="text" placeholder='Subject'/>
-                    <textarea placeholder='Message'/>
+                    <ul>
+                        <li id='contact-name' ><input type="text" placeholder='Name'/></li>
+                        <li id='contact-email' ><input type="email" placeholder='Email'/></li>
+                        <li><input id='contact-subject' type="text" placeholder='Subject'/></li>
+                        <li>
+                            <textarea placeholder='Message'/>
+                        </li>
+                    </ul>
                     <button type="submit">Send message!</button>
                 </form>
                 <div className="contact-aside"></div>
