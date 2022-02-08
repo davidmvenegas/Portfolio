@@ -34,7 +34,7 @@ function Blogs() {
                 <span>g</span>
                 <span>s</span>
             </h1>
-            <p className="blog-description">I like to keep myself informed. Here's a few things I've written.</p>
+            <p className="blog-description">I enjoy keeping myself informed. Here's a few things I've written.</p>
             <div className="blog-wrapper">
                 <input type="radio" name="slider" id="blog-item-1" defaultChecked/>
                 <input type="radio" name="slider" id="blog-item-2"/>

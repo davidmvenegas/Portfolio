@@ -1,4 +1,5 @@
 .contact-container {
+    margin-top: -2.5rem;
     padding-left: 20rem;
     min-height: 100vh;
     display: flex;
@@ -6,15 +7,14 @@
     justify-content: space-between;
 }
 .contact-left-box {
-    width: 47.5%;
+    width: 49%;
 }
 .contact-title {
     position: relative;
     font-size: 6.5rem;
-    line-height: 8.75rem;
+    line-height: 1.8;
     width: 90%;
     padding-left: 5%;
-    color: #08fdd8;
 }
 .contact-title span {
     display: inline-block;
@@ -30,35 +30,136 @@
     to {transform: scale3d(1, 1, 1)}
 }
 .contact-title span:hover {
+    color: #08fdd8;
     animation: contactBounce 1s ease-in-out forwards;
 }
 .contact-message {
-    font-family: "Open Sans",sans-serif;
+    font-family: sans-serif;
     display: block;
     width: 90%;
     padding-left: 5%;
     min-width: 320px;
-    font-size: 1.6rem;
-    line-height: 1.5;
+    font-size: 1.85rem;
+    line-height: 1.65;
 }
 .contact-form {
+    position: relative;
+    display: block;
     width: 90%;
     margin-left: 5%;
-    border: 1px solid red;
+    padding-top: 4rem;
     min-height: 20rem;
 }
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    background: #2b2b2b;
+    height: 50px;
+    font-size: 16px;
+    color: #8d8d8d;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+}
+.profile-input:focus + .profile-input-focus::before {
+    width: 100%;
+}
+#contact-name::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #009879;
+}
+#contact-name {
+    position: relative;
+    float: left;
+    width: 49%;
+    clear: none;
+}
+#contact-email {
+    float: right;
+    width: 49%;
+    clear: none;
+}
+#contact-subject {
+    width: 100%;
+    margin: 2% 0;
+}
+.contact-form textarea {
+    font-family: sans-serif;
+    width: 100%;
+    height: 50px;
+    min-width: 100%;
+    min-height: 150px;
+    max-width: 100%;
+    max-height: 450px;
+    background: #2b2b2b;
+    font-size: 16px;
+    color: #8d8d8d;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+}
+.contact-form button {
+    position: relative;
+    display: block;
+    float: right;
+    clear: none;
+    margin-top: 2rem;
+    font-size: 14px;
+    letter-spacing: 4px;
+    height: 45px;
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid #08fdd8;
+    color: #08fdd8;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.4s ease-out all;
+}
+.contact-form button:hover {
+    color: #1f1f1f;
+}
+.contact-form button:after {
+    background: #08fdd8;
+    content: "";
+    height: 200px;
+    left: -325px;
+    position: absolute;
+    top: -100px;
+    transform: rotate(-45deg);
+    transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 325px;
+    z-index: -10;
+}
+.contact-form button:hover:after {
+    left: -50px;
+}
+
+
+
+
 .contact-aside {
     width: 90%;
     margin-left: 5%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     min-height: 5rem;
 }
 
 
+
 .contact-right-box {
-    position: relative;
-    height: 100vh;
-    width: 52.5%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 43.5%;
 }
 @keyframes mapCoverBye {
     100% {width: 0}
@@ -69,7 +170,7 @@
     width: 100%;
     height: 100%;
     background-color: #1f1f1f;
-    animation: mapCoverBye .85s ease .5s forwards;
+    animation: mapCoverBye .85s ease 1s forwards;
 }
 @keyframes mapBoxPop {
     100% {margin-top: 0; opacity: 1}
@@ -86,7 +187,7 @@
     padding: 20px;
     color: #fff;
     margin-top: 5rem;
-    animation: mapBoxPop 1s ease 1.25s forwards;
+    animation: mapBoxPop 1s ease 1.75s forwards;
     opacity: 0;
 }
 .map-wrapper {

@@ -22,12 +22,13 @@
 }
 .blog-header span:hover {
     color: #08fdd8;
+    animation: contactBounce 1s ease forwards
 }
 .blog-description {
-    margin-top: 2.75rem;
+    margin-top: 3rem;
     font-size: 1.85rem;
     opacity: 0;
-    animation: blogDesc 1.75s ease 1.5s forwards;
+    animation: blogDesc 1.75s ease 1.25s forwards;
 }
 @keyframes blogDesc {
     100% {opacity: 1}

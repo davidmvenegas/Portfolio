@@ -18,9 +18,15 @@ function Contact() {
                     <span>e</span>
                 </h1>
                 <p className="contact-message">
-                    I'm interested and actively searching for a developer position - I currently reside in New York City, USA but am open to relocation. If you have any other questions or requests, don't hesitate to reach out.
+                    I'm interested and actively searching for a developer position. I currently reside in New York City, but am open to relocation. If you have any questions or requests, don't hesitate to reach out.
                 </p>
-                <div className="contact-form"></div>
+                <form className="contact-form">
+                    <input id='contact-name' type="text" placeholder='Name'/>
+                    <input id='contact-email' type="email" placeholder='Email'/>
+                    <input id='contact-subject' type="text" placeholder='Subject'/>
+                    <textarea placeholder='Message'/>
+                    <button type="submit">Send message!</button>
+                </form>
                 <div className="contact-aside"></div>
             </div>
             <div className="contact-right-box">

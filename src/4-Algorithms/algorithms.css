@@ -22,6 +22,7 @@
 }
 .algo-header span:hover {
     color: #08fdd8;
+    animation: contactBounce 1s ease forwards
 }
 .algo-description {
     margin-top: 2.75rem;

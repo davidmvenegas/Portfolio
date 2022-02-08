@@ -30,6 +30,7 @@
 }
 .skills-header span:hover {
     color: #08fdd8;
+    animation: contactBounce 1s ease forwards;
 }
 .skills-description {
     margin-top: 2rem;
@@ -171,6 +172,7 @@
 }
 .education-header span:hover {
     color: #08fdd8;
+    animation: contactBounce 1s ease forwards;
 }
 #certTitle-active {
     animation: skilsHeadFade 2s ease forwards;

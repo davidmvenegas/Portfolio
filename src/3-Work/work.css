@@ -33,6 +33,7 @@
 }
 .port-header span:hover {
     color: #08fdd8;
+    animation: contactBounce 1s ease forwards
 }
 .port-description {
     margin-top: 2.75rem;
@@ -293,6 +294,7 @@
 }
 .other-header span:hover {
     color: #08fdd8;
+    animation: contactBounce 1s ease forwards
 }
 .other-description {
     margin-top: 2.75rem;
