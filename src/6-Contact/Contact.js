@@ -1,6 +1,5 @@
 import './contact.css'
 import { useEffect } from 'react'
-import { GoogleMap, useLoadScript, Marker, InfoWindow } from "@react-google-maps/api"
 
 function Contact() {
     useEffect(() => {window.scrollTo(0, 0)}, [])
