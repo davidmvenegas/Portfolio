@@ -9,7 +9,6 @@
 .contact-left-box {
     position: relative;
     width: 49%;
-    border: 1px solid green;
 }
 .contact-title {
     position: relative;
@@ -33,8 +32,18 @@
 }
 .contact-title span:hover {
     color: #08fdd8;
-    animation: contactBounce 1s ease-in-out forwards;
 }
+
+#cLetter_c1 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 0s;}
+#cLetter_o {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .1s;}
+#cLetter_n {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .2s;}
+#cLetter_t1 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .3s;}
+#cLetter_a {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .4s;}
+#cLetter_c2 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .5s;}
+#cLetter_t2 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .6s;}
+#cLetter_m {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .7s;}
+#cLetter_e {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .8s;}
+
 .contact-message {
     display: block;
     width: 90%;
@@ -161,23 +170,59 @@
 }
 
 
-
-
 .contact-aside {
     position: absolute;
     bottom: 0;
     left: 0;
     margin-left: 5%;
     max-width: 50%;
+}
+#contact-copy-top {
     font-size: 2rem;
-    color: #515152;
-    /* border: 1px solid red; */
+    font-weight: 300;
+    color: #616162;
 }
-.contact-aside span {
-    font-size: 1.85rem;
-    color: #ddd;
+.contact-copy-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .65rem;
+    margin-top: .65rem;
 }
-
+#contact-copy-icon {
+    font-size: 2.75rem;
+    color: #08fdd8;
+    cursor: pointer;
+    transition: all .15s;
+}
+#contact-copy-icon:hover {
+    transform: scale(1.125);
+}
+#contact-copy-icon:active {
+    transform: scale(.9);
+}
+#contact-copy-email {
+    font-size: 2rem;
+    color: #bbb;
+}
+.contact-popup {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 500;
+    bottom: -2rem;
+    left: -1.25rem;
+    color: #fff;
+    opacity: 0;
+}
+#contact-popup-show {
+    animation: copyPopup 1.5s ease-out;
+}
+@keyframes copyPopup {
+    10% {opacity: 1}
+    75% {opacity: 1}
+    100% {opacity: 0; bottom: -3rem}
+}
 
 
 .contact-right-box {

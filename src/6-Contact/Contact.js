@@ -1,16 +1,16 @@
 import './contact.css'
 import { useEffect, useRef, useState } from 'react'
+import { VscCopy } from 'react-icons/vsc'
 import emailjs from 'emailjs-com'
 import Swal from 'sweetalert2'
 
 function Contact() {
     useEffect(() => {window.scrollTo(0, 0)}, [])
-    const [loading, setLoading] = useState(false)
+    const [copied, setCopied] = useState(false)
     const formRef = useRef()
 
     function sendEmail(e) {
         e.preventDefault()
-        setLoading(true)
         Swal.fire({
             title: 'Your message has been sent',
             color: '#f5f5f5',
@@ -20,28 +20,34 @@ function Contact() {
         })
         emailjs.sendForm('service_p4e9t3x', 'template_40qv28e', formRef.current, 'user_Wr18txCeJipUS6ENtKUc0')
         .then(e.target.reset())
-        .then(setLoading(false))
         .catch (error => console.log(error.text))
+    }
+
+    function handleCopy() {
+        let clearPopup = setTimeout(() => setCopied(false), 1500)
+        copied && clearTimeout(clearPopup)
+        setCopied(true)
+        navigator.clipboard.writeText("venegasdavidm@gmail.com")
     }
 
     return (
         <div className='contact-container'>
             <div className="contact-left-box">
                 <h1 className="contact-title">
-                    <span>C</span>
-                    <span>o</span>
-                    <span>n</span>
-                    <span>t</span>
-                    <span>a</span>
-                    <span>c</span>
-                    <span>t</span>&nbsp;
-                    <span>M</span>
-                    <span>e</span>
+                    <span id='cLetter_c1'>C</span>
+                    <span id='cLetter_o'>o</span>
+                    <span id='cLetter_n'>n</span>
+                    <span id='cLetter_t1'>t</span>
+                    <span id='cLetter_a'>a</span>
+                    <span id='cLetter_c2'>c</span>
+                    <span id='cLetter_t2'>t</span>&nbsp;
+                    <span id='cLetter_m'>M</span>
+                    <span id='cLetter_e'>e</span>
                 </h1>
                 <p className="contact-message">
-                    I'm interested and actively searching for a developer position. I currently reside in New York City, but open to relocation. If you have any questions or requests, don't hesitate to reach out.
+                    I'm available and actively searching for a developer position. I currently reside in New York City, but am open to relocation. If you have any questions or requests, don't hesitate to reach out.
                 </p>
-                <form className={loading ? "contact-form-loading" : "contact-form"} ref={formRef} onSubmit={sendEmail}>
+                <form className="contact-form" ref={formRef} onSubmit={sendEmail}>
                     <ul>
                         <li className='contact-item' id='contact-half-left'>
                             <input type="text" placeholder='Name' name="from_name" required/>
@@ -62,7 +68,13 @@ function Contact() {
                     </ul>
                     <button type="submit">Send message!</button>
                 </form>
-                <p className="contact-aside">Or email me directly at: <span>venegasdavidm@gmail.com</span></p>
+                <div className="contact-aside">
+                    <p id='contact-copy-top'>Or email me directly at:</p>
+                    <div className="contact-copy-wrap">
+                        <div className='contact-copy-box'><VscCopy onClick={() => handleCopy()} id='contact-copy-icon'/><p id='contact-copy-email'>venegasdavidm@gmail.com</p></div>
+                        <div className='contact-popup' id={copied ? "contact-popup-show" : undefined}>Copied!</div>
+                    </div>
+                </div>
             </div>
             <div className="contact-right-box">
             <div className="contact-right-cover"></div>
