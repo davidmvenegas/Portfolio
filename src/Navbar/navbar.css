@@ -62,6 +62,7 @@
     line-height: 2.85;
     border-bottom: 1px solid #282828;
     transition: transform .1s ease;
+    cursor: pointer;
 }
 .nav-link:hover {
     color: #08fdd8;

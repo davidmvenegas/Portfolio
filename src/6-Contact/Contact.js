@@ -1,8 +1,29 @@
 import './contact.css'
-import { useEffect } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import emailjs from 'emailjs-com'
+import Swal from 'sweetalert2'
 
 function Contact() {
     useEffect(() => {window.scrollTo(0, 0)}, [])
+    const [loading, setLoading] = useState(false)
+    const formRef = useRef()
+
+    function sendEmail(e) {
+        e.preventDefault()
+        setLoading(true)
+        Swal.fire({
+            title: 'Your message has been sent',
+            color: '#f5f5f5',
+            icon: 'success',
+            background: '#444',
+            backdrop: `rgba(0,0,0,0.5)`
+        })
+        emailjs.sendForm('service_p4e9t3x', 'template_40qv28e', formRef.current, 'user_Wr18txCeJipUS6ENtKUc0')
+        .then(e.target.reset())
+        .then(setLoading(false))
+        .catch (error => console.log(error.text))
+    }
+
     return (
         <div className='contact-container'>
             <div className="contact-left-box">
@@ -18,20 +39,30 @@ function Contact() {
                     <span>e</span>
                 </h1>
                 <p className="contact-message">
-                    I'm interested and actively searching for a developer position. I currently reside in New York City, but am open to relocation. If you have any questions or requests, don't hesitate to reach out.
+                    I'm interested and actively searching for a developer position. I currently reside in New York City, but open to relocation. If you have any questions or requests, don't hesitate to reach out.
                 </p>
-                <form className="contact-form">
+                <form className={loading ? "contact-form-loading" : "contact-form"} ref={formRef} onSubmit={sendEmail}>
                     <ul>
-                        <li id='contact-name' ><input type="text" placeholder='Name'/></li>
-                        <li id='contact-email' ><input type="email" placeholder='Email'/></li>
-                        <li><input id='contact-subject' type="text" placeholder='Subject'/></li>
-                        <li>
-                            <textarea placeholder='Message'/>
+                        <li className='contact-item' id='contact-half-left'>
+                            <input type="text" placeholder='Name' name="from_name" required/>
+                            <span className="contact-after"></span>
+                        </li>
+                        <li className='contact-item' id='contact-half-right'>
+                            <input type="email" placeholder='Email' name="from_email" required/>
+                            <span className="contact-after"></span>
+                        </li>
+                        <li className='contact-item' id='contact-subject'>
+                            <input id='contact-third-child' type="text" placeholder='Subject' name="subject" required/>
+                            <span className="contact-after"></span>
+                        </li>
+                        <li className='contact-item'>
+                            <textarea placeholder='Message' name="message" required/>
+                            <span className="contact-after"></span>
                         </li>
                     </ul>
                     <button type="submit">Send message!</button>
                 </form>
-                <div className="contact-aside"></div>
+                <p className="contact-aside">Or email me directly at: <span>venegasdavidm@gmail.com</span></p>
             </div>
             <div className="contact-right-box">
             <div className="contact-right-cover"></div>

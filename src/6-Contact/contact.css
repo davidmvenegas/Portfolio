@@ -7,12 +7,14 @@
     justify-content: space-between;
 }
 .contact-left-box {
+    position: relative;
     width: 49%;
+    border: 1px solid green;
 }
 .contact-title {
     position: relative;
     font-size: 6.5rem;
-    line-height: 1.8;
+    line-height: 1.9;
     width: 90%;
     padding-left: 5%;
 }
@@ -34,7 +36,6 @@
     animation: contactBounce 1s ease-in-out forwards;
 }
 .contact-message {
-    font-family: sans-serif;
     display: block;
     width: 90%;
     padding-left: 5%;
@@ -58,31 +59,37 @@
     overflow: hidden;
     display: block;
     clear: both;
+    margin-bottom: 10px;
+}
+.contact-form input[type="text"]::placeholder ,
+.contact-form input[type="email"]::placeholder,
+.contact-form textarea::placeholder  {
+    color: #8d8d8d;
 }
 .contact-form input[type="text"],
 .contact-form input[type="email"] {
     background: #2b2b2b;
     height: 50px;
     font-size: 16px;
-    color: #8d8d8d;
+    color: whitesmoke;
     padding: 0 20px;
     box-sizing: border-box;
     border: 0;
     outline: 0;
+    width: 100%;
 }
-#contact-name {
+#contact-half-left {
     float: left;
     width: 49%;
     clear: none;
 }
-#contact-email {
+#contact-half-right {
     float: right;
     width: 49%;
     clear: none;
 }
-#contact-subject {
+#contact-third-child {
     width: 100%;
-    margin: 2% 0;
 }
 .contact-form textarea {
     font-family: sans-serif;
@@ -94,12 +101,28 @@
     max-height: 450px;
     background: #2b2b2b;
     font-size: 16px;
-    color: #8d8d8d;
+    color: whitesmoke;
     padding: 20px;
     box-sizing: border-box;
     border: 0;
     outline: 0;
 }
+.contact-after::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background-color: #08fdd8;
+    height: 2px;
+    transition: all .3s;
+}
+.contact-item input:focus + .contact-after::after,
+.contact-item textarea:focus + .contact-after::after {
+    width: 100%;
+} 
+
+
 .contact-form button {
     position: relative;
     display: block;
@@ -141,10 +164,18 @@
 
 
 .contact-aside {
-    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     margin-left: 5%;
+    max-width: 50%;
+    font-size: 2rem;
+    color: #515152;
     /* border: 1px solid red; */
-    min-height: 5rem;
+}
+.contact-aside span {
+    font-size: 1.85rem;
+    color: #ddd;
 }
 
 

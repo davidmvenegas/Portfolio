@@ -12,3 +12,6 @@ html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
 }
+.swal2-popup {
+  font-size: 1.65rem !important;
+}
