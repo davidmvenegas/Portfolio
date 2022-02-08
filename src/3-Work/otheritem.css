@@ -38,7 +38,7 @@
     transform: scale(0);
 }
 #otherItem-active {
-    animation: bounceInOther .65s ease-in-out .25s forwards;
+    animation: bounceInOther .65s ease-in-out .2s forwards;
 }
 @keyframes bounceInOther {
     50% {transform: scale(1.25)}

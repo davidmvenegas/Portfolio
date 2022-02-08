@@ -265,3 +265,56 @@
     height: 100%;
     width: 100%;
 }
+
+.contactForm1 {
+    opacity: 0;
+    animation: contactFadeIn 1.5s ease .5s forwards;
+}
+.contactForm2 {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    animation: contactIsLoadedAnim 1s ease forwards;
+    animation-delay: .2s;
+}
+.contactForm3 {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    animation: contactIsLoadedAnim 1s ease forwards;
+    animation-delay: .3s;
+}
+.contactForm4 {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    animation: contactIsLoadedAnim 1s ease forwards;
+    animation-delay: .4s;
+}
+.contactForm5 {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    animation: contactIsLoadedAnim 1s ease forwards;
+    animation-delay: .5s;
+}
+.contactForm6 {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+    animation: contactSldRight 1s ease 1s forwards;
+}
+.contactForm7 {
+    opacity: 0;
+    left: -10rem;
+    animation: contactSldLeft 1s ease 1.5s forwards;
+}
+@keyframes contactIsLoadedAnim {
+    100% {opacity: 1; transform: none}
+}
+@keyframes contactSldLeft {
+    50% {opacity: 0}
+    100% {opacity: 1; left: 0}
+}
+@keyframes contactSldRight {
+    50% {opacity: 0}
+    100% {opacity: 1; transform: none}
+}
+@keyframes contactFadeIn {
+    100% {opacity: 1}
+}

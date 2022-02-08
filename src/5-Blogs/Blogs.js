@@ -44,7 +44,7 @@ function Blogs() {
                         <div className="blog-content">
                             <img className='blog-image' src={ReactBanner} alt="React Banner" />
                             <div className="blog-text-content">
-                                <h1 className='blog-title'>The Origin of React</h1>
+                                <h1 className='blog-title'><a style={blog1 ? null : {pointerEvents: "none"}} href='https://medium.com/@venegasdavidm/the-origin-of-react-db39d84c8503' target="_blank" rel="noreferrer">The Origin of React</a></h1>
                                 <div className="blog-start-wrap">
                                     <p className='blog-start'>Learn the history behind one of the world’s most popular programming libraries. React, (also known as ReactJS or React.js) is a popular free and open-source front-end Javascript library that is used for building UI components and user interfaces. It was created by Facebook and is still maintained by them along with an ever growing community of companies and individual developers. It is currently listed at or near the top of many industry rankings for popularity, developer...&nbsp; <a href='https://medium.com/@venegasdavidm/the-origin-of-react-db39d84c8503' target="_blank" rel="noreferrer">Read More</a></p>
                                 </div>
@@ -63,9 +63,9 @@ function Blogs() {
                         <div className="blog-content">
                             <img className='blog-image' src={JavascriptBanner} alt="Javascript Banner" />
                             <div className="blog-text-content">
-                                <h1 className='blog-title'>The Origin Of JavaScript</h1>
+                                <h1 className='blog-title'><a style={blog2 ? null : {pointerEvents: "none"}} href='https://medium.com/@venegasdavidm/the-origin-of-javascript-288154b923e' target="_blank" rel="noreferrer">The Origin Of JavaScript</a></h1>
                                 <div className="blog-start-wrap">
-                                    <p className='blog-start'>In 1995 Brendan Eich, a Netscape Communications Corporation programmer, took 10 days to develop a scripting language he called Mocha. Back than internet connectivity used dial-up connections with telephone lines and modems, so when you filled out a form on a website — which was usually coded using a language like Perl — the validation of the input fields of any form had to make a full round trip to make a full round trip to the server. This was not only...&nbsp; <a href='https://medium.com/@venegasdavidm/the-origin-of-javascript-288154b923e' target="_blank" rel="noreferrer">Read More</a></p>
+                                    <p className='blog-start'>In 1995 Brendan Eich, a Netscape Communications Corporation programmer, took 10 days to develop a scripting language he called Mocha. Back than internet connectivity used dial-up connections with telephone lines and modems, so when you filled out a form on a website — which was usually coded using a language like Perl — the validation of the input fields of any form had to make a full round trip to the server. This was not only very, very slow, but even could cause...&nbsp; <a href='https://medium.com/@venegasdavidm/the-origin-of-javascript-288154b923e' target="_blank" rel="noreferrer">Read More</a></p>
                                 </div>
                             </div>
                             <div className="blog-facts">
@@ -82,7 +82,7 @@ function Blogs() {
                         <div className="blog-content">
                             <img className='blog-image' src={RubyBanner} alt="Ruby Banner" />
                             <div className="blog-text-content">
-                                <h1 className='blog-title'>The Best Ruby Enumerables</h1>
+                                <h1 className='blog-title'><a style={blog3 ? null : {pointerEvents: "none"}} href='https://medium.com/@venegasdavidm/the-best-ruby-enumerables-6d71fa5f933e' target="_blank" rel="noreferrer">The Best Ruby Enumerables</a></h1>
                                 <div className="blog-start-wrap">
                                     <p className='blog-start'><i>Here are a few of the best ruby enumerables and methods:</i> <br /> <b>all?</b> <br /> Return true when all elements result in true when passed into the block. <br /> <b>any?</b> <br /> Return true when all at least one element results in true when...&nbsp; <a href='https://medium.com/@venegasdavidm/the-best-ruby-enumerables-6d71fa5f933e' target="_blank" rel="noreferrer">Read More</a></p>
                                 </div>

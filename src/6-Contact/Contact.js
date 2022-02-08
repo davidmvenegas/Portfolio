@@ -44,31 +44,31 @@ function Contact() {
                     <span id='cLetter_m'>M</span>
                     <span id='cLetter_e'>e</span>
                 </h1>
-                <p className="contact-message">
+                <p className="contact-message contactForm1">
                     I'm available and actively searching for a developer position. I currently reside in New York City, but am open to relocation. If you have any questions or requests, don't hesitate to reach out.
                 </p>
                 <form className="contact-form" ref={formRef} onSubmit={sendEmail}>
                     <ul>
-                        <li className='contact-item' id='contact-half-left'>
+                        <li className='contact-item contactForm2' id='contact-half-left'>
                             <input type="text" placeholder='Name' name="from_name" required/>
                             <span className="contact-after"></span>
                         </li>
-                        <li className='contact-item' id='contact-half-right'>
+                        <li className='contact-item contactForm3' id='contact-half-right'>
                             <input type="email" placeholder='Email' name="from_email" required/>
                             <span className="contact-after"></span>
                         </li>
-                        <li className='contact-item' id='contact-subject'>
+                        <li className='contact-item contactForm4' id='contact-subject'>
                             <input id='contact-third-child' type="text" placeholder='Subject' name="subject" required/>
                             <span className="contact-after"></span>
                         </li>
-                        <li className='contact-item'>
+                        <li className='contact-item contactForm5'>
                             <textarea placeholder='Message' name="message" required/>
                             <span className="contact-after"></span>
                         </li>
                     </ul>
-                    <button type="submit">Send message!</button>
+                    <button className='contactForm6' type="submit">Send message!</button>
                 </form>
-                <div className="contact-aside">
+                <div className="contact-aside contactForm7">
                     <p id='contact-copy-top'>Or email me directly at:</p>
                     <div className="contact-copy-wrap">
                         <div className='contact-copy-box'><VscCopy onClick={() => handleCopy()} id='contact-copy-icon'/><p id='contact-copy-email'>venegasdavidm@gmail.com</p></div>
