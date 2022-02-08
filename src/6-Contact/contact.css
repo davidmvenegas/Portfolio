@@ -1,7 +1,29 @@
 .contact-container {
-    padding: 2.5rem 0 5rem 20rem;
+    padding-left: 20rem;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.contact-left-box {
+}
+.contact-header {
+}
+.contact-message {
+}
+.contact-form {
+}
+.contact-aside {
+}
+
+
+.contact-right-box {
+    height: 100vh;
+    width: 40vw;
+}
+.map-popup {
+}
+.map-wrapper {
+    height: 100%;
+    width: 100%;
 }
