@@ -28,7 +28,7 @@
     margin-top: 3rem;
     font-size: 1.85rem;
     opacity: 0;
-    animation: blogDesc 1.75s ease 1.25s forwards;
+    animation: blogDesc 1.75s ease 1.5s forwards;
 }
 @keyframes blogDesc {
     100% {opacity: 1}

@@ -93,7 +93,7 @@ function Modal({open, setOpenModal, modalID}) {
                             height="315" 
                             src={currentData?.video} 
                             title={currentData?.title}
-                            frameborder="0" 
+                            frameBorder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
                             allowFullScreen="allowfullscreen"
                         ></iframe>
