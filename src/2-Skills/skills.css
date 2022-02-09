@@ -437,3 +437,9 @@
     50% {color: #00947e;}
     100% {color: #08fdd8;}
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 1400px) {
+    
+}

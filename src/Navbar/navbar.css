@@ -201,6 +201,10 @@
     }
 }
 @media (max-width: 480px) {
+    .navbar-top img {
+        height: 10rem;
+        width: 10rem;
+    }
     .navbar-toggle-button {
         top: 1rem;
         right: 1rem;

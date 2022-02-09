@@ -50,7 +50,7 @@ function Contact() {
                 <form className="contact-form" ref={formRef} onSubmit={sendEmail}>
                     <ul>
                         <li className='contact-item contactForm2' id='contact-half-left'>
-                            <input type="text" placeholder='Name' name="from_name" required/>
+                            <input type="text" placeholder='Name' name="from_name"/>
                             <span className="contact-after"></span>
                         </li>
                         <li className='contact-item contactForm3' id='contact-half-right'>
@@ -58,7 +58,7 @@ function Contact() {
                             <span className="contact-after"></span>
                         </li>
                         <li className='contact-item contactForm4' id='contact-subject'>
-                            <input id='contact-third-child' type="text" placeholder='Subject' name="subject" required/>
+                            <input id='contact-third-child' type="text" placeholder='Subject' name="subject"/>
                             <span className="contact-after"></span>
                         </li>
                         <li className='contact-item contactForm5'>
