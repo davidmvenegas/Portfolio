@@ -41,7 +41,6 @@
     width: 95.5rem;
     height: 2.5rem;
     margin-top: 2rem;
-    /* border: 1px solid rebeccapurple; */
 }
 .skills-box:first-of-type {
     margin-top: 7.5rem;
@@ -201,7 +200,7 @@
     position: relative;
     display: flex;
     height: 100%;
-    width: 37.5%;
+    width: 42.5rem;
 }
 .flatiron-images {
     position: relative;
@@ -213,7 +212,7 @@
     position: absolute;
     left: 0;
     height: 100%;
-    width: 100%;
+    width: 42.5rem;
     border-radius: .25rem 0 0 .25rem;
     transition: opacity .5s ease-in-out;
 }
@@ -240,7 +239,7 @@
     display: grid;
     place-content: center;
     height: 100%;
-    width: 100%;
+    width: 42.5rem;
     background-color: rgba(50, 50, 50, .85);
     opacity: 0;
     cursor: pointer;
@@ -265,7 +264,7 @@
     justify-content: center;
     flex-direction: column;
     height: 100%;
-    width: 62.5%;
+    width: 65%;
     padding: 0 2.5rem;
     background-color: #111;
     border-radius: .25rem;
@@ -440,6 +439,11 @@
 
 /* RESPONSIVE */
 
+@media (max-width: 1425px) {
+    .flatiron-text-box {
+        padding: 0 1rem 0 5rem;
+    }
+}
 @media (max-width: 1400px) {
     .skills-box {
         width: 95%;
@@ -463,6 +467,12 @@
         line-height: 1.45;
     }
 }
+@media (max-width: 1300px) {
+    .cert-items {
+        padding-top: 2rem;
+        width: 96%;
+    }
+}
 @media (max-width: 1250px) {
     .skills-description {
         font-size: .75rem;
@@ -477,11 +487,23 @@
         padding: 0 .85rem;
     }
     .skills-item img {
-        height: 6.5rem;
-        width: 6.5rem;
+        height: 6.25rem;
+        width: 6.25rem;
     }
     .skills-item h2 {
         font-size: 2.35rem;
+    }
+}
+@media (max-width: 1200px) {
+    .cert-items {
+        width: 97.5%;
+    }
+    .flatiron-text-box p {
+        font-size: 1.5rem;
+        line-height: 1.45;
+    }
+        .flatiron-text-box {
+        padding: 0 1rem 0 6.5rem;
     }
 }
 @media (max-width: 1150px) {
@@ -501,11 +523,255 @@
         line-height: 1.45;
     }
 }
-@media (max-width: 1150px) {
+@media (max-width: 1100px) {
     .skills-container {
         padding: 3.5rem 0 3.5rem 0;
     }
     .skills-box {
         width: 95%;
+    }
+    .skills-item img {
+        height: 5.85rem;
+        width: 5.85rem;
+    }
+    .skills-item {
+        height: 15.5rem;
+    }
+    .skills-item h2 {
+        padding: 1rem 0 .75rem;
+    }
+    .cert-items {
+        width: 95%;
+    }
+}
+@media (max-width: 1000px) {
+    .skillSeparator {
+        height: 85%;
+    }
+}
+@media (max-width: 950px) {
+    .skills-header {
+        font-size: 5.5rem;
+    }
+    .education-header {
+        font-size: 5rem;
+    }
+    .flatiron-item {
+        flex-direction: column;
+        width: 100%;
+        height: 57.5rem;
+        background-color: #333;
+    }
+    .flatiron-img-wrapper {
+        height: 25rem;
+        width: 35rem;
+        justify-content: center;
+    }
+    .flatiron-img-hover-box {
+        width: 35rem;
+    }
+    .flatiron-img {
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        width: 35rem;
+    }
+    .flatiron-text-box {
+        height: 32.5rem;
+        width: 100%;
+        padding: 0 2rem;
+    }
+    .skills-description {
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: fit-content;
+        height: 5.5rem;
+        margin-top: 2rem;
+        font-size: .85rem;
+        line-height: 1.25;
+    }
+    .skills-content {
+        grid-template-columns: auto 10px auto 10px auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+    }
+    .skills-item {
+        height: 18.5rem;
+        width: 18rem;
+        padding: 0 .75rem;
+    }
+    .responsiveSkillsItem1 {
+        position: absolute;
+        bottom: 0;
+        left: 11rem;
+    }
+    .responsiveSkillsItem2 {
+        position: absolute;
+        bottom: 0;
+        left: 30rem;
+        height: 12.025rem !important;
+        margin-bottom: 5.5rem !important;
+    }
+    .responsiveSkillsItem3 {
+        position: absolute;
+        bottom: 0;
+        right: 11rem;
+    }
+    .skillSeparator {
+        height: 65%;
+        width: 3px;
+        margin: 0 auto;
+    }
+    .hiddenSkillSeparator {
+        display: none;
+    }
+    .skills-item h2 {
+        font-size: 2.25rem;
+    }
+    .skills-item p {
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+    .skills-box {
+        width: 60rem;
+        height: 40rem;
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 800px) {
+    .education-header {
+        font-size: 4.5rem;
+    }
+    .flatiron-text-box p {
+        line-height: 1.85rem;
+    }
+}
+@media (max-width: 650px) {
+    .skills-container {
+        padding: 1.5rem 0 1.5rem 0;
+    }
+    .skills-header {
+        font-size: 4.5rem;
+    }
+    .education-header {
+        font-size: 3.5rem;
+    }
+    .skills-description {
+        font-size: .65rem;
+        word-spacing: -1px;
+        line-height: 1.35;
+    }
+    .skills-content {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .skills-box {
+        padding: 1.25rem 0;
+    }
+    .skills-item {
+        height: 11rem;
+        width: 25rem;
+        padding: 0;
+    }
+    .responsiveSkillsItem1 {
+        position: relative;
+        left: 0;
+    }
+    .responsiveSkillsItem3 {
+        position: relative;
+        right: 0;
+    }
+    .skillSeparator {
+        display: none;
+    }
+    .skills-item img {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+    .skills-item h2 {
+        font-size: 2.25rem;
+        padding: 0 0 .25rem;
+    }
+    .skills-item p {
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+    .skills-box {
+        width: 30rem;
+        height: 57rem;
+        justify-content: flex-start;
+    }
+    .skills-box:first-of-type {
+        margin-top: 5rem;
+    }
+    .cert-title {
+        font-size: 2.75rem;
+        margin-bottom: 1rem;
+    }
+    .cert-text-box p {
+        font-size: 1.35rem;
+        line-height: 1.35;
+        width: 95%;
+    }
+    #cert-pointer-gone {
+        opacity: 1;
+    }
+    .flatiron-text-box h3 {
+        font-size: 1.5rem;
+    }
+    .flatiron-text-box h1 {
+        font-size: 3rem;
+    }
+    .flatiron-text-box h4 {
+        font-size: 1.95rem;
+    }
+    .flatiron-text-box p {
+        font-size: 1.5rem;
+        line-height: 1.85rem;
+    }
+}
+@media (max-width: 480px) {
+    .skills-header {
+        font-size: 4rem;
+    }
+    .education-header {
+        font-size: 2.6rem;
+    }
+    .skills-description {
+        font-size: .55rem;
+        word-spacing: -1px;
+        line-height: 1.35;
+    }
+    .flatiron-description-box ul {
+        font-size: 1.25rem;
+        line-height: 1.25;
+    }
+    .flatiron-text-box p {
+        font-size: 1.4rem;
+        line-height: 1.85rem;
+    }
+    .cert-title {
+        font-size: 2.25rem;
+        line-height: 1.15;
+        margin-bottom: .5rem;
+    }
+    .cert-text-box p {
+        font-size: 1.25rem;
+        line-height: 1.3;
+        width: 98.5%;
+    }
+    .cert-img {
+        height: 15rem;
+        width: 15rem;
+    }
+    .cert-img-hover-box h1 {
+        font-size: 1.5rem;
+    }
+    #cert-arrow {
+        font-size: 1.5rem;
+    }
+    .cert-item {
+        height: 20rem;
     }
 }

@@ -75,14 +75,14 @@ function Skills() {
                             <h2>Javascript</h2>
                             <p>The duct tape of the Internet and my first love</p>
                         </div>
-                        <div id="JavascriptSkill" className="skillSeparator"></div>
-                        <div id="RubySkill" className="skills-item">
+                        <div id="JavascriptSkill" className="skillSeparator hiddenSkillSeparator"></div>
+                        <div id="RubySkill" className="skills-item responsiveSkillsItem1">
                             <img src={RubyImg} alt="Ruby" />
                             <h2>Ruby</h2>
                             <p>Dynamic and simplistic - my first programming language</p>
                         </div>
-                        <div id="RubySkill" className="skillSeparator"></div>
-                        <div id="CSSSkill" className="skills-item">
+                        <div id="RubySkill" className="skillSeparator responsiveSkillsItem2"></div>
+                        <div id="CSSSkill" className="skills-item responsiveSkillsItem3">
                             <img src={CSSImg} alt="CSS" />
                             <h2>CSS</h2>
                             <p>I utilize CSS to bring an attractive look and feel to my work</p>
@@ -109,14 +109,14 @@ function Skills() {
                             <h2>SQL</h2>
                             <p>I am well versed in SQL development - from queries to schemas</p>
                         </div>
-                        <div id="SQLSkill" className="skillSeparator"></div>
-                        <div id="RubyonRailsSkill" className="skills-item">
+                        <div id="SQLSkill" className="skillSeparator hiddenSkillSeparator"></div>
+                        <div id="RubyonRailsSkill" className="skills-item responsiveSkillsItem1">
                             <img src={RailsImg} alt="Ruby-on-Rails" />
                             <h2>Ruby-on-Rails</h2>
                             <p>I have a solid understanding of Rails MVC and Active Record</p>
                         </div>
-                        <div id="RubyonRailsSkill" className="skillSeparator"></div>
-                        <div id="FirebaseSkill" className="skills-item">
+                        <div id="RubyonRailsSkill" className="skillSeparator responsiveSkillsItem2"></div>
+                        <div id="FirebaseSkill" className="skills-item responsiveSkillsItem3">
                             <img src={FirebaseImg} alt="Firebase" />
                             <h2>Firebase</h2>
                             <p>A highly versatile NoSQL database - I'm also adept at its Storage and Auth systems</p>
