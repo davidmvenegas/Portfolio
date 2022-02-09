@@ -16,7 +16,7 @@ function Navbar() {
                 <span className={navActive ? "navbar-line navActive" : "navbar-line"}></span>
                 <span className={navActive ? "navbar-line navActive" : "navbar-line"}></span>
             </p>
-            <div className='navbar-container'>
+            <div className={navActive ? "navbar-container navActive" : "navbar-container"}>
                 <div className="navbar-top">
                     <img src={Logo} alt="DV" onClick={() => navigate('/contact')} />
                     <h1>David Venegas</h1>

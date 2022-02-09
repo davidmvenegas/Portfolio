@@ -140,7 +140,7 @@
     font-size: 1.9rem;
     font-weight: 600;
     line-height: 1rem;
-    z-index: 100;
+    z-index: 90;
 }
 .blog-start a:hover {
     cursor: pointer;

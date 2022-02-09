@@ -12,7 +12,7 @@
     width: 18.5rem;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 799;
 }
 .navbar-top {
     display: flex;
@@ -147,7 +147,7 @@
         height: 5.5rem;
         background-color: rgba(0,0,0,0.4);
         border-radius: 3px;
-        z-index: 1000;
+        z-index: 899;
         cursor: pointer;
     }
     .navbar-toggle-button .navbar-line {
@@ -163,7 +163,6 @@
     .navbar-line:nth-child(1).navActive {
         transform: translate(0, 12.5px) rotate(45deg);
         background-color: white;
-        z-index: 1000;
         height: 5px;
     }
     .navbar-line:nth-child(2).navActive {
@@ -172,7 +171,14 @@
     .navbar-line:nth-child(3).navActive {
         transform: translate(0, -12.5px) rotate(-45deg);
         background-color: white;
-        z-index: 1000;
         height: 5px;
+    }
+    .navbar-container {
+        display: none;
+        width: 100%;
+    }
+    .navbar-container.navActive {
+        display: flex;
+        width: 100%;
     }
 }
