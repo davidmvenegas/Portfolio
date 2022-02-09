@@ -163,6 +163,7 @@
         transform: translate(0, 12.5px) rotate(45deg);
         background-color: white;
         height: 5px;
+        border-radius: 2px;
     }
     .navbar-line:nth-child(2).navActive {
         opacity: 0;
@@ -171,6 +172,7 @@
         transform: translate(0, -12.5px) rotate(-45deg);
         background-color: white;
         height: 5px;
+        border-radius: 2px;
     }
     .navbar-container {
         display: none;
@@ -218,12 +220,10 @@
     }
     .navbar-line:nth-child(1).navActive {
         transform: translate(0, 10px) rotate(45deg);
-        background-color: white;
         height: 4px;
     }
     .navbar-line:nth-child(3).navActive {
         transform: translate(0, -11px) rotate(-45deg);
-        background-color: white;
         height: 4px;
     }
 }

@@ -9,7 +9,7 @@ import TheFinancialTrackerIcon from '../../Media/Images/portfolio-icons/TFT.png'
 import MyCryptomaticIcon from '../../Media/Images/portfolio-icons/MC.png'
 
 function Modal({open, setOpenModal, modalID}) {
-    useEffect(() => {open ?  document.body.style.overflow = 'hidden' : document.body.style.overflow = 'unset'}, [open])
+    useEffect(() => {open ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'unset'}, [open])
     const modalData = [
         {id: 1, 
             title: "My Simple Wardrobe.",

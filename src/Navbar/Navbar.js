@@ -4,12 +4,13 @@ import { useNavigate } from 'react-router-dom'
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import Logo from '../Media/Images/logo.png'
 import { Fragment } from 'react/cjs/react.production.min'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function Navbar() {
     const navigate = useNavigate()
-    const [navActive, setNavActive] = useState(false)
     const closeNav = () => setNavActive(false)
+    const [navActive, setNavActive] = useState(false)
+    useEffect(() => {navActive ?  document.body.style.overflow = 'hidden' : document.body.style.overflow = 'unset'}, [navActive])
     return (
         <Fragment>
             <p className="navbar-toggle-button" onClick={() => setNavActive(!navActive)}>

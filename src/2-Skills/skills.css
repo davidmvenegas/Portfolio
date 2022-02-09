@@ -485,23 +485,27 @@
     }
 }
 @media (max-width: 1150px) {
-    .skills-description {
-        font-size: .75rem;
-        width: 89.5rem;
-    }
-    .skills-container {
-        padding: 3.5rem 0 3.5rem 16.5rem;
+    .skills-box {
+        width: 97.5%;
     }
     .skills-item {
         height: 16.5rem;
-        width: 18.5rem;
-        padding: 0 .85rem;
-    }
-    .skills-item img {
-        height: 6.5rem;
-        width: 6.5rem;
+        width: 18rem;
+        padding: 0 .75rem;
     }
     .skills-item h2 {
-        font-size: 2.35rem;
+        font-size: 2.25rem;
+    }
+    .skills-item p {
+        font-size: 1.2rem;
+        line-height: 1.45;
+    }
+}
+@media (max-width: 1150px) {
+    .skills-container {
+        padding: 3.5rem 0 3.5rem 0;
+    }
+    .skills-box {
+        width: 95%;
     }
 }
