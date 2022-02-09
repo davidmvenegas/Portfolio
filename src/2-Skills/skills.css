@@ -33,15 +33,15 @@
     animation: contactBounce 1s ease forwards;
 }
 .skills-description {
-    margin-top: 2rem;
     position: relative;
-    display: flex;
     font-family: monospace;
-    font-size: 1.5rem;
-    line-height: 2;
-    width: 62.5vw;
+    display: flex;
+    align-items: flex-start;
+    font-size: .8rem;
+    width: 95.5rem;
     height: 2.5rem;
-    border: 1px solid rebeccapurple;
+    margin-top: 2rem;
+    /* border: 1px solid rebeccapurple; */
 }
 .skills-box:first-of-type {
     margin-top: 7.5rem;
@@ -441,5 +441,67 @@
 /* RESPONSIVE */
 
 @media (max-width: 1400px) {
-    
+    .skills-box {
+        width: 95%;
+    }
+}
+@media (max-width: 1350px) {
+    .skills-item {
+        height: 17.5rem;
+        width: 20rem;
+        padding: 0 1rem;
+    }
+    .skills-item img {
+        height: 7rem;
+        width: 7rem;
+    }
+    .skills-item h2 {
+        font-size: 2.5rem;
+    }
+    .skills-item p {
+        font-size: 1.275rem;
+        line-height: 1.45;
+    }
+}
+@media (max-width: 1250px) {
+    .skills-description {
+        font-size: .75rem;
+        width: 89.5rem;
+    }
+    .skills-container {
+        padding: 3.5rem 0 3.5rem 16.5rem;
+    }
+    .skills-item {
+        height: 16.5rem;
+        width: 18.5rem;
+        padding: 0 .85rem;
+    }
+    .skills-item img {
+        height: 6.5rem;
+        width: 6.5rem;
+    }
+    .skills-item h2 {
+        font-size: 2.35rem;
+    }
+}
+@media (max-width: 1150px) {
+    .skills-description {
+        font-size: .75rem;
+        width: 89.5rem;
+    }
+    .skills-container {
+        padding: 3.5rem 0 3.5rem 16.5rem;
+    }
+    .skills-item {
+        height: 16.5rem;
+        width: 18.5rem;
+        padding: 0 .85rem;
+    }
+    .skills-item img {
+        height: 6.5rem;
+        width: 6.5rem;
+    }
+    .skills-item h2 {
+        font-size: 2.35rem;
+    }
 }

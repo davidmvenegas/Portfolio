@@ -17,6 +17,7 @@ import ComptiaImg from '../Media/Images/comptia.png'
 import AWSImg from '../Media/Images/aws.jpg'
 import FlatironCert from '../Media/Images/flatiron_cert.png'
 import AtlassianImg from '../Media/Images/atlassian.png'
+import TypeWriterEffect from 'react-typewriter-effect'
 import { useInView } from 'react-intersection-observer'
 
 function Skills() {
@@ -50,7 +51,10 @@ function Skills() {
                     <span>e</span>
                     <span>s</span>
                 </h1>
-                <p className="skills-description">I love to learn and am always teaching myself new things. These are my strongest skillsets and technologies.</p>
+                <p className="skills-description">
+                    <TypeWriterEffect startDelay={1000} cursorColor="white" text="I love to learn and am always teaching myself new things." typeSpeed={35} hideCursorAfterText={true}/>&nbsp;&nbsp;
+                    <TypeWriterEffect startDelay={4000} cursorColor="white" text="These are my strongest skillsets and technologies." typeSpeed={35} hideCursorAfterText={true}/>
+                </p>
                 <div className="skills-box">
                     <h1 className="skills-title">Frontend</h1>
                     <div className="skills-content">
