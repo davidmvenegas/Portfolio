@@ -13,8 +13,8 @@
     "react-intersection-observer": "^8.33.1",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
-    "react-typewriter-effect": "^1.1.0",
     "sweetalert2": "^11.4.0",
+    "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
