@@ -59,7 +59,7 @@ function Modal({open, setOpenModal, modalID}) {
         {id: 4, 
             title: "My Cryptomatic",
             logo: MyCryptomaticIcon,
-            desc: "My Cryptomatic™ is a cryptocurrency tracker that offers comprehensive views of the market, a watchlist for favorite coins, in-sync portfolio calculator and the latest news. Real-time data is provided by CoinGecko. I built this project with Louis Escobar - an incredible programmer and friend.", 
+            desc: "My Cryptomatic™ is a cryptocurrency tracker that offers comprehensive views of the market, a coin watchlist, in-sync portfolio calculator and the latest news. Real-time data is provided by CoinGecko. I built this project with Louis Escobar - an incredible programmer and friend.", 
             features: ["Real-time data", "Favorites watchlist", "Portfolio calculator", "Up-to-date news"],
             tools: [SiReact, SiNodedotjs, SiCss3],
             technologies: {
@@ -129,9 +129,9 @@ function Modal({open, setOpenModal, modalID}) {
                                 <li className="modal-feature">{feature}</li>
                             ))}
                         </ul>
-                    </div>
-                    <div className="modal-visit-site">
-                        <a className='modal-visit-btn' href={currentData?.url} target="_blank" rel="noreferrer">VISIT WEBSITE</a>
+                        <div className="modal-visit-site">
+                            <a className='modal-visit-btn' href={currentData?.url} target="_blank" rel="noreferrer">VISIT WEBSITE</a>
+                        </div>
                     </div>
                 </div>
             </div>
