@@ -100,7 +100,7 @@ function Work() {
                         <div className="port-gif-box">
                             <div className="port-gif-wrapper">
                                 <img className='port-gif' src={MySimpleWardrobeGif} alt="My Simple Wardrobe Gif" style={port1 ? {opacity: "1"} : {opacity: "0"}}/>
-                                <img className='port-gif' src={MySimpleWardrobeLogo} alt="My Simple Wardrobe Logo" style={port1 ? {opacity: "0"} : {opacity: "1"}}/>
+                                <img className='port-gif port-gif-logo' src={MySimpleWardrobeLogo} alt="My Simple Wardrobe Logo" style={port1 ? {opacity: "0"} : {opacity: "1"}}/>
                             </div>
                             <a href='https://www.mysimplewardrobe.com/' target="_blank" rel="noreferrer">
                                 <div className="portGifPopup">
@@ -125,7 +125,7 @@ function Work() {
                         <div className="port-gif-box">
                             <div className="port-gif-wrapper">
                                 <img className='port-gif' src={GroceryMagixGif} alt="Grocery Magix Gif" style={port2 ? {opacity: "1"} : {opacity: "0"}}/>
-                                <img className='port-gif' src={GroceryMagixLogo} alt="Grocery Magix Logo" style={port2 ? {opacity: "0"} : {opacity: "1"}}/>
+                                <img className='port-gif port-gif-logo' src={GroceryMagixLogo} alt="Grocery Magix Logo" style={port2 ? {opacity: "0"} : {opacity: "1"}}/>
                             </div>
                             <a href='https://www.grocerymagix.com/' target="_blank" rel="noreferrer">
                                 <div className="portGifPopup">
@@ -150,7 +150,7 @@ function Work() {
                         <div className="port-gif-box">
                             <div className="port-gif-wrapper">
                                 <img className='port-gif' src={TheFinancialTrackerGif} alt="The Financial Tracker Gif" style={port3 ? {opacity: "1"} : {opacity: "0"}}/>
-                                <img className='port-gif' src={TheFinancialTrackerLogo} alt="The Financial Tracker Logo" style={port3 ? {opacity: "0"} : {opacity: "1"}}/>
+                                <img className='port-gif port-gif-logo' src={TheFinancialTrackerLogo} alt="The Financial Tracker Logo" style={port3 ? {opacity: "0"} : {opacity: "1"}}/>
                             </div>
                             <a href='https://www.thefinancialtracker.com/' target="_blank" rel="noreferrer">
                                 <div className="portGifPopup">
@@ -175,7 +175,7 @@ function Work() {
                         <div className="port-gif-box">
                             <div className="port-gif-wrapper">
                                 <img className='port-gif' src={MyCryptomaticGif} alt="Grocery Magix Gif" style={port4 ? {opacity: "1"} : {opacity: "0"}}/>
-                                <img className='port-gif' src={MyCryptomaticLogo} alt="Grocery Magix Logo" style={port4 ? {opacity: "0"} : {opacity: "1"}}/>
+                                <img className='port-gif port-gif-logo' src={MyCryptomaticLogo} alt="Grocery Magix Logo" style={port4 ? {opacity: "0"} : {opacity: "1"}}/>
                             </div>
                             <a href='https://www.mycryptomatic.com/' target="_blank" rel="noreferrer">
                                 <div className="portGifPopup">

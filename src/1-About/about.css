@@ -381,6 +381,9 @@
     }
 }
 @media (max-width: 650px) {
+    .about-container {
+        min-height: 0;
+    }
     .about-left-title {
         font-size: 5rem;
         line-height: 6.25rem;
