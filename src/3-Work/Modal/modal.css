@@ -351,6 +351,13 @@
         margin-left: -1rem;
     }
 }
+@media (max-width: 1280px) and (min-height: 800px) {
+    .modal-description {
+        margin-bottom: 2.5rem;
+        font-size: 2.125rem;
+        line-height: 3rem;
+    }
+}
 @media (max-width: 1250px) {
     .modal-video-title {
         font-size: 3rem;
@@ -407,23 +414,58 @@
 @media (max-width: 1100px) {
     .modal-container {
         overflow: auto;
-        padding: 10rem 0;
+        display: block;
+        height: 100vh;
+    }
+    #leave-modal {
+        top: 2.5rem;
+        right: 2.5rem;
+        font-size: 3rem;
+        z-index: 9999;
     }
     .modal-wrapper {
-        height: 200rem;
+        width: 100vw;
+        height: 120rem;
+        border-radius: 0;
+        margin-left: 0;
+        justify-content: flex-end;
         flex-direction: column-reverse;
-        margin: 2.5rem 0 -1rem;
+        gap: 2.2rem;
     }
     .modal-text-wrapper {
-        height: 50rem;
-        width: 100%;
+        margin-top: 2.5rem;
+        height: 60rem;
+        width: 60rem;
         margin-left: 0;
     }
     .modal-video-wrapper {
-        height: 20rem;
+        height: 50rem;
+        margin-bottom: 2.5rem;
         width: 100%;
     }
     .modal-video-title {
         display: none;
+    }
+    .iframe-wrapper {
+        width: 60rem;
+    }
+    .iframe-wrapper iframe {
+        height: 35rem;
+        margin-bottom: 1.5rem;
+    }
+    .modal-tech-wrapper {
+        width: 60rem;
+        padding: 1.75rem 2rem 2rem;
+    }
+    .modal-tech-wrapper h1 {
+        font-size: 2.25rem;
+        padding: .2rem 0 .8rem;
+    }
+    .modal-techs {
+        font-size: 1.65rem;
+        word-spacing: 2px;
+    }
+    .modal-techs span {
+        font-size: 2rem;
     }
 }
