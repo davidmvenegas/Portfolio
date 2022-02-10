@@ -318,3 +318,8 @@
 @keyframes contactFadeIn {
     100% {opacity: 1}
 }
+
+/* RESPONSIVE */
+@media (max-width: 1400px) {
+    
+}

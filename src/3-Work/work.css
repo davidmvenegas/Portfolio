@@ -476,9 +476,13 @@
     .port-description {
         font-size: 1.5rem;
         padding: 0 2rem;
+        margin-top: 2rem;
     }
     .port-wrapper {
         margin-left: -.75rem;
+    }
+    .port-items {
+        margin-top: 2.5rem;
     }
     .port-item {
         height: 42.5rem;

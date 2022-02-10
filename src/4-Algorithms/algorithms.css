@@ -66,7 +66,7 @@
     grid-template-rows: auto auto;
     justify-content: center;
     width: 85%;
-    gap: 5rem;
+    gap: 4.5rem;
     margin-top: 3.85rem;
 }
 .algo-item {
@@ -192,7 +192,7 @@
 }
 @media (max-width: 1250px) {
     .algo-container {
-        padding: 3.5rem 0 3.5rem 15rem;
+        padding: 3.5rem 0 3.5rem 16.5rem;
     }
     .algo-wrapper {
         width: 95%;
