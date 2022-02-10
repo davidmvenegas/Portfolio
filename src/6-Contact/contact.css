@@ -1,6 +1,6 @@
 .contact-container {
     margin-top: -2.5rem;
-    padding-left: 20rem;
+    padding: 3.5rem 0 3.5rem 20rem;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -12,13 +12,14 @@
 }
 .contact-title {
     position: relative;
-    font-size: 6.5rem;
+    font-size: 6.25rem;
     line-height: 1.9;
     width: 90%;
     padding-left: 5%;
 }
 .contact-title span {
     display: inline-block;
+    color: #08fdd8;
     transition: color .35s ease;
 }
 @keyframes contactBounce {
@@ -30,19 +31,16 @@
     75% {transform: scale3d(1.05, .95, 1)}
     to {transform: scale3d(1, 1, 1)}
 }
-.contact-title span:hover {
-    color: #08fdd8;
-}
 
-#cLetter_c1 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 0s;}
-#cLetter_o {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .1s;}
-#cLetter_n {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .2s;}
-#cLetter_t1 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .3s;}
-#cLetter_a {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .4s;}
-#cLetter_c2 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .5s;}
-#cLetter_t2 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .6s;}
-#cLetter_m {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .7s;}
-#cLetter_e {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .8s;}
+#cLetter_c1 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .1s}
+#cLetter_o {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .2s}
+#cLetter_n {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .3s}
+#cLetter_t1 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .4s}
+#cLetter_a {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .5s}
+#cLetter_c2 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .6s}
+#cLetter_t2 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .7s}
+#cLetter_m {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .8s}
+#cLetter_e {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .9s}
 
 .contact-message {
     display: block;
@@ -115,6 +113,7 @@
     box-sizing: border-box;
     border: 0;
     outline: 0;
+    resize: vertical;
 }
 .contact-after::after {
     content: '';
@@ -130,8 +129,6 @@
 .contact-item textarea:focus + .contact-after::after {
     width: 100%;
 } 
-
-
 .contact-form button {
     position: relative;
     display: block;
@@ -168,8 +165,6 @@
 .contact-form button:hover:after {
     left: -50px;
 }
-
-
 .contact-aside {
     position: absolute;
     bottom: 0;
@@ -216,15 +211,13 @@
     opacity: 0;
 }
 #contact-popup-show {
-    animation: copyPopup 1.5s ease-out;
+    animation: copyPopup 1.25s ease-out;
 }
 @keyframes copyPopup {
-    10% {opacity: 1}
+    25% {opacity: 1}
     75% {opacity: 1}
     100% {opacity: 0; bottom: -3rem}
 }
-
-
 .contact-right-box {
     position: fixed;
     right: 0;
@@ -258,14 +251,13 @@
     padding: 20px;
     color: #fff;
     margin-top: 5rem;
-    animation: mapBoxPop 1s ease 1.75s forwards;
+    animation: mapBoxPop 1.25s ease 2s forwards;
     opacity: 0;
 }
 .map-wrapper {
     height: 100%;
     width: 100%;
 }
-
 .contactForm1 {
     opacity: 0;
     animation: contactFadeIn 1.5s ease .5s forwards;
@@ -297,12 +289,12 @@
 .contactForm6 {
     opacity: 0;
     transform: translate3d(100%, 0, 0);
-    animation: contactSldRight 1s ease 1s forwards;
+    animation: contactSldRight 1s ease 1.25s forwards;
 }
 .contactForm7 {
     opacity: 0;
     left: -10rem;
-    animation: contactSldLeft 1s ease 1.5s forwards;
+    animation: contactSldLeft 1s ease 2s forwards;
 }
 @keyframes contactIsLoadedAnim {
     100% {opacity: 1; transform: none}
@@ -321,5 +313,315 @@
 
 /* RESPONSIVE */
 @media (max-width: 1400px) {
-    
+    .map-popup {
+        top: 3rem;
+        left: 3rem;
+    }
+    .contact-title {
+        padding-left: 3.75%;
+    }
+    .contact-form {
+        margin-left: 3.5%;
+    }
+    .contact-message {
+        padding-left: 4%;
+        font-size: 1.7rem;
+    }
+    .contact-aside {
+        margin-left: 4%;
+    }
+    #contact-copy-top {
+        font-size: 1.95rem;
+    }
+    #contact-copy-email {
+        font-size: 1.9rem;
+    }
+    #contact-copy-icon {
+        font-size: 2.65rem;
+    }
+}
+@media (max-width: 1325px) {
+    .contact-left-box {
+        width: 50%;
+    }
+    .contact-right-box {
+        width: 42.5%;
+    }
+    .contact-aside {
+        margin-left: 3.5%;
+    }
+}
+@media (max-width: 1300px) {
+    .contact-left-box {
+        width: 50.5%;
+    }
+    .contact-right-box {
+        width: 42%;
+    }
+    .contact-title {
+        font-size: 6rem;
+        padding-left: 3.5%;
+    }
+    .contact-form {
+        margin-left: 3.25%;
+    }
+    .contact-message {
+        width: 92.5%;
+        padding-left: 3.75%;
+        font-size: 1.65rem;
+    }
+    .contact-copy-box {
+        gap: .5rem;
+    }
+    #contact-copy-top {
+        font-size: 1.8rem;
+    }
+    #contact-copy-email {
+        font-size: 1.75rem;
+    }
+    #contact-copy-icon {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 1250px) {
+    .contact-container {
+        padding: 3.5rem 0 3.5rem 16.5rem;
+    }
+    .contact-title {
+        line-height: 1.85;
+        width: 93.5%;
+        padding-left: 4%;
+    }
+    .contact-message {
+        width: 97%;
+        font-size: 1.625rem;
+        padding-left: 4%;
+    }
+    .contact-form {
+        width: 93.5%;
+        margin-left: 4%;
+        padding-top: 3.75rem;
+    }
+    .contact-aside {
+        margin-left: 4%;
+    }
+}
+@media (max-width: 1150px) {
+    .contact-message {
+        font-size: 1.55rem;
+    }
+    #contact-copy-top {
+        font-size: 1.75rem;
+    }
+    #contact-copy-email {
+        font-size: 1.75rem;
+    }
+    #contact-copy-icon {
+        font-size: 2.5rem;
+    }
+    .contact-form button {
+        font-size: 13px;
+        height: 46px;
+        width: 185px;
+    }
+    .contact-aside {
+        max-width: 52.5%;
+    }
+}
+@media (max-width: 1125px) {
+    #contact-copy-email {
+        font-size: 1.7rem;
+    }
+    .contact-popup {
+        font-size: 1.35rem;
+    }
+}
+@media (max-width: 1100px) {
+    .contact-container {
+        padding: 3.5rem 0 3.5rem 0;
+    }
+    .contact-left-box {
+        width: 53.5%;
+    }
+    .contact-right-box {
+        width: 43.5%;
+    }
+    .contact-title {
+        padding-left: 6.25%;
+    }
+    .contact-message {
+        font-size: 1.65rem;
+        padding-left: 6.5%;
+    }
+    .contact-form {
+        margin-left: 6.5%;
+    }
+    .contact-aside {
+        margin-left: 6.5%;
+    }
+    #contact-copy-top {
+        font-size: 1.85rem;
+    }
+    #contact-copy-email {
+        font-size: 1.75rem;
+    }
+}
+@media (max-width: 1000px) {
+    .contact-message {
+        font-size: 1.625rem;
+    }
+}
+@media (max-width: 950px) {
+    .contact-container {
+        padding: 3.5rem 0 3.5rem 0;
+        flex-direction: column;
+    }
+    .contact-left-box {
+        width: 92.5%;
+        margin-bottom: 4.25rem;
+    }
+    .contact-right-box {
+        position: relative;
+        height: 50rem;
+        width: 92.5%;
+    }
+    .map-popup {
+        top: 2.5rem;
+        left: 2.5rem;
+    }
+    .contact-title {
+        font-size: 5.5rem;
+        padding-left: 1%;
+    }
+    .contact-message {
+        font-size: 1.75rem;
+        padding-left: 1%;
+    }
+    .contact-form {
+        margin-left: 0;
+        width: 100%;
+    }
+    .contact-aside {
+        margin-left: 0;
+    }
+}
+@media (max-width: 650px) {
+    .contact-title {
+        font-size: 5rem;
+    }
+    .contact-left-box {
+        width: 95%;
+    }
+    .contact-right-box {
+        width: 95%;
+        height: 45rem;
+    }
+    .map-popup {
+        top: 2rem;
+        left: 2rem;
+    }
+    .contact-message {
+        font-size: 1.6rem;
+        width: 100%;
+        padding-left: 1%;
+    }
+    #contact-copy-email {
+        font-size: 1.675rem;
+    }
+}
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 3rem 0 3rem 0;
+    }
+    .contact-title {
+        font-size: 4.5rem;
+        line-height: 2;
+    }
+    .contact-message {
+        font-size: 1.5rem;
+    }
+    .map-popup {
+        top: 1rem;
+        left: 1rem;
+        font-size: 16px;
+        padding: 16.5px;
+    }
+    #contact-half-left {
+        float: none;
+        width: 100%;
+    }
+    #contact-half-right {
+        float: none;
+        width: 100%;
+    }
+    .contact-left-box {
+        width: 95%;
+        padding-bottom: .5rem;
+        margin-bottom: 3rem;
+    }
+    .contact-form {
+        padding-top: 2.85rem;
+    }
+    .contact-aside {
+        position: relative;
+        margin-top: 10rem;
+        max-width: 100%;
+    }
+    .contact-form button {
+        float: none;
+        font-size: 14px;
+        letter-spacing: 4px;
+        height: 50px;
+        width: 210px;
+    }
+    .contact-copy-box {
+        gap: .6rem;
+        margin-top: .75rem;
+    }
+    #contact-copy-top {
+        font-size: 1.9rem;
+    }
+    #contact-copy-email {
+        font-size: 1.8rem;
+        color: #bbb;
+    }
+    #contact-copy-icon {
+        font-size: 2.4rem;
+    }
+    .contactForm6 {
+        margin: 0 auto;
+    }
+    .contactForm7 {
+        margin-left: 20%;
+        margin-top: 2.75rem;
+    }
+    .contact-copy-wrap {
+        position: relative;
+        width: fit-content;
+    }
+    .contact-popup {
+        font-size: 1.25rem;
+        bottom: -1.5rem;
+        left: -1rem;
+    }
+    @keyframes copyPopup {
+        50% {opacity: 1}
+        75% {opacity: 1}
+        100% {opacity: 0; bottom: -2.5rem;}
+    }
+}
+@media (max-width: 400px) {
+    .contactForm7 {
+        margin-left: 16.5%;
+    }
+}
+@media (max-width: 380px) {
+    .contactForm7 {
+        margin-left: 15%;
+    }
+}
+@media (max-width: 359px) {
+    .contactForm7 {
+        margin-left: 12.5%;
+    }
 }
