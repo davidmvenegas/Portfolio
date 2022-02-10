@@ -14,7 +14,7 @@ function Modal({open, setOpenModal, modalID}) {
         {id: 1, 
             title: "My Simple Wardrobe.",
             logo: MySimpleWardrobeIcon,
-            desc: "My Simple Wardrobe™ is a fully functional eCommerce clothing store with Stripe™. Users can either checkout as a guest or sign up to add items to their wishlist, leave product reviews and see their order history. A separate admin panel allows for easy control of products, users and orders.", 
+            desc: "My Simple Wardrobe™ is a fully functional eCommerce clothing store with Stripe™. Users can either checkout as a guest or sign up to add items to their wishlist, leave product reviews and see their order history. An admin panel allows for easy control of products and users.", 
             features: ["Guest checkout", "Product review system", "Personal order history", "256-bit AES encryption"],
             tools: [SiReact, SiRedux, SiNodedotjs, SiExpress, SiMongodb],
             technologies: {
@@ -29,7 +29,7 @@ function Modal({open, setOpenModal, modalID}) {
         {id: 2, 
             title: "Grocery Magix",
             logo: GroceryMagixIcon,
-            desc: "With Grocery Magix™ you can search through millions of recipes, pick your favorites and instantly generate a shopping list. It uses Edamam's Recipe API to provide over 2.3 million recipes which can be adjusted by serving and then aggregated into a single, concise shopping list.", 
+            desc: "With Grocery Magix™ users can search through millions of recipes, pick their favorites and instantly generate grocery lists. It uses Edamam's Recipe API to provide over 2.3 million recipes. Easily customize your meals and aggregate them into concise grocery lists.", 
             features: ["Millions of recipes", "Over 30 recipe search filters", "Secure Register/Login system", "Fully responsive"],
             tools: [SiReact, SiRedux, SiFirebase, SiCss3],
             technologies: {
@@ -44,7 +44,7 @@ function Modal({open, setOpenModal, modalID}) {
         {id: 3, 
             title: "The Financial Tracker",
             logo: TheFinancialTrackerIcon,
-            desc: "The Financial Tracker™ is a personal finance tool. Users can log income and expenses, set monthly budgets, create saving goals and adjust their profile. User accounts are secured with the Rails BCrypt gem with all traffic encrypted to and from the server via session cookies.", 
+            desc: "The Financial Tracker™ is a complete personal finance tool. Users can log income and expenses, set monthly budgets and create saving goals. User accounts are secured with the Rails BCrypt gem with all traffic encrypted to and from the server via session cookies.", 
             features: ["Transaction ledger", "Monthly budget", "Adjustable savings goals", "Fully Responsive"],
             tools: [SiReact, SiRedux, SiPostgresql, SiRubyonrails, SiSass],
             technologies: {
