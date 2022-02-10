@@ -469,3 +469,126 @@
         font-size: 2rem;
     }
 }
+@media (max-width: 750px) {
+    #leave-modal {
+        top: 1.5rem;
+        right: 1.5rem;
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 650px) {
+    .modal-wrapper {
+        height: 106.5rem;
+        gap: 2rem;
+    }
+    #leave-modal {
+        top: 1.5rem;
+        right: 1.5rem;
+        font-size: 2.5rem;
+    }
+    .modal-text-wrapper {
+        margin-top: 4rem;
+        height: 55rem;
+        width: 40rem;
+    }
+    .modal-video-wrapper {
+        height: 40rem;
+    }
+    .iframe-wrapper {
+        width: 40rem;
+    }
+    .iframe-wrapper iframe {
+        height: 27.5rem;
+    }
+    .modal-tech-wrapper {
+        width: 40rem;
+    }
+    .modal-tech-wrapper h1 {
+        font-size: 1.65rem;
+    }
+    .modal-techs {
+        font-size: 1.25rem;
+        word-spacing: 1px;
+    }
+    .modal-techs span {
+        font-size: 1.65rem;
+    }
+    .modal-tool {
+        height: 3rem;
+        width: 3rem;
+    }
+    .modal-visit-site {
+        height: 8rem;
+    }
+    .modal-title-wrapper {
+        margin-top: 1.75rem;
+        line-height: 1.65;
+    }
+    .modal-title-wrapper img {
+        height: 4rem;
+        width: 4rem;
+        margin-right: 1.25rem;
+    }
+    .modal-title {
+        font-size: 3.125rem;
+    }
+    .modal-link1 {
+        font-size: 1.55rem;
+    }
+    .modal-link2 {
+        font-size: 2.25rem;
+    }
+    .modal-description {
+        font-size: 1.5rem;
+        line-height: 2.35rem;
+        height: fit-content;
+        margin-bottom: 1rem;
+    }
+    .modal-features-header {
+        font-size: 1.65rem;
+    }
+    .modal-feature {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+    .modal-visit-btn {
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+        padding: 1.25rem 3.25rem;
+    }
+}
+@media (max-width: 480px) {
+    .modal-title-wrapper img {
+        height: 3.75rem;
+        width: 3.75rem;
+        margin-right: 1rem;
+    }
+    .modal-title {
+        font-size: 3rem;
+    }
+    .modal-text-wrapper {
+        height: 55rem;
+        width: 36rem;
+    }
+    .modal-video-wrapper {
+        height: 36rem;
+    }
+    .iframe-wrapper {
+        width: 36rem;
+    }
+    .iframe-wrapper iframe {
+        height: 25rem;
+    }
+    .modal-tech-wrapper {
+        width: 36rem;
+        padding: 1rem 1.25rem 1.25rem;
+    }
+    .modal-techs span {
+        font-size: 1.6rem;
+    }
+    .modal-techs {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        word-spacing: 0px;
+    }
+}

@@ -474,7 +474,8 @@
         font-size: 4.35rem;
     }
     .port-description {
-        padding: 0 1rem;
+        font-size: 1.5rem;
+        padding: 0 2rem;
     }
     .port-wrapper {
         margin-left: -.75rem;
