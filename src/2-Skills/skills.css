@@ -766,4 +766,10 @@
     .cert-item {
         height: 20rem;
     }
+    .flatiron-item {
+        margin-top: 1.25rem;
+    }
+    .education-separator {
+        margin: 4.5rem 0 3.5rem;
+    }
 }

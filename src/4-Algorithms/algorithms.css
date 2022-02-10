@@ -64,13 +64,14 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    width: 90%;
-    gap: 5rem 0;
+    justify-content: center;
+    width: 85%;
+    gap: 5rem;
     margin-top: 3.85rem;
 }
 .algo-item {
     padding: 0 1rem;
-    width: 92.5%;
+    width: 54rem;
     margin: 0 auto;
     background-color: #1a1a1a;
     box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
@@ -152,18 +153,150 @@
     margin-top: 1rem;
 }
 .algo-iframe-wrapper {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
+    width: 52rem;
     height: 30rem;
     margin-bottom: 1rem;
 }
 .algo-iframe-wrapper iframe {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     width: 100%;
     height: 100%;
     border-radius: .5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1400px) {
+    .algo-wrapper {
+        width: 90%;
+        gap: 4rem;
+    }
+    .algo-item {
+        width: 52rem;
+    }
+    .algo-iframe-wrapper {
+        width: 50rem;
+        height: 30rem;
+    }
+}
+@media (max-width: 1350px) {
+    .algo-wrapper {
+        width: 90%;
+        gap: 4rem;
+    }
+    .algo-item {
+        width: 48rem;
+    }
+    .algo-iframe-wrapper {
+        width: 46rem;
+        height: 28.5rem;
+    }
+}
+@media (max-width: 1250px) {
+    .algo-container {
+        padding: 3.5rem 0 3.5rem 15rem;
+    }
+    .algo-wrapper {
+        width: 95%;
+        gap: 3rem;
+    }
+    .algo-item {
+        width: 44rem;
+    }
+    .algo-iframe-wrapper {
+        width: 42rem;
+        height: 25.5rem;
+    }
+}
+@media (max-width: 1100px) {
+    .algo-header {
+        font-size: 5.75rem;
+    }
+    .algo-container {
+        padding: 3.5rem 0 3.5rem 0;
+    }
+    .algo-wrapper {
+        width: 95%;
+        gap: 3rem;
+    }
+    .algo-item {
+        width: 40rem;
+    }
+    .algo-iframe-wrapper {
+        width: 38rem;
+        height: 21.5rem;
+    }
+}
+@media (max-width: 950px) {
+    .algo-header {
+        font-size: 5rem;
+    }
+    .algo-description {
+        margin-top: 2.25rem;
+        font-size: 1.65rem;
+    }
+    .algo-container {
+        padding: 2rem 0 2rem 0;
+    }
+    .algo-wrapper {
+        width: 95%;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    @keyframes reveal {
+        0% {opacity: 0; width: 0px}
+        50% {opacity: 1; width: 0px}
+        100% {width: 225px}
+    }
+}
+@media (max-width: 650px) {
+    .algo-header {
+        font-size: 4.25rem;
+    }
+    .algo-description {
+        margin-top: 2.25rem;
+        font-size: 1.65rem;
+        text-align: center;
+        padding: 0 3.25rem;
+        height: 4.5rem;
+    }
+    @keyframes slidein {
+        0% {margin-left: 0px}
+        50% {margin-left: 0px}
+        100% {margin-left: 0px}
+    }
+    .algo-container {
+        padding: 2rem 0 2rem 0;
+    }
+    .algo-wrapper {
+        width: 95%;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    #algo-slide2 {
+        opacity: 0; 
+        width: 225px;
+        animation: reveal 2.5s ease 2.5s forwards;
+    }
+    @keyframes reveal {
+        0% {opacity: 0; width: 225px}
+        50% {opacity: 1; width: 225px}
+        100% {width: 225px; opacity: 1}
+    }
+}
+@media (max-width: 480px) {
+
+    .algo-item {
+        width: 36rem;
+    }
+    .algo-iframe-wrapper {
+        width: 34rem;
+        height: 20rem;
+    }
+    .algo-description {
+        font-size: 1.55rem;
+        padding: 0;
+    }
 }
