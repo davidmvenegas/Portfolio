@@ -131,10 +131,7 @@ function Modal({open, setOpenModal, modalID}) {
                         </ul>
                     </div>
                     <div className="modal-visit-site">
-                        <a href={currentData?.url} target="_blank" rel="noreferrer" className='modal-visit-wrap'>
-                            <div className="front">VISIT WEBSITE</div>
-                            <div className="back">VISIT WEBSITE</div>
-                        </a>
+                        <a className='modal-visit-btn' href={currentData?.url} target="_blank" rel="noreferrer">VISIT WEBSITE</a>
                     </div>
                 </div>
             </div>

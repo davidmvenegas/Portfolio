@@ -233,72 +233,56 @@
     font-weight: 600;
 }
 .modal-visit-site {
-    align-self: center;
-    position: relative;
-    width: 60%;
-    height: 4.5rem;
-    font-size: 2rem;
-    margin-top: -.25rem;
-    margin-bottom: 3.25rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    margin-top: -2.5rem;
 }
-.modal-visit-wrap {
+.modal-visit-btn {
+    position: relative;	
+	font-size: 2rem;
     font-weight: 400;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
-    transform: translateZ(-25px);
-    transition: all 0.3s ease;
-    cursor: pointer;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+    text-decoration: none;
+	padding: 1.25rem 4rem;
+	color: white;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
 }
-.modal-visit-wrap .front,
-.modal-visit-wrap .back {
-    margin: 0;
-    width: 100%;
-    height: 48px;
-    line-height: 48px;
-    position: absolute;
-    text-align: center;
-    letter-spacing: 0.4em;
+.modal-visit-btn:before {
+    left: 0;
+	border: 1px solid white;
+	border-left: 0;
+	border-right: 0;
 }
-.modal-visit-wrap .front {
-    background-color: #373737;
-    color: #fff;
-    transform: rotateY(0) translateZ(24px);
+.modal-visit-btn:after {
+    right: 0;
 }
-.modal-visit-wrap .back {
-    background-color: rgba(255,255,255,0);
-    color: rgba(34,34,34,0);
-    transform: rotateX(90deg) translateZ(24px);
-    overflow: hidden;
+.modal-visit-btn:before, 
+.modal-visit-btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+    top: 0;
+	width: 0;
+	height: 100%;
 }
-.modal-visit-wrap .back:after {
-    content: '';
-    position: absolute;
-    top: -100%;
-    left: -80%;
-    width: 200%;
-    height: 250%;
-    background: #373737;
-    transform: rotate(8deg);
-    transition: all 0.65s ease;
-    transition-delay: 0.25s;
+.modal-visit-btn:hover {
+	color: black;
+	transition-delay: .5s;
 }
-.modal-visit-wrap:hover {
-    transform: translateZ(-24px) rotateX(-90deg);
+.modal-visit-btn:hover:before {
+	transition-delay: 0s;
 }
-.modal-visit-wrap:hover .front {
-    background: #373737;
-    transition: all 0.8s ease;
+.modal-visit-btn:hover:after {
+	background-color: white;
+	transition-delay: .35s;
 }
-.modal-visit-wrap:hover .back {
-    color: #373737;
-    transition: color 0.4s linear;
-    background: #fff;
-}
-.modal-visit-wrap:hover .back:after {
-    transform: rotate(6deg) translate(100px, -120px);
+.modal-visit-btn:hover:before,
+.modal-visit-btn:hover:after {
+	width: 100%;
 }
