@@ -478,6 +478,9 @@
         padding: 0 2rem;
         margin-top: 2rem;
     }
+    .other-description {
+        font-size: 1.65rem;
+    }
     .port-wrapper {
         margin-left: -.75rem;
     }
@@ -515,5 +518,10 @@
     .port-btn-more:hover > #port-more-text {
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+@media (max-width: 360px) {
+    .port-wrapper {
+        margin-left: -2rem;
     }
 }

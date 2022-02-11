@@ -731,7 +731,7 @@
     }
     .skills-description {
         font-size: .55rem;
-        word-spacing: -1px;
+        word-spacing: -2px;
         line-height: 1.35;
     }
     .flatiron-description-box ul {
@@ -743,9 +743,9 @@
         line-height: 1.85rem;
     }
     .cert-title {
-        font-size: 2.25rem;
+        font-size: 2rem;
         line-height: 1.15;
-        margin-bottom: .5rem;
+        margin-bottom: .75rem;
     }
     .cert-text-box p {
         font-size: 1.25rem;
@@ -753,15 +753,15 @@
         width: 98.5%;
     }
     .cert-img {
-        height: 15rem;
-        width: 15rem;
+        height: 12.5rem;
+        width: 12.5rem;
         border-radius: .5rem;
     }
     .cert-img-hover-box h1 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     #cert-arrow {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     .cert-item {
         height: 20rem;
@@ -778,5 +778,41 @@
     }
     @keyframes visibleSecondSkillMobile {
         100% {opacity: 1}
+    }
+}
+@media (max-width: 360px) {
+    .education-header {
+        font-size: 2.25rem;
+    }
+    .flatiron-img-wrapper {
+        width: 30rem;
+    }
+    .flatiron-img-hover-box {
+        width: 30rem;
+    }
+    .skills-description {
+        font-size: .5rem;
+        word-spacing: -2px;
+        line-height: 1.35;
+    }
+    .flatiron-img {
+        width: 30rem;
+    }
+    .flatiron-text-box {
+        height: 33.5rem;
+        padding: 0 1rem;
+    }
+    .flatiron-text-box h1 {
+        font-size: 2.65rem;
+    }
+    .cert-img {
+        height: 10rem;
+        width: 10rem;
+    }
+    .cert-img-hover-box h1 {
+        font-size: 1rem;
+    }
+    #cert-arrow {
+        font-size: 1rem;
     }
 }
