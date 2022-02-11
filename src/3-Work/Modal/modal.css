@@ -558,6 +558,13 @@
     }
 }
 @media (max-width: 480px) {
+    .modal-wrapper {
+        height: 105rem;
+    }
+    #leave-modal {
+        top: 1.75rem;
+        right: 1.75rem;
+    }
     .modal-title-wrapper img {
         height: 3.75rem;
         width: 3.75rem;
@@ -571,6 +578,7 @@
         width: 36rem;
     }
     .modal-video-wrapper {
+        margin-top: 2rem;
         height: 36rem;
     }
     .iframe-wrapper {

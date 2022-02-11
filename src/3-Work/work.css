@@ -487,6 +487,10 @@
     .port-item {
         height: 42.5rem;
     }
+    @keyframes portAnimItem {
+        60% {transform: scale(.9)}
+        100% {width: 35rem; transform: scale(1)}
+    }
     .port-title {
         font-size: 3rem;
     }
@@ -496,5 +500,20 @@
     }
     .ending-work-this span:first-of-type {
         display: none;
+    }
+    .port-btn-more {
+        width: 18rem;
+    }
+    #port-more-text {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #port-more-arrow {
+        display: none;
+    }
+    .port-btn-more:hover > #port-more-text {
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
