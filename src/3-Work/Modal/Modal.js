@@ -53,7 +53,7 @@ function Modal({open, setOpenModal, modalID}) {
             },
             link: "www.thefinancialtracker.com",
             url: "https://www.thefinancialtracker.com/",
-            github: "https://github.com/davidmvenegas/my-cryptomatic",
+            github: "https://github.com/davidmvenegas/financial-tracker",
             video: "https://www.youtube.com/embed/KX3mJggp4h0"
         },
         {id: 4, 
@@ -68,7 +68,7 @@ function Modal({open, setOpenModal, modalID}) {
             },
             link: "www.mycryptomatic.com",
             url: "https://www.mycryptomatic.com/",
-            github: "https://github.com/davidmvenegas/GroceryMagix",
+            github: "https://github.com/davidmvenegas/my-cryptomatic",
             video: "https://www.youtube.com/embed/2kEOdCkTEzk"
         },
     ]
