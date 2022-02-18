@@ -779,6 +779,9 @@
     @keyframes visibleSecondSkillMobile {
         100% {opacity: 1}
     }
+    .note-wrapper p {
+        font-size: 1.5rem;
+    }
 }
 @media (max-width: 360px) {
     .education-header {
