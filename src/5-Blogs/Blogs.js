@@ -92,7 +92,7 @@ function Blogs() {
                                 <h2 className="blog-read">2 Minute Read</h2>
                                 <div className="blog-likes">
                                     <img src={MediumClap} alt="Claps" />
-                                    <p>63</p>
+                                    <p>64</p>
                                 </div>
                             </div>
                         </div>
