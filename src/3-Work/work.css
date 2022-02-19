@@ -282,9 +282,9 @@
     font-size: 2.65rem;
     width: fit-content;
     top: 50%;
-    left: 82.5%;
+    left: 78.5%;
     transform: translate(-82.5%, -50%);
-    -webkit-transform: translate(-82.5%, -50%);
+    -webkit-transform: translate(-51%, -50%);
     transition: all .2s ease;
 }
 
