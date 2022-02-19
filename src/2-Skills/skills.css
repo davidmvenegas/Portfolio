@@ -111,15 +111,13 @@
     opacity: 0;
 }
 .skills-content {
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: space-around;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto;
-    grid-template-rows: auto;
     width: 100%;
 }
 .skillSeparator {
-    height: 75%;
+    height: 13.5rem;
     width: 2px;
     border-radius: 1rem;
     background-color: #515152;
@@ -693,6 +691,10 @@
         line-height: 1.35;
     }
     .skills-content {
+        display: grid;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
         grid-template-columns: auto;
         grid-template-rows: auto;
     }
