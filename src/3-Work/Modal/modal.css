@@ -38,6 +38,10 @@
     60% {opacity: 1}
     100% {opacity: 1; margin-right: 0}
 }
+@-webkit-keyframes modalAnim {
+    60% {opacity: 1}
+    100% {opacity: 1; margin-right: 0}
+}
 .modal-video-wrapper {
     width: 50%;
     height: 95%;
@@ -49,6 +53,9 @@
     opacity: 0;
 }
 @keyframes modalFade {
+    100% {opacity: 1}
+}
+@-webkit-keyframes modalFade {
     100% {opacity: 1}
 }
 .modal-video-title {
@@ -127,6 +134,9 @@
 @keyframes modalScale {
     100% {opacity: 1; transform: scale(1)}
 }
+@-webkit-keyframes modalScale {
+    100% {opacity: 1; -webkit-transform: scale(1)}
+}
 .modal-header {
     align-self: center;
     display: flex;
@@ -189,6 +199,15 @@
     65% {transform: scale3d(.95, 1.05, 1)}
     75% {transform: scale3d(1.05, .95, 1)}
     to {transform: scale3d(1, 1, 1)}
+}
+@-webkit-keyframes toolBounce {
+    from {-webkit-transform: scale3d(1, 1, 1)}
+    30% {-webkit-transform: scale3d(1.25, 0.75, 1)}
+    40% {-webkit-transform: scale3d(0.75, 1.2, 1)}
+    50% {-webkit-transform: scale3d(1.15, 0.85, 1)}
+    65% {-webkit-transform: scale3d(.95, 1.05, 1)}
+    75% {-webkit-transform: scale3d(1.05, .95, 1)}
+    to {-webkit-transform: scale3d(1, 1, 1)}
 }
 .modal-body {
     align-self: center;

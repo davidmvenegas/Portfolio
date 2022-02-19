@@ -41,6 +41,15 @@
     75% {transform: scale3d(1.05, .95, 1)}
     to {transform: scale3d(1, 1, 1); opacity: 1;}
 }
+@-webkit-keyframes aboutFadeIn {
+    from {-webkit-transform: scale3d(1, 1, 1); opacity: 0;}
+    30% {-webkit-transform: scale3d(1.25, 0.75, 1)}
+    40% {-webkit-transform: scale3d(0.75, 1.2, 1)}
+    50% {-webkit-transform: scale3d(1.15, 0.85, 1); opacity: 1;}
+    65% {-webkit-transform: scale3d(.95, 1.05, 1)}
+    75% {-webkit-transform: scale3d(1.05, .95, 1)}
+    to {-webkit-transform: scale3d(1, 1, 1); opacity: 1;}
+}
 #letter_H {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 0s;}
 #letter_i_one {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .05s;}
 #letter_comma_one {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .1s;}
@@ -68,6 +77,9 @@
 @keyframes aboutTitleAfterFade {
     100% {opacity: 1}
 }
+@-webkit-keyframes aboutTitleAfterFade {
+    100% {opacity: 1}
+}
 .about-left-title:after {
     content: '</h1>';
     position: absolute;
@@ -77,10 +89,17 @@
     font-weight: 200;
     margin-top: 2.25rem;
     margin-left: 1rem;
+    -webkit-animation: aboutTitleAfterFade .5s ease 1.8s forwards;
+    -moz-animation: aboutTitleAfterFade .5s ease 1.8s forwards;
+    -ms-animation: aboutTitleAfterFade .5s ease 1.8s forwards;
+    -o-animation: aboutTitleAfterFade .5s ease 1.8s forwards;
     animation: aboutTitleAfterFade .5s ease 1.8s forwards;
     opacity: 0;
 }
 @keyframes aboutDescriptionFade {
+    100% {opacity: 1}
+}
+@-webkit-keyframes aboutDescriptionFade {
     100% {opacity: 1}
 }
 .about-left-description:before {
@@ -116,6 +135,9 @@
     opacity: 0;
 }
 @keyframes aboutButtonBoxUp {
+    100% {margin-top: 6.5rem; margin-bottom: 0; opacity: 1}
+}
+@-webkit-keyframes aboutButtonBoxUp {
     100% {margin-top: 6.5rem; margin-bottom: 0; opacity: 1}
 }
 .about-left-button-box {
@@ -210,6 +232,9 @@
 
 /* RIGHT SIDE */
 @keyframes aboutRightSideFade {
+    100% {opacity: 1}
+}
+@-webkit-keyframes aboutRightSideFade {
     100% {opacity: 1}
 }
 .about-right-box {

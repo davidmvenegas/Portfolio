@@ -38,11 +38,19 @@
     transform: scale(0);
 }
 #otherItem-active {
+    -webkit-animation: bounceInOther .65s ease-in-out .2s forwards;
+    -moz-animation: bounceInOther .65s ease-in-out .2s forwards;
+    -ms-animation: bounceInOther .65s ease-in-out .2s forwards;
+    -o-animation: bounceInOther .65s ease-in-out .2s forwards;
     animation: bounceInOther .65s ease-in-out .2s forwards;
 }
 @keyframes bounceInOther {
     50% {transform: scale(1.25)}
     100% {transform: scale(1)}
+}
+@-webkit-keyframes bounceInOther {
+    50% {-webkit-transform: scale(1.25)}
+    100% {-webkit-transform: scale(1)}
 }
 .other-item-top h1 {
     color: #08fdd8;
