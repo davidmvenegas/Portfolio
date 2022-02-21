@@ -235,7 +235,7 @@ function Skills() {
                 </div>
             </div>
             <div className="note-wrapper">
-                <p><span>*</span> While I don't have a computer science degree, I do have a working understanding of the theory and math behind the code. I've completed Harvard's CS50, finished numerous of MIT's Computer Science courses, read countless textbooks, taken advanced math courses and much more. I'm passionate about the fundamentals of programming - not just at the surface level, and I believe that dedication will show.</p>
+                <p><span>*</span> While I don't have a computer science degree, I do have a working understanding of the theory and math behind the code. I've completed Harvard's CS50, finished numerous of MIT's Computer Science courses, taken advanced math courses and much more. I'm passionate about the fundamentals of programming - not just at the surface level, and I believe that dedication will show.</p>
             </div>
         </div>
     )
