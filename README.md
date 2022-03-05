@@ -1,5 +1,5 @@
-## *(currently redacted)*
-
+### *(currently redacted)*
+<br>
 # David Venegas - a Fullstack Web Developer
 
 
