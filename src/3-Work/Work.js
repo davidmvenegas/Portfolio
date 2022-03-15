@@ -42,10 +42,10 @@ function Work() {
     const [otherTitleRef, otherTitleInView] = useInView({threshold: 0, triggerOnce: true})
     const [otherDescRef, otherDescInView] = useInView({threshold: 0, triggerOnce: true})
     const otherData = [
-        {id: 1, title: 'Weather App', image: WeatherLogo, github: "https://github.com/davidmvenegas/weather_app", link: "https://davidmvenegas.github.io/weather_app", largeTitle: false},
+        {id: 1, title: 'Weather App', image: WeatherLogo, github: "https://github.com/davidmvenegas/WeatherApp", link: "https://davidmvenegas.github.io/WeatherApp", largeTitle: false},
         {id: 2, title: 'Favorite Books', image: BooklistLogo, github: "https://github.com/davidmvenegas/booklist", link: "https://davyvegasbooklist.com", largeTitle: false},
         {id: 3, title: 'Coin Flip', image: CoinFlipLogo, github: "https://github.com/davidmvenegas/coin-flip", link: "https://davidmvenegas.github.io/coin-flip", largeTitle: false},
-        {id: 4, title: 'Tic-Tac-Toe', image: TicTacToeLogo, github: "https://github.com/davidmvenegas/ticTacToe-Game", link: "https://davidmvenegas.github.io/ticTacToe-Game", largeTitle: false},
+        {id: 4, title: 'Tic-Tac-Toe', image: TicTacToeLogo, github: "https://github.com/davidmvenegas/TicTacToe", link: "https://davidmvenegas.github.io/TicTacToe", largeTitle: false},
         {id: 5, title: 'Calculator', image: CalculatorLogo, github: "https://github.com/davidmvenegas/calculator", link: "https://davidmvenegas.github.io/calculator", largeTitle: false},
         {id: 6, title: 'Rock Paper Scissors', image: RockPaperScissorsLogo, github: "https://github.com/davidmvenegas/rock-paper-scissors", link: "https://davidmvenegas.github.io/rock-paper-scissors", largeTitle: true},
         {id: 7, title: 'Mini Quiz', image: QuizLogo, github: "https://github.com/davidmvenegas/JS-Quiz", link: "https://davidmvenegas.github.io/JS-Quiz", largeTitle: false},
