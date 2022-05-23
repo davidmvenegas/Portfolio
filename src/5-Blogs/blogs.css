@@ -33,9 +33,6 @@
 @keyframes blogDesc {
     100% {opacity: 1}
 }
-@-webkit-keyframes blogDesc {
-    100% {opacity: 1}
-}
 .blog-wrapper {
     margin-top: 2.5rem;
     width: 90%;
@@ -50,9 +47,6 @@
     animation: blogWrapUp 1s ease .75s forwards;
 }
 @keyframes blogWrapUp {
-    100% {opacity: 1; margin-top: 5rem}
-}
-@-webkit-keyframes blogWrapUp {
     100% {opacity: 1; margin-top: 5rem}
 }
 .blog-wrapper input[type=radio] {

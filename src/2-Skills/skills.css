@@ -19,10 +19,6 @@
     color: white;
     font-size: 6.25rem;
     font-weight: 600;
-    -webkit-animation: skilsHeadFade 2s ease forwards;
-    -moz-animation: skilsHeadFade 2s ease forwards;
-    -ms-animation: skilsHeadFade 2s ease forwards;
-    -o-animation: skilsHeadFade 2s ease forwards;
     animation: skilsHeadFade 2s ease forwards;
     margin-top: 3.5rem;
     margin-bottom: -3.5rem;
@@ -34,10 +30,6 @@
 }
 .skills-header span:hover {
     color: #08fdd8;
-    -webkit-animation: contactBounce 1s ease forwards;
-    -moz-animation: contactBounce 1s ease forwards;
-    -ms-animation: contactBounce 1s ease forwards;
-    -o-animation: contactBounce 1s ease forwards;
     animation: contactBounce 1s ease forwards;
 }
 .skills-description {
@@ -58,15 +50,7 @@
     50% {margin-top: 0rem; margin-bottom: 0rem}
     100% {opacity: 1; margin-top: 0rem; margin-bottom: 0rem}
 }
-@-webkit-keyframes skilsHeadFade {
-    10% {opacity: 0}
-    50% {margin-top: 0rem; margin-bottom: 0rem}
-    100% {opacity: 1; margin-top: 0rem; margin-bottom: 0rem}
-}
 @keyframes skilsBoxFade {
-    100% {opacity: 1}
-}
-@-webkit-keyframes skilsBoxFade {
     100% {opacity: 1}
 }
 .skills-box {
@@ -82,10 +66,6 @@
     background-color: rgba(0, 0, 0, .25);
     color: whitesmoke;
     border-radius: 1rem;
-    -webkit-animation: skilsBoxFade 1.75s ease forwards;
-    -moz-animation: skilsBoxFade 1.75s ease forwards;
-    -ms-animation: skilsBoxFade 1.75s ease forwards;
-    -o-animation: skilsBoxFade 1.75s ease forwards;
     animation: skilsBoxFade 1.75s ease forwards;
     opacity: 0;
 }
@@ -103,10 +83,6 @@
     letter-spacing: 1px;
     padding: .5rem 1.65rem;
     border-radius: .5rem .5rem 0 0;
-    -webkit-animation: skilsBoxFade 2s ease forwards;
-    -moz-animation: skilsBoxFade 2s ease forwards;
-    -ms-animation: skilsBoxFade 2s ease forwards;
-    -o-animation: skilsBoxFade 2s ease forwards;
     animation: skilsBoxFade 2s ease forwards;
     opacity: 0;
 }
@@ -165,16 +141,9 @@
     margin: 7.5rem 0 5rem;
 }
 #education-separator-active {
-    -webkit-animation: lineAcross 4s ease forwards;
-    -moz-animation: lineAcross 4s ease forwards;
-    -ms-animation: lineAcross 4s ease forwards;
-    -o-animation: lineAcross 4s ease forwards;
     animation: lineAcross 4s ease forwards;
 }
 @keyframes lineAcross {
-    100% {width: 90%}
-}
-@-webkit-keyframes lineAcross {
     100% {width: 90%}
 }
 
@@ -223,9 +192,6 @@
     animation: certItemSlide 2s ease forwards;
 }
 @keyframes certItemSlide {
-    100% {opacity: 1; margin-left: 0}
-}
-@-webkit-keyframes certItemSlide {
     100% {opacity: 1; margin-left: 0}
 }
 .flatiron-img-wrapper {
@@ -464,11 +430,6 @@
     animation: flickerNote 2s ease infinite;
 }
 @keyframes flickerNote {
-    0% {color: #08fdd8;}
-    50% {color: #00947e;}
-    100% {color: #08fdd8;}
-}
-@-webkit-keyframes flickerNote {
     0% {color: #08fdd8;}
     50% {color: #00947e;}
     100% {color: #08fdd8;}
@@ -818,9 +779,6 @@
         animation: visibleSecondSkillMobile .25s ease 3.75s forwards;
     }
     @keyframes visibleSecondSkillMobile {
-        100% {opacity: 1}
-    }
-    @-webkit-keyframes visibleSecondSkillMobile {
         100% {opacity: 1}
     }
     .note-wrapper p {

@@ -17,9 +17,6 @@
 @keyframes portFade {
     100% {opacity: 1}
 }
-@-webkit-keyframes portFade {
-    100% {opacity: 1}
-}
 .port-header {
     position: relative;
     color: white;
@@ -47,9 +44,6 @@
 @keyframes portDescScale {
     100% {transform: scale(1)}
 }
-@-webkit-keyframes portDescScale {
-    100% {-webkit-transform: scale(1)}
-}
 .port-description span {
     display: inline-block;
     opacity: 0;
@@ -70,9 +64,6 @@
 .port-description span:nth-child(12) {animation: descFadeIn 0.8s 2.7s forwards cubic-bezier(0.11, 0, 0.5, 0)}
 .port-description span:nth-child(13) {animation: descFadeIn 0.8s 2.8s forwards cubic-bezier(0.11, 0, 0.5, 0)}
 @keyframes descFadeIn {
-    100% {opacity: 1; filter: blur(0)}
-}
-@-webkit-keyframes descFadeIn {
     100% {opacity: 1; filter: blur(0)}
 }
 
@@ -161,20 +152,6 @@
     100% {width: 48.5rem; opacity: 1}
 }
 @keyframes portAnimPop {
-    100% {opacity: 1}
-}
-@-webkit-keyframes portAnimItem {
-    60% {-webkit-transform: scale(.9)}
-    100% {width: 100%; -webkit-transform: scale(1)}
-}
-@-webkit-keyframes portAnimBox {
-    100% {width: 48.5rem}
-}
-@-webkit-keyframes portAnimWrap {
-    80% {opacity: 0}
-    100% {width: 48.5rem; opacity: 1}
-}
-@-webkit-keyframes portAnimPop {
     100% {opacity: 1}
 }
 .portGifPopup {
@@ -431,13 +408,6 @@
         80% {opacity: 0}
         100% {width: 35rem; opacity: 1}
     }
-    @-webkit-keyframes portAnimBox {
-        100% {width: 35rem}
-    }
-    @-webkit-keyframes portAnimWrap {
-        80% {opacity: 0}
-        100% {width: 35rem; opacity: 1}
-    }
     .portGifPopup {
         display: none;
     }
@@ -525,10 +495,6 @@
     @keyframes portAnimItem {
         60% {transform: scale(.9)}
         100% {width: 35rem; transform: scale(1)}
-    }
-    @-webkit-keyframes portAnimItem {
-        60% {-webkit-transform: scale(.9)}
-        100% {width: 35rem; -webkit-transform: scale(1)}
     }
     .port-title {
         font-size: 3rem;

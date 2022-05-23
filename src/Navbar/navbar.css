@@ -186,9 +186,6 @@
     @keyframes navFadeBack {
         100% {opacity: 1}
     }
-    @-webkit-keyframes navFadeBack {
-        100% {opacity: 1}
-    }
     .navbar-top img {
         height: 11rem;
         width: 11rem;

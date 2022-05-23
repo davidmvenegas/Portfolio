@@ -60,20 +60,6 @@
     50% {opacity: 1; width: 0px}
     100% {width: 260px}
 }
-@-webkit-keyframes showup {
-    0% {opacity: 0}
-    100% {opacity: 1}
-}
-@-webkit-keyframes slidein {
-    0% {margin-left: -800px}
-    50% {margin-left: -800px}
-    100% {margin-left: 0px}
-}
-@-webkit-keyframes reveal {
-    0% {opacity: 0; width: 0px}
-    50% {opacity: 1; width: 0px}
-    100% {width: 260px}
-}
 .algo-wrapper {
     display: grid;
     grid-template-columns: auto auto;
@@ -94,9 +80,6 @@
     opacity: 0;
 }
 @keyframes algoFadeUp {
-    100% {opacity: 1; margin-top: 0; margin-bottom: 0}
-}
-@-webkit-keyframes algoFadeUp {
     100% {opacity: 1; margin-top: 0; margin-bottom: 0}
 }
 .algo-item1 {animation: algoFadeUp 1.25s ease .5s forwards}
@@ -265,11 +248,6 @@
         50% {opacity: 1; width: 0px}
         100% {width: 225px}
     }
-    @-webkit-keyframes reveal {
-        0% {opacity: 0; width: 0px}
-        50% {opacity: 1; width: 0px}
-        100% {width: 225px}
-    }
 }
 @media (max-width: 650px) {
     .algo-header {
@@ -283,11 +261,6 @@
         height: 4.5rem;
     }
     @keyframes slidein {
-        0% {margin-left: 0px}
-        50% {margin-left: 0px}
-        100% {margin-left: 0px}
-    }
-    @-webkit-keyframes slidein {
         0% {margin-left: 0px}
         50% {margin-left: 0px}
         100% {margin-left: 0px}
@@ -308,11 +281,6 @@
         animation: reveal 2.5s ease 2.5s forwards;
     }
     @keyframes reveal {
-        0% {opacity: 0; width: 225px}
-        50% {opacity: 1; width: 225px}
-        100% {width: 225px; opacity: 1}
-    }
-    @-webkit-keyframes reveal {
         0% {opacity: 0; width: 225px}
         50% {opacity: 1; width: 225px}
         100% {width: 225px; opacity: 1}
