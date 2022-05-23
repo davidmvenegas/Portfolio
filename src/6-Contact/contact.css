@@ -242,8 +242,8 @@
 .map-popup {
     position: absolute;
     background: rgba(0,0,0,0.875);
-    top: 4rem;
-    left: 4rem;
+    top: 3rem;
+    right: 3rem;
     font-size: 18px;
     font-weight: 300;
     line-height: 1.6;
@@ -314,8 +314,8 @@
 /* RESPONSIVE */
 @media (max-width: 1400px) {
     .map-popup {
-        top: 3rem;
-        left: 3rem;
+        top: 2.5rem;
+        right: 2.5rem;
     }
     .contact-title {
         padding-left: 3.75%;
@@ -487,7 +487,7 @@
     }
     .map-popup {
         top: 2.5rem;
-        left: 2.5rem;
+        right: 2.5rem;
     }
     .contact-title {
         font-size: 5.5rem;
@@ -517,8 +517,8 @@
         height: 45rem;
     }
     .map-popup {
-        top: 2rem;
-        left: 2rem;
+        top: 1.8rem;
+        right: 1.8rem;
     }
     .contact-message {
         font-size: 1.6rem;
@@ -542,9 +542,9 @@
     }
     .map-popup {
         top: 1rem;
-        left: 1rem;
-        font-size: 16px;
-        padding: 16.5px;
+        right: 1rem;
+        font-size: 12.5px;
+        padding: 14px;
     }
     #contact-half-left {
         float: none;

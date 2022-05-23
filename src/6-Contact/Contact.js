@@ -11,7 +11,7 @@ function Contact() {
 
     function sendEmail(e) {
         e.preventDefault()
-        Swal.fire({
+            Swal.fire({
             title: 'Your message has been sent',
             color: '#f5f5f5',
             icon: 'success',
@@ -22,7 +22,6 @@ function Contact() {
         .then(e.target.reset())
         .catch (error => console.log(error.text))
     }
-
     function handleCopy() {
         let clearPopup = setTimeout(() => setCopied(false), 1500)
         copied && clearTimeout(clearPopup)
@@ -45,7 +44,7 @@ function Contact() {
                     <span id='cLetter_e'>e</span>
                 </h1>
                 <p className="contact-message contactForm1">
-                    I'm available for a developer position and would love to connect. I currently reside in New York City, but am open to relocation. If you have any questions or requests, don't hesitate to reach out.
+                    I'm available for a developer position and would love to connect. I currently reside in Chicago, but am open to relocation. If you have any questions or requests, don't hesitate to reach out.
                 </p>
                 <form className="contact-form" ref={formRef} onSubmit={sendEmail}>
                     <ul>
@@ -54,7 +53,7 @@ function Contact() {
                             <span className="contact-after"></span>
                         </li>
                         <li className='contact-item contactForm3' id='contact-half-right'>
-                            <input type="email" placeholder='Email' name="from_email" required/>
+                            <input type="email" placeholder='Email*' name="from_email" required/>
                             <span className="contact-after"></span>
                         </li>
                         <li className='contact-item contactForm4' id='contact-subject'>
@@ -62,7 +61,7 @@ function Contact() {
                             <span className="contact-after"></span>
                         </li>
                         <li className='contact-item contactForm5'>
-                            <textarea placeholder='Message' name="message" required/>
+                            <textarea placeholder='Message*' name="message" required/>
                             <span className="contact-after"></span>
                         </li>
                     </ul>
