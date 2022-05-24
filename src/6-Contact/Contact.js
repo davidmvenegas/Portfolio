@@ -81,7 +81,7 @@ function Contact() {
                     <p>David Venegas</p>
                     <p>venegasdavidm@gmail.com</p>
                     <p>1-803-944-1772</p>
-                    <p>NYC, NY - USA</p>
+                    <p>Chicago, IL - USA</p>
                 </div>
                 <div className="map-wrapper">
                     <iframe title='Contact Map' src="https://snazzymaps.com/embed/370659" width="100%" height="100%" style={{border: "none"}}/>

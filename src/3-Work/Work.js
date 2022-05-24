@@ -43,16 +43,18 @@ function Work() {
     const [otherDescRef, otherDescInView] = useInView({threshold: 0, triggerOnce: true})
     const otherData = [
         {id: 1, title: 'Weather App', image: WeatherLogo, github: "https://github.com/davidmvenegas/WeatherApp", link: "https://davidmvenegas.github.io/WeatherApp", largeTitle: false},
-        {id: 2, title: 'Favorite Books', image: BooklistLogo, github: "https://github.com/davidmvenegas/booklist", link: "https://davyvegasbooklist.com", largeTitle: false},
-        {id: 3, title: 'Coin Flip', image: CoinFlipLogo, github: "https://github.com/davidmvenegas/coin-flip", link: "https://davidmvenegas.github.io/coin-flip", largeTitle: false},
+        {id: 2, title: 'Favorite Books', image: BooklistLogo, github: "https://github.com/davidmvenegas/DavyVegasBooklist", link: "https://davyvegasbooklist.com", largeTitle: false},
+        {id: 3, title: 'Coin Flip', image: CoinFlipLogo, github: "https://github.com/davidmvenegas/CoinFlip", link: "https://davidmvenegas.github.io/CoinFlip", largeTitle: false},
         {id: 4, title: 'Tic-Tac-Toe', image: TicTacToeLogo, github: "https://github.com/davidmvenegas/TicTacToe", link: "https://davidmvenegas.github.io/TicTacToe", largeTitle: false},
-        {id: 5, title: 'Calculator', image: CalculatorLogo, github: "https://github.com/davidmvenegas/calculator", link: "https://davidmvenegas.github.io/calculator", largeTitle: false},
-        {id: 6, title: 'Rock Paper Scissors', image: RockPaperScissorsLogo, github: "https://github.com/davidmvenegas/rock-paper-scissors", link: "https://davidmvenegas.github.io/rock-paper-scissors", largeTitle: true},
+        {id: 5, title: 'Calculator', image: CalculatorLogo, github: "https://github.com/davidmvenegas/Calculator", link: "https://davidmvenegas.github.io/Calculator", largeTitle: false},
+        {id: 6, title: 'Rock Paper Scissors', image: RockPaperScissorsLogo, github: "https://github.com/davidmvenegas/RockPaperScissors", link: "https://davidmvenegas.github.io/RockPaperScissors", largeTitle: true},
         {id: 7, title: 'Mini Quiz', image: QuizLogo, github: "https://github.com/davidmvenegas/JS-Quiz", link: "https://davidmvenegas.github.io/JS-Quiz", largeTitle: false},
-        {id: 8, title: 'Starbucks Page', image: StarbucksLogo, github: "https://github.com/davidmvenegas/starbucks-home-page-clone", link: "https://davidmvenegas.github.io/starbucks-home-page-clone/", largeTitle: false},
-        {id: 9, title: 'Restaurant Page', image: RestaurantLogo, github: "https://github.com/davidmvenegas/burgerhouse", link: "https://davidmvenegas.github.io/burgerhouse", largeTitle: false},
-        {id: 10, title: 'Notes App', image: NotesLogo, github: "https://github.com/davidmvenegas/notes-app", link: "https://davidmvenegas.github.io/notes-app", largeTitle: false},
+        {id: 8, title: 'Starbucks Page', image: StarbucksLogo, github: "https://github.com/davidmvenegas/StarbucksPageClone", link: "https://davidmvenegas.github.io/StarbucksPageClone", largeTitle: false},
+        // BROKEN 👇 THIS ONES BROKENNN
+        {id: 9, title: 'Restaurant Page', image: RestaurantLogo, github: "https://github.com/davidmvenegas/Burgerhouse", link: "https://davidmvenegas.github.io/Burgerhouse", largeTitle: false},
+        {id: 10, title: 'Notes App', image: NotesLogo, github: "https://github.com/davidmvenegas/NotesApp", link: "https://davidmvenegas.github.io/NotesApp", largeTitle: false},
         {id: 11, title: 'Password Generator', image: PasswordLogo, github: "https://github.com/davidmvenegas/PasswordGenerator", link: "https://davidmvenegas.github.io/PasswordGenerator", largeTitle: true},
+        // FIX FORMATING PLZZZ
         {id: 12, title: 'New Years Timer', image: NewYearsLogo, github: "https://github.com/davidmvenegas/JS-CountdownTimer", link: "https://davidmvenegas.github.io/JS-CountdownTimer", largeTitle: false},
     ]
     function handleOpenModal(id) {
