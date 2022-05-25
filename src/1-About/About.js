@@ -45,7 +45,7 @@ function About() {
                         <h2 className="about-resume-title">My Resume:</h2>
                         <div className="about-resume-buttons-wrapper">
                             <a href="David_Venegas_Resume.pdf" download><img src={PDF_Icon} alt="PDF" className="about-resume-pdf"/></a>
-                            <a href="https://docs.google.com/document/d/1hePALiQVLoytmgKcoLG4KtkNFi6UeMQBSTLCf5gfZnc/edit?usp=sharing" target="_blank" rel="noreferrer"><img src={GoogleDocs_Icon} alt="Google Docs" className="about-resume-googleDocs"/></a>
+                            <a href="https://docs.google.com/document/d/1Oe-zKdlp0BpDYQMK6FmnJpq2rV_KYMvbh3ElkJ0QXdw/edit?usp=sharing" target="_blank" rel="noreferrer"><img src={GoogleDocs_Icon} alt="Google Docs" className="about-resume-googleDocs"/></a>
                         </div>
                     </div>
                 </div>
