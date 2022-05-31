@@ -37,7 +37,7 @@
     font-family: monospace;
     display: flex;
     align-items: flex-start;
-    font-size: .8rem;
+    font-size: .735rem;
     width: 95.5rem;
     height: 2.5rem;
     margin-top: 2rem;
@@ -467,7 +467,7 @@
 }
 @media (max-width: 1250px) {
     .skills-description {
-        font-size: .75rem;
+        font-size: .69rem;
         width: 89.5rem;
     }
     .skills-container {
