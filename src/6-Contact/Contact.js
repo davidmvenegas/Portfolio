@@ -44,7 +44,7 @@ function Contact() {
                     <span id='cLetter_e'>e</span>
                 </h1>
                 <p className="contact-message contactForm1">
-                    I'm available for a contract developer position and would love to connect. I currently reside in Boston, and am open to a remote role. If you have any questions or requests, don't hesitate to reach out.
+                    I'm available for a contract developer position and would love to connect. I currently reside in Boston and am open to a remote role. If you have any questions or requests, don't hesitate to reach out.
                 </p>
                 <form className="contact-form" ref={formRef} onSubmit={sendEmail}>
                     <ul>
