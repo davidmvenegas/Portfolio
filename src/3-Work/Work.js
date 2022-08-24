@@ -48,7 +48,7 @@ function Work() {
         {id: 4, title: 'Tic-Tac-Toe', image: TicTacToeLogo, github: "https://github.com/davidmvenegas/TicTacToe", link: "https://davidmvenegas.github.io/TicTacToe", largeTitle: false},
         {id: 5, title: 'Calculator', image: CalculatorLogo, github: "https://github.com/davidmvenegas/Calculator", link: "https://davidmvenegas.github.io/Calculator", largeTitle: false},
         {id: 6, title: 'Rock Paper Scissors', image: RockPaperScissorsLogo, github: "https://github.com/davidmvenegas/RockPaperScissors", link: "https://davidmvenegas.github.io/RockPaperScissors", largeTitle: true},
-        {id: 7, title: 'Mini Quiz', image: QuizLogo, github: "https://github.com/davidmvenegas/JS-Quiz", link: "https://davidmvenegas.github.io/JS-Quiz", largeTitle: false},
+        {id: 7, title: 'Quiz App', image: QuizLogo, github: "https://github.com/davidmvenegas/quizApp", link: "https://davidmvenegas-quizapp.netlify.app", largeTitle: false},
         {id: 8, title: 'Starbucks Page', image: StarbucksLogo, github: "https://github.com/davidmvenegas/StarbucksPageClone", link: "https://davidmvenegas.github.io/StarbucksPageClone", largeTitle: false},
         // BROKEN 👇 THIS ONES BROKENNN
         {id: 9, title: 'Restaurant Page', image: RestaurantLogo, github: "https://github.com/davidmvenegas/Burgerhouse", link: "https://davidmvenegas.github.io/Burgerhouse", largeTitle: false},
