@@ -55,7 +55,7 @@ function About() {
                 <p className='about-right-description'>
                 I am a driven software engineer with a passion for programming and solving difficult problems.
                     <br /><br />Technology is something with which I've always felt a deep connection. I have high aspirations and am constantly striving to outdo myself with every <span onClick={() => navigate('/work')}>challenge</span> I undertake.
-                    <br /><br />My goal is to join a team that is truly passionate about what they create and are proud to make the world a better place.
+                    <br /><br />My goal is to work with teams who help create technologies that make the world a better, more exciting, and fulfilling place.
                 </p>
             </div>
         </div>
