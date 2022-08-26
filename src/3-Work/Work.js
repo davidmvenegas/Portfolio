@@ -43,7 +43,7 @@ function Work() {
     const [otherDescRef, otherDescInView] = useInView({threshold: 0, triggerOnce: true})
     const otherData = [
         {id: 1, title: 'Weather App', image: WeatherLogo, github: "https://github.com/davidmvenegas/WeatherApp", link: "https://davidmvenegas.github.io/WeatherApp", largeTitle: false},
-        {id: 2, title: 'Favorite Books', image: BooklistLogo, github: "https://github.com/davidmvenegas/DavyVegasBooklist", link: "https://davyvegasbooklist.com", largeTitle: false},
+        {id: 2, title: 'Favorite Books', image: BooklistLogo, github: "https://github.com/davidmvenegas/MyFavoriteBooks", link: "https://davidmvenegas.github.io/MyFavoriteBooks", largeTitle: false},
         {id: 3, title: 'Coin Flip', image: CoinFlipLogo, github: "https://github.com/davidmvenegas/CoinFlip", link: "https://davidmvenegas.github.io/CoinFlip", largeTitle: false},
         {id: 4, title: 'Tic-Tac-Toe', image: TicTacToeLogo, github: "https://github.com/davidmvenegas/TicTacToe", link: "https://davidmvenegas.github.io/TicTacToe", largeTitle: false},
         {id: 5, title: 'Calculator', image: CalculatorLogo, github: "https://github.com/davidmvenegas/Calculator", link: "https://davidmvenegas.github.io/Calculator", largeTitle: false},
