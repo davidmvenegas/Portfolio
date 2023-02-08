@@ -508,8 +508,10 @@
     }
     .port-btn-more {
         width: 18rem;
+        padding: 0;
     }
     #port-more-text {
+        width: 100%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
