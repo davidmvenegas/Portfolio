@@ -1,7 +1,6 @@
 # David Venegas - Fullstack Web Developer
 
-
-Email - venegasdavidm@gmail.com
+Email - <david@venegas.com>
 <br>
-LinkedIn - https://www.linkedin.com/in/david-venegas-m
+LinkedIn - <https://www.linkedin.com/in/david-venegas-m>
 <br>

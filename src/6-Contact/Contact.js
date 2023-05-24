@@ -5,13 +5,13 @@ import emailjs from 'emailjs-com'
 import Swal from 'sweetalert2'
 
 function Contact() {
-    useEffect(() => {window.scrollTo(0, 0)}, [])
+    useEffect(() => { window.scrollTo(0, 0) }, [])
     const [copied, setCopied] = useState(false)
     const formRef = useRef()
 
     function sendEmail(e) {
         e.preventDefault()
-            Swal.fire({
+        Swal.fire({
             title: 'Your message has been sent',
             color: '#f5f5f5',
             icon: 'success',
@@ -19,14 +19,14 @@ function Contact() {
             backdrop: `rgba(0,0,0,0.5)`
         })
         emailjs.sendForm('service_p4e9t3x', 'template_40qv28e', formRef.current, 'user_Wr18txCeJipUS6ENtKUc0')
-        .then(e.target.reset())
-        .catch (error => console.log(error.text))
+            .then(e.target.reset())
+            .catch(error => console.log(error.text))
     }
     function handleCopy() {
         let clearPopup = setTimeout(() => setCopied(false), 1500)
         copied && clearTimeout(clearPopup)
         setCopied(true)
-        navigator.clipboard.writeText("venegasdavidm@gmail.com")
+        navigator.clipboard.writeText("david@venegas.com")
     }
 
     return (
@@ -49,19 +49,19 @@ function Contact() {
                 <form className="contact-form" ref={formRef} onSubmit={sendEmail}>
                     <ul>
                         <li className='contact-item contactForm2' id='contact-half-left'>
-                            <input type="text" placeholder='Name' name="from_name"/>
+                            <input type="text" placeholder='Name' name="from_name" />
                             <span className="contact-after"></span>
                         </li>
                         <li className='contact-item contactForm3' id='contact-half-right'>
-                            <input type="email" placeholder='Email*' name="from_email" required/>
+                            <input type="email" placeholder='Email*' name="from_email" required />
                             <span className="contact-after"></span>
                         </li>
                         <li className='contact-item contactForm4' id='contact-subject'>
-                            <input id='contact-third-child' type="text" placeholder='Subject' name="subject"/>
+                            <input id='contact-third-child' type="text" placeholder='Subject' name="subject" />
                             <span className="contact-after"></span>
                         </li>
                         <li className='contact-item contactForm5'>
-                            <textarea placeholder='Message*' name="message" required/>
+                            <textarea placeholder='Message*' name="message" required />
                             <span className="contact-after"></span>
                         </li>
                     </ul>
@@ -70,21 +70,21 @@ function Contact() {
                 <div className="contact-aside contactForm7">
                     <p id='contact-copy-top'>Or email me directly at:</p>
                     <div className="contact-copy-wrap">
-                        <div className='contact-copy-box'><VscCopy onClick={() => handleCopy()} id='contact-copy-icon'/><p id='contact-copy-email'>venegasdavidm@gmail.com</p></div>
+                        <div className='contact-copy-box'><VscCopy onClick={() => handleCopy()} id='contact-copy-icon' /><p id='contact-copy-email'>david@venegas.com</p></div>
                         <div className='contact-popup' id={copied ? "contact-popup-show" : undefined}>Copied!</div>
                     </div>
                 </div>
             </div>
             <div className="contact-right-box">
-            <div className="contact-right-cover"></div>
+                <div className="contact-right-cover"></div>
                 <div className="map-popup">
                     <p>David Venegas</p>
-                    <p>venegasdavidm@gmail.com</p>
-                    <p>1-803-944-1772</p>
+                    <p>david@venegas.com</p>
+                    <p>1-857-327-3414</p>
                     <p>Boston, MA - USA</p>
                 </div>
                 <div className="map-wrapper">
-                    <iframe title='Contact Map' src="https://snazzymaps.com/embed/370659" width="100%" height="100%" style={{border: "none"}}/>
+                    <iframe title='Contact Map' src="https://snazzymaps.com/embed/370659" width="100%" height="100%" style={{ border: "none" }} />
                 </div>
             </div>
         </div>
