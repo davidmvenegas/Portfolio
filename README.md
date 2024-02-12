@@ -1,4 +1,4 @@
-# David Venegas - Fullstack Engineer
+# David Venegas - a Fullstack Engineer
 
 Email - <david@venegas.com>
 <br>
