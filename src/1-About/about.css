@@ -22,8 +22,8 @@
 }
 .about-left-title {
     position: relative;
-    font-size: 7.75rem;
-    line-height: 8.75rem;
+    font-size: 6.75rem;
+    line-height: 8.25rem;
 }
 .about-left-title span {
     display: inline-block;
@@ -33,40 +33,155 @@
     color: #08fdd8;
 }
 @keyframes aboutFadeIn {
-    from {transform: scale3d(1, 1, 1); opacity: 0;}
-    30% {transform: scale3d(1.25, 0.75, 1)}
-    40% {transform: scale3d(0.75, 1.2, 1)}
-    50% {transform: scale3d(1.15, 0.85, 1); opacity: 1;}
-    65% {transform: scale3d(.95, 1.05, 1)}
-    75% {transform: scale3d(1.05, .95, 1)}
-    to {transform: scale3d(1, 1, 1); opacity: 1;}
+    from {
+        transform: scale3d(1, 1, 1);
+        opacity: 0;
+    }
+    30% {
+        transform: scale3d(1.25, 0.75, 1)
+    }
+    40% {
+        transform: scale3d(0.75, 1.2, 1)
+    }
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+        opacity: 1;
+    }
+    65% {
+        transform: scale3d(.95, 1.05, 1)
+    }
+    75% {
+        transform: scale3d(1.05, .95, 1)
+    }
+    to {
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
 }
-#letter_H {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 0s;}
-#letter_i_one {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .05s;}
-#letter_comma_one {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .1s;}
-#letter_I {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .15s;}
-#letter_hyphen {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .2s;}
-#letter_m {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .25s;}
-#letter_D_one {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .3s;}
-#letter_a {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .35s;}
-#letter_v_one {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .4s;}
-#letter_i_two {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .45s;}
-#letter_d {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .5s;}
-#letter_comma_two {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .55s;}
-#letter_W {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1s;}
-#letter_e_one {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.05s;}
-#letter_b {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.1s;}
-#letter_D_two {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.25s;}
-#letter_e_two {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.3s;}
-#letter_v_two {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.35s;}
-#letter_e_three {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.4s;}
-#letter_l {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.45s;}
-#letter_o {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.5s;}
-#letter_p {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.55s;}
-#letter_e_four {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.65s;}
-#letter_r {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.7s;}
+#letter_H {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 0s;
+}
+#letter_i_one {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: .05s;
+}
+#letter_comma_one {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: .1s;
+}
+#letter_I {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: .15s;
+}
+#letter_hyphen {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: .2s;
+}
+#letter_m {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: .25s;
+}
+#letter_D_one {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: .3s;
+}
+#letter_a {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: .35s;
+}
+#letter_v_one {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: .4s;
+}
+#letter_i_two {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: .45s;
+}
+#letter_d {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: .5s;
+}
+#letter_comma_two {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: .55s;
+}
+#letter_W {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+#letter_e_one {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.05s;
+}
+#letter_b {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.1s;
+}
+#letter_D_two {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.25s;
+}
+#letter_e_two {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.3s;
+}
+#letter_v_two {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.35s;
+}
+#letter_e_three {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.4s;
+}
+#letter_l {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.45s;
+}
+#letter_o {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+#letter_p {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.55s;
+}
+#letter_e_four {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.65s;
+}
+#letter_r {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.7s;
+}
 @keyframes aboutTitleAfterFade {
-    100% {opacity: 1}
+    100% {
+        opacity: 1
+    }
 }
 .about-left-title:after {
     content: '</h1>';
@@ -85,7 +200,9 @@
     opacity: 0;
 }
 @keyframes aboutDescriptionFade {
-    100% {opacity: 1}
+    100% {
+        opacity: 1
+    }
 }
 .about-left-description:before {
     content: '<p>';
@@ -120,7 +237,11 @@
     opacity: 0;
 }
 @keyframes aboutButtonBoxUp {
-    100% {margin-top: 6.5rem; margin-bottom: 0; opacity: 1}
+    100% {
+        margin-top: 6.5rem;
+        margin-bottom: 0;
+        opacity: 1
+    }
 }
 .about-left-button-box {
     display: flex;
@@ -211,10 +332,11 @@
     transform: scale(.95);
 }
 
-
 /* RIGHT SIDE */
 @keyframes aboutRightSideFade {
-    100% {opacity: 1}
+    100% {
+        opacity: 1
+    }
 }
 .about-right-box {
     padding-right: 6.5rem;
@@ -274,7 +396,7 @@
 .about-right-description:after {
     content: '</p>';
     position: absolute;
-    font-family:cursive;
+    font-family: cursive;
     color: #515152;
     font-size: 14px;
     font-weight: 200;
@@ -285,14 +407,14 @@
 /* RESPONSIVE */
 @media (max-width: 1400px) {
     .about-left-title {
-        font-size: 7rem;
-        line-height: 8.25rem;
+        font-size: 6rem;
+        line-height: 7rem;
     }
 }
 @media (max-width: 1300px) {
     .about-left-title {
-        font-size: 6.5rem;
-        line-height: 7.5rem;
+        font-size: 5.5rem;
+        line-height: 6.65rem;
     }
     .about-right-title {
         font-size: 5rem;
@@ -306,8 +428,8 @@
 }
 @media (max-width: 1200px) {
     .about-left-title {
-        font-size: 6rem;
-        line-height: 7rem;
+        font-size: 4.75rem;
+        line-height: 6rem;
     }
     .about-right-title {
         font-size: 4.5rem;
@@ -361,8 +483,8 @@
 }
 @media (max-width: 950px) {
     .about-left-title {
-        font-size: 6.5rem;
-        line-height: 7.5rem;
+        font-size: 6rem;
+        line-height: 7.25rem;
     }
     .about-right-title {
         font-size: 5rem;
@@ -389,8 +511,8 @@
         min-height: 0;
     }
     .about-left-title {
-        font-size: 5rem;
-        line-height: 6.25rem;
+        font-size: 4.75rem;
+        line-height: 6rem;
     }
     .about-left-description {
         font-size: 1.5rem;
@@ -434,8 +556,8 @@
         margin-top: -3.35rem;
     }
     .about-left-title {
-        font-size: 4.125rem;
-        line-height: 5.125rem;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
     }
     .about-left-title:after {
         margin-top: 1.25rem;

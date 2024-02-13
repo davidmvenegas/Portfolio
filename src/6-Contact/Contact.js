@@ -44,7 +44,7 @@ function Contact() {
                     <span id='cLetter_e'>e</span>
                 </h1>
                 <p className="contact-message contactForm1">
-                    I'm available for collaboration and work opportunities and would love to connect. I reside in Boston and can work both locally and remote. If you have any questions or requests, don't hesitate to reach out.
+                    I'm always interested in cool projects and meeting new people. I reside in Seattle and work both locally and remote. If you have any questions or requests, don't hesitate to reach out!
                 </p>
                 <form className="contact-form" ref={formRef} onSubmit={sendEmail}>
                     <ul>
@@ -81,7 +81,7 @@ function Contact() {
                     <p>David Venegas</p>
                     <p>david@venegas.com</p>
                     <p>1-857-327-3414</p>
-                    <p>Boston, MA - USA</p>
+                    <p>Seattle, WA - USA</p>
                 </div>
                 <div className="map-wrapper">
                     <iframe title='Contact Map' src="https://snazzymaps.com/embed/370659" width="100%" height="100%" style={{ border: "none" }} />

@@ -11,14 +11,14 @@ import Contact from './6-Contact/Contact'
 function App() {
   return (
     <Fragment>
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<About/>} />
-        <Route path="/skills" element={<Skills/>} />
-        <Route path="/work" element={<Work/>} />
-        <Route path="/algorithms" element={<Algorithms/>} />
-        <Route path="/blogs" element={<Blogs/>} />
-        <Route path="/contact" element={<Contact/>} />
+        <Route path="/" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Work />} />
+        <Route path="/algorithms" element={<Algorithms />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Fragment>
   )

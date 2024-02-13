@@ -38,7 +38,7 @@
     display: flex;
     align-items: flex-start;
     font-size: .735rem;
-    width: 95.5rem;
+    width: 96rem;
     height: 2.5rem;
     margin-top: 2rem;
 }
@@ -46,12 +46,23 @@
     margin-top: 7.5rem;
 }
 @keyframes skilsHeadFade {
-    10% {opacity: 0}
-    50% {margin-top: 0rem; margin-bottom: 0rem}
-    100% {opacity: 1; margin-top: 0rem; margin-bottom: 0rem}
+    10% {
+        opacity: 0
+    }
+    50% {
+        margin-top: 0rem;
+        margin-bottom: 0rem
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0rem;
+        margin-bottom: 0rem
+    }
 }
 @keyframes skilsBoxFade {
-    100% {opacity: 1}
+    100% {
+        opacity: 1
+    }
 }
 .skills-box {
     position: relative;
@@ -120,16 +131,46 @@
     font-size: 1.35rem;
     line-height: 1.4;
 }
-#ReactSkill {animation: skilsBoxFade 1s ease .75s forwards; opacity: 0}
-#ReduxSkill {animation: skilsBoxFade 1s ease 1.25s forwards; opacity: 0}
-#JavascriptSkill {animation: skilsBoxFade 1s ease 1.75s forwards; opacity: 0}
-#RubySkill {animation: skilsBoxFade 1s ease 2.25s forwards; opacity: 0}
-#CSSSkill {animation: skilsBoxFade 1s ease 2.75s forwards; opacity: 0}
-#NodeSkill {animation: skilsBoxFade 1s ease .75s forwards; opacity: 0}
-#MongoDBSkill {animation: skilsBoxFade 1s ease 1.25s forwards; opacity: 0}
-#SQLSkill {animation: skilsBoxFade 1s ease 1.75s forwards; opacity: 0}
-#RubyonRailsSkill {animation: skilsBoxFade 1s ease 2.25s forwards; opacity: 0}
-#FirebaseSkill {animation: skilsBoxFade 1s ease 2.75s forwards; opacity: 0}
+#ReactSkill {
+    animation: skilsBoxFade 1s ease .75s forwards;
+    opacity: 0
+}
+#ReduxSkill {
+    animation: skilsBoxFade 1s ease 1.25s forwards;
+    opacity: 0
+}
+#JavascriptSkill {
+    animation: skilsBoxFade 1s ease 1.75s forwards;
+    opacity: 0
+}
+#RubySkill {
+    animation: skilsBoxFade 1s ease 2.25s forwards;
+    opacity: 0
+}
+#CSSSkill {
+    animation: skilsBoxFade 1s ease 2.75s forwards;
+    opacity: 0
+}
+#NodeSkill {
+    animation: skilsBoxFade 1s ease .75s forwards;
+    opacity: 0
+}
+#MongoDBSkill {
+    animation: skilsBoxFade 1s ease 1.25s forwards;
+    opacity: 0
+}
+#SQLSkill {
+    animation: skilsBoxFade 1s ease 1.75s forwards;
+    opacity: 0
+}
+#RubyonRailsSkill {
+    animation: skilsBoxFade 1s ease 2.25s forwards;
+    opacity: 0
+}
+#FirebaseSkill {
+    animation: skilsBoxFade 1s ease 2.75s forwards;
+    opacity: 0
+}
 
 .education-separator {
     width: 0;
@@ -144,7 +185,9 @@
     animation: lineAcross 4s ease forwards;
 }
 @keyframes lineAcross {
-    100% {width: 90%}
+    100% {
+        width: 90%
+    }
 }
 
 .education-wrapper {
@@ -192,7 +235,10 @@
     animation: certItemSlide 2s ease forwards;
 }
 @keyframes certItemSlide {
-    100% {opacity: 1; margin-left: 0}
+    100% {
+        opacity: 1;
+        margin-left: 0
+    }
 }
 .flatiron-img-wrapper {
     position: relative;
@@ -320,7 +366,7 @@
 .cert-item {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     background-color: #111;
     height: 100%;
@@ -388,6 +434,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 0 1rem;
+    width: calc(100% - 20rem);
 }
 .cert-title {
     font-size: 3.25rem;
@@ -431,9 +478,15 @@
     animation: flickerNote 2s ease infinite;
 }
 @keyframes flickerNote {
-    0% {color: #08fdd8;}
-    50% {color: #00947e;}
-    100% {color: #08fdd8;}
+    0% {
+        color: #08fdd8;
+    }
+    50% {
+        color: #00947e;
+    }
+    100% {
+        color: #08fdd8;
+    }
 }
 
 /* RESPONSIVE */
@@ -469,7 +522,7 @@
 @media (max-width: 1250px) {
     .skills-description {
         font-size: .69rem;
-        width: 89.5rem;
+        width: 90rem;
     }
     .skills-container {
         padding: 3.5rem 0 3.5rem 16.5rem;
@@ -780,7 +833,9 @@
         animation: visibleSecondSkillMobile .25s ease 3.75s forwards;
     }
     @keyframes visibleSecondSkillMobile {
-        100% {opacity: 1}
+        100% {
+            opacity: 1
+        }
     }
     .note-wrapper p {
         font-size: 1.5rem;

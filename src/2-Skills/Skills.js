@@ -27,12 +27,12 @@ function Skills() {
     const [mouse3, setMouse3] = useState(false)
     const [mouse4, setMouse4] = useState(false)
     const [cert, setCert] = useState(false)
-    const [edSepRef, edSepInView] = useInView({threshold: 0, triggerOnce: true})
-    const [edTitleRef, edTitleInView] = useInView({threshold: 0, triggerOnce: true})
-    const [ed1Ref, ed1InView] = useInView({threshold: 0, triggerOnce: true})
-    const [ed2Ref, ed2InView] = useInView({threshold: 0, triggerOnce: true})
-    const [ed3Ref, ed3InView] = useInView({threshold: 0, triggerOnce: true})
-    const [ed4Ref, ed4InView] = useInView({threshold: 0, triggerOnce: true})
+    const [edSepRef, edSepInView] = useInView({ threshold: 0, triggerOnce: true })
+    const [edTitleRef, edTitleInView] = useInView({ threshold: 0, triggerOnce: true })
+    const [ed1Ref, ed1InView] = useInView({ threshold: 0, triggerOnce: true })
+    const [ed2Ref, ed2InView] = useInView({ threshold: 0, triggerOnce: true })
+    const [ed3Ref, ed3InView] = useInView({ threshold: 0, triggerOnce: true })
+    const [ed4Ref, ed4InView] = useInView({ threshold: 0, triggerOnce: true })
     return (
         <div className='skills-container'>
             <div className="skills-wrapper">
@@ -52,8 +52,8 @@ function Skills() {
                     <span>s</span>
                 </h1>
                 <p className="skills-description">
-                    <TypeWriterEffect startDelay={1000} cursorColor="white" text="I love to learn and am always teaching myself new things." typeSpeed={35} hideCursorAfterText={true}/>&nbsp;&nbsp;
-                    <span id="skillsMobileSecond"><TypeWriterEffect startDelay={4000} cursorColor="white" text="These are my strongest skillsets and technologies." typeSpeed={35} hideCursorAfterText={true}/></span>
+                    <TypeWriterEffect startDelay={1000} cursorColor="white" text="I love to learn and am always teaching myself new things." typeSpeed={35} hideCursorAfterText={true} />&nbsp;&nbsp;
+                    <span id="skillsMobileSecond"><TypeWriterEffect startDelay={4000} cursorColor="white" text="These are my strongest skillsets and technologies." typeSpeed={35} hideCursorAfterText={true} /></span>
                 </p>
                 <div className="skills-box">
                     <h1 className="skills-title">Frontend</h1>
@@ -61,25 +61,25 @@ function Skills() {
                         <div id="ReactSkill" className="skills-item">
                             <img src={ReactImg} alt="React" />
                             <h2>React JS</h2>
-                            <p>I use React on a daily basis for nearly everything I do</p>
+                            <p>I use React on a regular basis for a lot of what I do</p>
                         </div>
                         <div id="ReactSkill" className="skillSeparator"></div>
                         <div id="ReduxSkill" className="skills-item">
                             <img src={ReduxImg} alt="Redux" />
                             <h2>Redux</h2>
-                            <p>My best friend when building large-scale applications</p>
+                            <p>A useful friend when building large-scale applications</p>
                         </div>
                         <div id="ReduxSkill" className="skillSeparator"></div>
                         <div id="JavascriptSkill" className="skills-item">
                             <img src={JavascriptImg} alt="Javascript" />
                             <h2>Javascript</h2>
-                            <p>The duct tape of the Internet and my first love</p>
+                            <p>The duct tape of the Internet and my partner in crime</p>
                         </div>
                         <div id="JavascriptSkill" className="skillSeparator hiddenSkillSeparator"></div>
                         <div id="RubySkill" className="skills-item responsiveSkillsItem1">
                             <img src={RubyImg} alt="Ruby" />
                             <h2>Ruby</h2>
-                            <p>Dynamic and simplistic - my first programming language</p>
+                            <p>My first programming language, dynamic and simplistic</p>
                         </div>
                         <div id="RubySkill" className="skillSeparator responsiveSkillsItem2"></div>
                         <div id="CSSSkill" className="skills-item responsiveSkillsItem3">
@@ -107,7 +107,7 @@ function Skills() {
                         <div id="SQLSkill" className="skills-item">
                             <img src={SQLImg} alt="SQL" />
                             <h2>SQL</h2>
-                            <p>I am well versed in SQL development - from queries to schemas</p>
+                            <p>I am well versed in SQL development, from queries to schemas</p>
                         </div>
                         <div id="SQLSkill" className="skillSeparator hiddenSkillSeparator"></div>
                         <div id="RubyonRailsSkill" className="skills-item responsiveSkillsItem1">
@@ -158,13 +158,13 @@ function Skills() {
                     <div className="flatiron-item" ref={ed1Ref} id={ed1InView ? "cert1-active" : undefined} onMouseEnter={() => setMouse1(true)} onMouseLeave={() => setMouse1(false)}>
                         <div className="flatiron-img-wrapper" onMouseEnter={() => setMouse1(false)} onMouseLeave={() => setMouse1(true)} onClick={() => setCert(!cert)}>
                             <div className="flatiron-images">
-                                <img className="flatiron-img" src={FlatironImg} alt="Flatiron" style={cert ? {opacity: "0"} : {opacity: "1"}}/>
-                                <img className="flatiron-img" src={FlatironCert} alt="Flatiron" style={cert ? {opacity: "1"} : {opacity: "0"}}/>
+                                <img className="flatiron-img" src={FlatironImg} alt="Flatiron" style={cert ? { opacity: "0" } : { opacity: "1" }} />
+                                <img className="flatiron-img" src={FlatironCert} alt="Flatiron" style={cert ? { opacity: "1" } : { opacity: "0" }} />
                             </div>
-                            <GiClick id={mouse1 ? "flatiron-pointer" : "flatiron-pointer-gone"}/>
+                            <GiClick id={mouse1 ? "flatiron-pointer" : "flatiron-pointer-gone"} />
                             <div className="flatiron-img-hover-box">
-                                <h1 style={cert ? {opacity: "1"} : {opacity: "0"}}>Click to hide certificate</h1>
-                                <h1 style={cert ? {opacity: "0"} : {opacity: "1"}}>Click to view certificate</h1>
+                                <h1 style={cert ? { opacity: "1" } : { opacity: "0" }}>Click to hide certificate</h1>
+                                <h1 style={cert ? { opacity: "0" } : { opacity: "1" }}>Click to view certificate</h1>
                             </div>
                         </div>
                         <div className="flatiron-text-box">
@@ -188,10 +188,10 @@ function Skills() {
                         <a href="https://www.credly.com/badges/7414c8a3-6315-4711-b4a3-ead2b9720a2d" target="_blank" rel="noreferrer">
                             <div className="cert-img-wrapper" onMouseEnter={() => setMouse2(false)} onMouseLeave={() => setMouse2(true)}>
                                 <img className='cert-img' src={AWSImg} alt="AWS" />
-                                <GiClick id={mouse2 ? "cert-pointer" : "cert-pointer-gone"}/>
+                                <GiClick id={mouse2 ? "cert-pointer" : "cert-pointer-gone"} />
                                 <div className="cert-img-hover-box">
                                     <h1>View certificate</h1>
-                                    <BsBoxArrowUpRight id='cert-arrow'/>
+                                    <BsBoxArrowUpRight id='cert-arrow' />
                                 </div>
                             </div>
                         </a>
@@ -204,10 +204,10 @@ function Skills() {
                         <a href="https://www.credly.com/badges/533f456d-e121-4340-b831-cc361012ce59" target="_blank" rel="noreferrer">
                             <div className="cert-img-wrapper" onMouseEnter={() => setMouse3(false)} onMouseLeave={() => setMouse3(true)}>
                                 <img className='cert-img' src={ComptiaImg} alt="Comptia Security +" />
-                                <GiClick id={mouse3 ? "cert-pointer" : "cert-pointer-gone"}/>
+                                <GiClick id={mouse3 ? "cert-pointer" : "cert-pointer-gone"} />
                                 <div className="cert-img-hover-box">
                                     <h1>View certificate</h1>
-                                    <BsBoxArrowUpRight id='cert-arrow'/>
+                                    <BsBoxArrowUpRight id='cert-arrow' />
                                 </div>
                             </div>
                         </a>
@@ -220,10 +220,10 @@ function Skills() {
                         <a href="https://university.atlassian.com/student/award/SzMgzKvEBivKWJWuomUu2PR5" target="_blank" rel="noreferrer">
                             <div className="cert-img-wrapper" onMouseEnter={() => setMouse4(false)} onMouseLeave={() => setMouse4(true)}>
                                 <img className='cert-img' src={AtlassianImg} alt="Jira Fundamentals" />
-                                <GiClick id={mouse4 ? "cert-pointer" : "cert-pointer-gone"}/>
+                                <GiClick id={mouse4 ? "cert-pointer" : "cert-pointer-gone"} />
                                 <div className="cert-img-hover-box">
                                     <h1>View certificate</h1>
-                                    <BsBoxArrowUpRight id='cert-arrow'/>
+                                    <BsBoxArrowUpRight id='cert-arrow' />
                                 </div>
                             </div>
                         </a>
