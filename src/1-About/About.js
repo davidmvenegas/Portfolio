@@ -58,9 +58,9 @@ function About() {
             <div className="about-right-box">
                 <div className="about-right-title">About me</div>
                 <p className='about-right-description'>
-                    I am a motivated engineer with a drive for using technology to solve difficult problems.
-                    <br /><br />Aerospace and technology are things with which I've always felt a deep connection. I have high aspirations and am constantly striving to outdo myself with every <span onClick={() => navigate('/projects')}>challenge</span> I undertake.
-                    <br /><br />My goal is to work with teams who help create technologies that make the earth (and other planets 🪐) a better, more exciting, and fulfilling place.
+                    I am a motivated engineer with a passion for using technology to solve important problems.
+                    <br /><br />I've always felt a deep connection to Aerospace and technology. I have high aspirations and am constantly striving to outdo myself with every <span onClick={() => navigate('/projects')}>challenge</span> I undertake.
+                    <br /><br />My goal is to work on building things that make the earth (and other planets 🪐) more exciting and fulfilling places to live.
                 </p>
             </div>
         </div>
