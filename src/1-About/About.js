@@ -37,13 +37,13 @@ function About() {
                     <span id='letter_p'>E</span>
                     <span id='letter_e_four'>n</span>
                     <span id='letter_r'>g</span>
-                    <span id='letter_r'>i</span>
-                    <span id='letter_r'>n</span>
-                    <span id='letter_r'>e</span>
-                    <span id='letter_r'>e</span>
-                    <span id='letter_r'>r</span>
+                    <span id='letter_r1'>i</span>
+                    <span id='letter_r2'>n</span>
+                    <span id='letter_r3'>e</span>
+                    <span id='letter_r4'>e</span>
+                    <span id='letter_r5'>r</span>
                 </h1>
-                <p className='about-left-description'>Software Engineer / Aerospace Enthusiast</p>
+                <p className='about-left-description'>Software Engineer / Technology Enthusiast</p>
                 <div className="about-left-button-box">
                     <button onClick={() => navigate('/contact')} className="about-contact-button">Contact me!</button>
                     <div className="about-resume-box">
@@ -58,9 +58,9 @@ function About() {
             <div className="about-right-box">
                 <div className="about-right-title">About me</div>
                 <p className='about-right-description'>
-                    I am a motivated engineer with a passion for using technology to solve important problems.
-                    <br /><br />I've always felt a deep connection to Aerospace and technology. I have high aspirations and am constantly striving to outdo myself with every <span onClick={() => navigate('/projects')}>challenge</span> I undertake.
-                    <br /><br />My goal is to work on building things that make the earth (and other planets 🪐) more exciting and fulfilling places to live.
+                    I'm an engineer focused on solving problems that contribute to making the world a better place.
+                    <br /><br />Being apart of technological advancements is what gets me up in the morning, and I constantly strive to outdo myself with every <span onClick={() => navigate('/projects')}>challenge</span> I undertake.
+                    <br /><br />My goal is work alongside similarly motivated people to make the world a more exciting and fulfilling place to live.
                 </p>
             </div>
         </div>

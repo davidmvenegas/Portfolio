@@ -178,6 +178,31 @@
     animation: aboutFadeIn 1s ease-in-out forwards;
     animation-delay: 1.7s;
 }
+#letter_r1 {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.75s;
+}
+#letter_r2 {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.8s;
+}
+#letter_r3 {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.85s;
+}
+#letter_r4 {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.9s;
+}
+#letter_r5 {
+    opacity: 0;
+    animation: aboutFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.95s;
+}
 @keyframes aboutTitleAfterFade {
     100% {
         opacity: 1

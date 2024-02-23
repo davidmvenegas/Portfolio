@@ -61,19 +61,19 @@ function Skills() {
                         <div id="ReactSkill" className="skills-item">
                             <img src={ReactImg} alt="React" />
                             <h2>React JS</h2>
-                            <p>I use React on a regular basis for a lot of what I do</p>
+                            <p>I use React on a regular basis for lots of what I do</p>
                         </div>
                         <div id="ReactSkill" className="skillSeparator"></div>
                         <div id="ReduxSkill" className="skills-item">
                             <img src={ReduxImg} alt="Redux" />
                             <h2>Redux</h2>
-                            <p>A useful friend when building large-scale applications</p>
+                            <p>A useful tool for managing state in large-scale systems</p>
                         </div>
                         <div id="ReduxSkill" className="skillSeparator"></div>
                         <div id="JavascriptSkill" className="skills-item">
                             <img src={JavascriptImg} alt="Javascript" />
                             <h2>Javascript</h2>
-                            <p>The duct tape of the Internet and my partner in crime</p>
+                            <p>The duct tape of the Internet and my everyday acquaintance</p>
                         </div>
                         <div id="JavascriptSkill" className="skillSeparator hiddenSkillSeparator"></div>
                         <div id="RubySkill" className="skills-item responsiveSkillsItem1">
